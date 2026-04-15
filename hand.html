@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cassidy Paving - Hand Crew Calendar</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.header-left {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.header-left span { color: #CC0000; }
+.header-center {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #15803D;
+}
+.header-right {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #666;
+}
+.header-right .date {
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* CALENDAR GRID */
+.calendar-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.calendar-month {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+.weekday-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.weekday-header div {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  padding: 8px 0;
+}
+.calendar-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  min-height: 0;
+}
+.day-cell {
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 0;
+}
+.day-cell.other-month {
+  opacity: 0.4;
+}
+.day-number {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #999;
+  margin-bottom: 6px;
+}
+.day-cell.current-month .day-number {
+  color: #666;
+}
+.day-cell.current-day {
+  border-left: 3px solid #CC0000;
+  background: #fffafb;
+}
+.day-cell.current-day .day-number {
+  color: #CC0000;
+  font-weight: 700;
+}
+.events {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+}
+.event {
+  background: #dcfce7;
+  color: #1a1a1a;
+  border-left: 3px solid #15803D;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.event:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: #bbf7d0;
+}
+.event.complete {
+  opacity: 0.5;
+  background: #f0f0f0;
+  border-left-color: #999;
+  color: #888;
+}
+
+/* STATUS INDICATOR */
+.status-bar {
+  font-size: 0.7rem;
+  color: #999;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-left">CASSIDY <span>PAVING</span></div>
+  <div class="header-center">HAND CREW</div>
+  <div class="header-right">
+    <div>Today</div>
+    <div class="date"></div>
+  </div>
+</div>
+
+<div class="calendar-container">
+  <div class="calendar-month"></div>
+  <div class="weekday-header">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="calendar-grid"></div>
+</div>
+
+<div class="status-bar">Last updated: <span id="update-time">--:--</span></div>
+
+<script src="calendar-utils.js"></script>
+<script>
+const CREW_PHASE = 'Hand';
+const CREW_COLOR = '#15803D';
+let cachedEvents = [];
+let lastUpdateTime = null;
+
+async function renderCalendar() {
+  const today = new Date();
+  document.querySelector('.header-right .date').textContent = today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+  const allEvents = await loadEvents();
+  cachedEvents = filterEventsByPhase(allEvents, CREW_PHASE);
+
+  const calendarDates = getCalendarDates(today);
+  const monthYear = formatMonthYear(today);
+  document.querySelector('.calendar-month').textContent = monthYear;
+
+  const grid = document.querySelector('.calendar-grid');
+  grid.innerHTML = '';
+
+  calendarDates.forEach(date => {
+    const cell = document.createElement('div');
+    cell.className = 'day-cell';
+
+    const isCurrentMonth = date.getMonth() === today.getMonth();
+    const isCurrentDay = date.toDateString() === today.toDateString();
+
+    if (!isCurrentMonth) cell.classList.add('other-month');
+    else cell.classList.add('current-month');
+    if (isCurrentDay) cell.classList.add('current-day');
+
+    const dayNum = document.createElement('div');
+    dayNum.className = 'day-number';
+    dayNum.textContent = date.getDate();
+    cell.appendChild(dayNum);
+
+    const events = document.createElement('div');
+    events.className = 'events';
+
+    const dayEvents = getEventsForDate(cachedEvents, date);
+    dayEvents.forEach(event => {
+      const eventEl = document.createElement('div');
+      eventEl.className = 'event';
+      if (event.status === 'Complete') eventEl.classList.add('complete');
+
+      const text = `${event.jobNumber} ${event.client} ${event.city}`;
+      eventEl.textContent = text;
+      eventEl.title = `${event.phase} - ${event.status}`;
+
+      events.appendChild(eventEl);
+    });
+
+    cell.appendChild(events);
+    grid.appendChild(cell);
+  });
+
+  const now = new Date();
+  document.getElementById('update-time').textContent = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+  lastUpdateTime = now;
+}
+
+renderCalendar();
+setInterval(renderCalendar, 10 * 60 * 1000);
+</script>
+</body>
+</html>
