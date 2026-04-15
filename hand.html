@@ -193,8 +193,8 @@ async function renderCalendar() {
   cachedEvents = filterEventsByPhase(allEvents, CREW_PHASE);
 
   const calendarDates = getCalendarDates(today);
-  const monthYear = formatMonthYear(today);
-  document.querySelector('.calendar-month').textContent = monthYear;
+  const dateRange = formatDateRange(calendarDates[0], calendarDates[calendarDates.length - 1]);
+  document.querySelector('.calendar-month').textContent = dateRange;
 
   const grid = document.querySelector('.calendar-grid');
   grid.innerHTML = '';
@@ -203,7 +203,7 @@ async function renderCalendar() {
     const cell = document.createElement('div');
     cell.className = 'day-cell';
 
-    const isCurrentMonth = date.getMonth() === today.getMonth();
+    const isCurrentMonth = date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear();
     const isCurrentDay = date.toDateString() === today.toDateString();
 
     if (!isCurrentMonth) cell.classList.add('other-month');

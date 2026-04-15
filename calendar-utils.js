@@ -134,26 +134,23 @@ function filterEventsByPhase(events, phase) {
   return events.filter(e => e.phase === phase);
 }
 
-// Get calendar grid dates (7 days before month start through end of month)
+// Get calendar grid dates (rolling 6-week window)
+// Grid start: Sunday of the week containing (today - 7 days)
+// Grid length: 42 days (6 weeks)
 function getCalendarDates(today) {
-  const year = today.getFullYear();
-  const month = today.getMonth();
+  // Calculate window start: today - 7 days
+  const sevenDaysAgo = new Date(today);
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
-  // First day of month
-  const firstDay = new Date(year, month, 1);
-  // Find the Sunday of the week containing the first day
-  const startDate = new Date(firstDay);
-  startDate.setDate(firstDay.getDate() - firstDay.getDay());
-  // Move back 7 more days
-  startDate.setDate(startDate.getDate() - 7);
+  // Find the Sunday of the week containing (today - 7 days)
+  const startDate = new Date(sevenDaysAgo);
+  startDate.setDate(startDate.getDate() - startDate.getDay());
+  startDate.setHours(0, 0, 0, 0);
 
-  // Last day of month
-  const lastDay = new Date(year, month + 1, 0);
-
-  // Build array of dates
+  // Build array of 42 dates (6 weeks)
   const dates = [];
   let current = new Date(startDate);
-  while (current <= lastDay) {
+  for (let i = 0; i < 42; i++) {
     dates.push(new Date(current));
     current.setDate(current.getDate() + 1);
   }
@@ -181,4 +178,33 @@ function formatDateShort(date) {
 // Format date for calendar header
 function formatMonthYear(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+}
+
+// Format date range for calendar header (handles month/year spanning)
+function formatDateRange(startDate, endDate) {
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+
+  const startMonth = start.getMonth();
+  const startYear = start.getFullYear();
+  const endMonth = end.getMonth();
+  const endYear = end.getFullYear();
+
+  // If same month and year
+  if (startMonth === endMonth && startYear === endYear) {
+    return new Date(start).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  }
+
+  // If different months/years
+  const startMonthStr = new Date(start).toLocaleDateString('en-US', { month: 'long' });
+  const endMonthYearStr = new Date(end).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+  // If same year, show "Month – Month Year"
+  if (startYear === endYear) {
+    return `${startMonthStr} – ${endMonthYearStr}`;
+  }
+
+  // If different years, show "Month Year – Month Year"
+  const startMonthYearStr = new Date(start).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  return `${startMonthYearStr} – ${endMonthYearStr}`;
 }
