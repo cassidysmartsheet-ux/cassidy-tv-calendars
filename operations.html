@@ -150,39 +150,60 @@ body {
   color: #888;
 }
 
+/* Crew badge pill */
+.crew-badge {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+  letter-spacing: -0.3px;
+}
+.crew-badge.milling { background: #C2410C; }
+.crew-badge.paving { background: #991B1B; }
+.crew-badge.crackfill { background: #A16207; }
+.crew-badge.hand { background: #166534; }
+.crew-badge.reclaimgrading { background: #1E3A8A; }
+.crew-badge.pulverizing { background: #6D28D9; }
+.crew-badge.subc { background: #115E59; }
+
 /* Phase-specific colors */
 .event.milling {
-  background: rgba(194, 65, 12, 0.08);
+  background: rgba(194, 65, 12, 0.20);
   border-color: rgba(194, 65, 12, 0.2);
   border-left-color: #C2410C;
 }
 .event.paving {
-  background: rgba(153, 27, 27, 0.08);
+  background: rgba(153, 27, 27, 0.20);
   border-color: rgba(153, 27, 27, 0.2);
   border-left-color: #991B1B;
 }
 .event.crackfill {
-  background: rgba(161, 98, 7, 0.08);
+  background: rgba(161, 98, 7, 0.20);
   border-color: rgba(161, 98, 7, 0.2);
   border-left-color: #A16207;
 }
 .event.hand {
-  background: rgba(22, 101, 52, 0.08);
+  background: rgba(22, 101, 52, 0.20);
   border-color: rgba(22, 101, 52, 0.2);
   border-left-color: #166534;
 }
 .event.reclaimgrading {
-  background: rgba(30, 58, 138, 0.08);
+  background: rgba(30, 58, 138, 0.20);
   border-color: rgba(30, 58, 138, 0.2);
   border-left-color: #1E3A8A;
 }
 .event.pulverizing {
-  background: rgba(109, 40, 217, 0.08);
+  background: rgba(109, 40, 217, 0.20);
   border-color: rgba(109, 40, 217, 0.2);
   border-left-color: #6D28D9;
 }
 .event.subc {
-  background: rgba(17, 94, 89, 0.08);
+  background: rgba(17, 94, 89, 0.20);
   border-color: rgba(17, 94, 89, 0.2);
   border-left-color: #115E59;
 }
@@ -269,6 +290,19 @@ function getPhaseClass(phase) {
   return phaseMap[phase] || 'milling';
 }
 
+function getCrewCode(phase) {
+  const crewCodeMap = {
+    'Milling': 'MILL',
+    'Paving': 'PAVE',
+    'Crackfill': 'CRCK',
+    'Hand': 'HAND',
+    'Reclaim/Grading': 'RECL',
+    'Pulverizing': 'PULV',
+    'SubC': 'SUBC'
+  };
+  return crewCodeMap[phase] || '';
+}
+
 async function renderCalendar() {
   const today = new Date();
   document.querySelector('.header-right .date').textContent = today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
@@ -306,6 +340,11 @@ async function renderCalendar() {
       const eventEl = document.createElement('div');
       eventEl.className = 'event ' + getPhaseClass(event.phase);
       if (event.status === 'Complete') eventEl.classList.add('complete');
+
+      const badge = document.createElement('span');
+      badge.className = 'crew-badge ' + getPhaseClass(event.phase);
+      badge.textContent = getCrewCode(event.phase);
+      eventEl.appendChild(badge);
 
       const span1 = document.createElement('span');
       span1.className = 'job';
