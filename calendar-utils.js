@@ -80,6 +80,9 @@ async function loadEvents() {
       // Skip Cancelled status
       if (row['Status'] === 'Cancelled') return;
 
+      // Skip Split Parent rollup rows (keep only granular children)
+      if (row['Split Parent'] && row['Split Parent'].trim().toUpperCase() === 'TRUE') return;
+
       // Parse dates (MM/DD/YY format)
       const startDate = parseDate(row['Start Date']);
       const endDate = parseDate(row['End Date']);

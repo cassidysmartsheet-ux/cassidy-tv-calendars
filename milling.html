@@ -94,9 +94,6 @@ body {
   overflow: hidden;
   min-height: 0;
 }
-.day-cell.other-month {
-  opacity: 0.4;
-}
 .day-number {
   font-size: 0.75rem;
   font-weight: 600;
@@ -209,8 +206,7 @@ async function renderCalendar() {
     const isCurrentMonth = date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear();
     const isCurrentDay = date.toDateString() === today.toDateString();
 
-    if (!isCurrentMonth) cell.classList.add('other-month');
-    else cell.classList.add('current-month');
+    if (isCurrentMonth) cell.classList.add('current-month');
     if (isCurrentDay) cell.classList.add('current-day');
 
     const dayNum = document.createElement('div');
