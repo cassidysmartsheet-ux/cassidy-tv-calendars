@@ -1,15 +1,15 @@
 // Shared calendar utilities for TV displays
 // Data source abstraction layer - swappable between CSV and API
 
-// Phase color palette - light theme friendly
+// Phase color palette - high contrast
 const PHASE_COLORS = {
-  'Milling': '#D97706',        // deep orange
-  'Paving': '#DC2626',         // crimson
-  'Crackfill': '#B45309',      // amber/brown
-  'Hand': '#15803D',           // forest green
-  'Reclaim/Grading': '#1D4ED8', // cobalt blue
-  'Pulverizing': '#6D28D9',    // purple
-  'SubC': '#475569'            // slate
+  'Milling': '#EA580C',        // orange
+  'Paving': '#B91C1C',         // dark red
+  'Crackfill': '#CA8A04',      // yellow-gold
+  'Hand': '#15803D',           // green
+  'Reclaim/Grading': '#1E40AF', // blue
+  'Pulverizing': '#7C3AED',    // purple
+  'SubC': '#0F766E'            // teal
 };
 
 // CSV Parser - handles quoted fields with embedded commas

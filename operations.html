@@ -127,13 +127,15 @@ body {
   padding: 5px 6px;
   border-radius: 3px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.15;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
   cursor: pointer;
   transition: all 0.2s;
   border-left: 2px solid;
+  font-size: 0.55rem;
 }
 .event:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -145,32 +147,32 @@ body {
 
 /* Phase-specific colors */
 .event.milling {
-  background: #D97706;
-  border-left-color: #b45a00;
+  background: #EA580C;
+  border-left-color: #b83a00;
 }
 .event.paving {
-  background: #DC2626;
-  border-left-color: #991b1b;
+  background: #B91C1C;
+  border-left-color: #7f1414;
 }
 .event.crackfill {
-  background: #B45309;
-  border-left-color: #7c2d12;
+  background: #CA8A04;
+  border-left-color: #9a6400;
 }
 .event.hand {
   background: #15803D;
-  border-left-color: #15330a;
+  border-left-color: #0e4620;
 }
 .event.reclaimgrading {
-  background: #1D4ED8;
-  border-left-color: #1e3a8a;
+  background: #1E40AF;
+  border-left-color: #1a347f;
 }
 .event.pulverizing {
-  background: #6D28D9;
-  border-left-color: #4c1d95;
+  background: #7C3AED;
+  border-left-color: #5e2bad;
 }
 .event.subc {
-  background: #475569;
-  border-left-color: #1e293b;
+  background: #0F766E;
+  border-left-color: #0a4d4b;
 }
 
 /* STATUS INDICATOR */
@@ -262,7 +264,7 @@ async function renderCalendar() {
       eventEl.className = 'event ' + getPhaseClass(event.phase);
       if (event.status === 'Complete') eventEl.classList.add('complete');
 
-      const text = `${event.jobNumber} ${event.client}`;
+      const text = `${event.jobNumber}\n${event.client}\n${event.city}`;
       eventEl.textContent = text;
       eventEl.title = `${event.phase} - ${event.status}`;
 
