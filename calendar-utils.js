@@ -2,15 +2,42 @@
 // Data source abstraction layer - swappable between CSV and API
 
 // Phase color palette - muted, enterprise dashboard tones
+// Milling moved from burnt orange to deep teal/cyan to separate it from
+// Paving (brick red) and Crackfill (warm amber) which sit too close on a TV.
 const PHASE_COLORS = {
-  'Milling': '#C2410C',        // burnt orange
+  'Milling': '#0E7490',        // deep teal/cyan
   'Paving': '#991B1B',         // brick red
   'Crackfill': '#A16207',      // warm amber
   'Hand': '#166534',           // forest green
   'Reclaim/Grading': '#1E3A8A', // navy
   'Pulverizing': '#6D28D9',    // muted purple
-  'SubC': '#115E59'            // deep teal
+  'SubC': '#115E59'            // deep teal (legacy — no dedicated TV)
 };
+
+// Phase -> CSS class slug used by calendar-styles.css
+const PHASE_SLUGS = {
+  'Milling': 'milling',
+  'Paving': 'paving',
+  'Crackfill': 'crackfill',
+  'Hand': 'hand',
+  'Reclaim/Grading': 'reclaimgrading',
+  'Pulverizing': 'pulverizing',
+  'SubC': 'subc'
+};
+
+// Phase -> short crew code shown on the operations calendar badge
+const PHASE_CODES = {
+  'Milling': 'MILL',
+  'Paving': 'PAVE',
+  'Crackfill': 'CRCK',
+  'Hand': 'HAND',
+  'Reclaim/Grading': 'RECL',
+  'Pulverizing': 'PULV',
+  'SubC': 'SUBC'
+};
+
+function getPhaseSlug(phase) { return PHASE_SLUGS[phase] || 'milling'; }
+function getPhaseCode(phase) { return PHASE_CODES[phase] || ''; }
 
 // CSV Parser - handles quoted fields with embedded commas
 function parseCSVLine(line) {
@@ -23,15 +50,12 @@ function parseCSVLine(line) {
 
     if (char === '"') {
       if (insideQuotes && line[i + 1] === '"') {
-        // Escaped quote
         current += '"';
         i++;
       } else {
-        // Toggle quote mode
         insideQuotes = !insideQuotes;
       }
     } else if (char === ',' && !insideQuotes) {
-      // Field delimiter
       result.push(current.trim());
       current = '';
     } else {
@@ -74,16 +98,10 @@ async function loadEvents() {
     const events = [];
 
     rows.forEach(row => {
-      // Skip empty rows and rows without required fields
       if (!row['Job #'] || !row['Start Date']) return;
-
-      // Skip Cancelled status
       if (row['Status'] === 'Cancelled') return;
-
-      // Skip Split Parent rollup rows (keep only granular children)
       if (row['Split Parent'] && row['Split Parent'].trim().toUpperCase() === 'TRUE') return;
 
-      // Parse dates (MM/DD/YY format)
       const startDate = parseDate(row['Start Date']);
       const endDate = parseDate(row['End Date']);
 
@@ -115,15 +133,13 @@ function parseDate(dateStr) {
   const parts = dateStr.trim().split('/');
   if (parts.length !== 3) return null;
 
-  const month = parseInt(parts[0], 10) - 1; // JS months are 0-indexed
+  const month = parseInt(parts[0], 10) - 1;
   const day = parseInt(parts[1], 10);
   const year = parseInt(parts[2], 10);
 
-  // Handle 2-digit year (26 -> 2026)
   const fullYear = year > 50 ? 1900 + year : 2000 + year;
 
   const date = new Date(fullYear, month, day);
-  // Validate date
   if (date.getMonth() !== month || date.getDate() !== day) {
     return null;
   }
@@ -141,16 +157,13 @@ function filterEventsByPhase(events, phase) {
 // Grid start: Sunday of the week containing (today - 7 days)
 // Grid length: 42 days (6 weeks)
 function getCalendarDates(today) {
-  // Calculate window start: today - 7 days
   const sevenDaysAgo = new Date(today);
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
-  // Find the Sunday of the week containing (today - 7 days)
   const startDate = new Date(sevenDaysAgo);
   startDate.setDate(startDate.getDate() - startDate.getDay());
   startDate.setHours(0, 0, 0, 0);
 
-  // Build array of 42 dates (6 weeks)
   const dates = [];
   let current = new Date(startDate);
   for (let i = 0; i < 42; i++) {
@@ -183,6 +196,39 @@ function formatMonthYear(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 }
 
+// Adaptive cell scaling — guarantees no event truncation.
+//
+// Strategy: after the grid renders, every day cell is measured. If the events
+// container would overflow its allotted height, a density class
+// (.density-2 / .density-3 / .density-4 / .density-max) is applied to the
+// CELL — calendar-styles.css uses these to ratchet down font-size, padding,
+// and gap so every event remains visible. Re-run on window resize so a
+// rotating TV mount or browser zoom won't break the layout.
+function applyAdaptiveDensity() {
+  const cells = document.querySelectorAll('.day-cell');
+  cells.forEach(cell => {
+    cell.classList.remove('density-2', 'density-3', 'density-4', 'density-max');
+    const events = cell.querySelector('.events');
+    if (!events) return;
+
+    const levels = ['', 'density-2', 'density-3', 'density-4', 'density-max'];
+    for (let i = 0; i < levels.length; i++) {
+      if (levels[i]) cell.classList.add(levels[i]);
+      const fits = events.scrollHeight <= events.clientHeight + 1;
+      if (fits) return;
+    }
+  });
+}
+
+// Debounced resize handler — re-evaluates density when viewport changes.
+function bindAdaptiveDensityResize() {
+  let t = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(t);
+    t = setTimeout(applyAdaptiveDensity, 150);
+  });
+}
+
 // Format date range for calendar header (handles month/year spanning)
 function formatDateRange(startDate, endDate) {
   const start = new Date(startDate);
@@ -193,21 +239,17 @@ function formatDateRange(startDate, endDate) {
   const endMonth = end.getMonth();
   const endYear = end.getFullYear();
 
-  // If same month and year
   if (startMonth === endMonth && startYear === endYear) {
     return new Date(start).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
   }
 
-  // If different months/years
   const startMonthStr = new Date(start).toLocaleDateString('en-US', { month: 'long' });
   const endMonthYearStr = new Date(end).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
-  // If same year, show "Month – Month Year"
   if (startYear === endYear) {
     return `${startMonthStr} – ${endMonthYearStr}`;
   }
 
-  // If different years, show "Month Year – Month Year"
   const startMonthYearStr = new Date(start).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
   return `${startMonthYearStr} – ${endMonthYearStr}`;
 }

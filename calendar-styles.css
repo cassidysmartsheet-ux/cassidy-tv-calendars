@@ -1,0 +1,334 @@
+/* ============================================================
+   Cassidy Paving — TV Calendar shared styles
+   Brand palette pulled from the Cassidy Paving logo:
+     --brand-red     #CC0000
+     --brand-black   #1A1A1A
+   Phase colors live in calendar-utils.js (PHASE_COLORS).
+   ============================================================ */
+
+:root {
+  --brand-red:        #CC0000;
+  --brand-red-dark:   #990000;
+  --brand-black:      #1A1A1A;
+  --brand-ink:        #0F0F0F;
+  --grid-line:        #E5E5E5;
+  --cell-bg:          #FAFAFA;
+  --cell-bg-today:    #FFF5F5;
+  --muted:            #6B6B6B;
+  --muted-soft:       #999999;
+
+  /* Per-crew color override — single-crew calendars set this. */
+  --crew-color:       var(--brand-red);
+}
+
+/* ---------- Reset / base ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #FFFFFF;
+  color: var(--brand-ink);
+  display: flex;
+  flex-direction: column;
+  padding: 18px 22px;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 3px solid var(--brand-black);
+  position: relative;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -3px;
+  width: 22%;
+  height: 3px;
+  background: var(--brand-red);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+.header-logo img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.header-title {
+  text-align: center;
+}
+.header-title .crew-name {
+  font-family: 'Oswald', 'Impact', 'Arial Narrow', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4.2vw, 3.4rem);
+  letter-spacing: 1.5px;
+  line-height: 1;
+  color: var(--brand-black);
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding: 0 18px 10px;
+}
+.header-title .crew-name::before,
+.header-title .crew-name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  background: var(--brand-red);
+  width: 36px;
+}
+.header-title .crew-name::before { left: 0; }
+.header-title .crew-name::after  { right: 0; }
+.header-title .crew-name .accent {
+  color: var(--brand-red);
+}
+.header-title .date-range {
+  margin-top: 8px;
+  font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.header-right {
+  text-align: right;
+  min-width: 110px;
+}
+.header-right .label {
+  font-family: 'Oswald', 'Impact', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--brand-red);
+  text-transform: uppercase;
+}
+.header-right .date {
+  font-family: 'Oswald', 'Impact', sans-serif;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  font-weight: 700;
+  color: var(--brand-black);
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- LEGEND (operations calendar only) ---------- */
+.legend {
+  display: flex;
+  gap: 22px;
+  padding: 10px 0 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--grid-line);
+  margin-bottom: 12px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--brand-black);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+.legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+/* ---------- CALENDAR GRID ---------- */
+.calendar-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.weekday-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.weekday-header div {
+  text-align: center;
+  font-family: 'Oswald', 'Impact', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brand-black);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 6px 0;
+  border-bottom: 2px solid var(--brand-black);
+}
+.calendar-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 6px;
+  min-height: 0;
+}
+
+/* ---------- DAY CELL ---------- */
+.day-cell {
+  background: var(--cell-bg);
+  border: 1px solid var(--grid-line);
+  border-radius: 6px;
+  padding: 8px 8px 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 0;
+}
+.day-cell:not(.current-month) { opacity: 0.5; }
+.day-cell.current-day {
+  background: var(--cell-bg-today);
+  border: 2px solid var(--brand-red);
+  padding: 7px 7px 5px;
+}
+.day-number {
+  font-family: 'Oswald', 'Impact', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 4px;
+  line-height: 1;
+}
+.day-cell.current-month .day-number { color: var(--brand-black); }
+.day-cell.current-day .day-number {
+  color: var(--brand-red);
+  font-weight: 700;
+}
+
+/* ---------- EVENTS ---------- */
+.events {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow: hidden;
+  min-height: 0;
+}
+.event {
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--brand-ink);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-left: 4px solid var(--crew-color);
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.25;
+  /* multi-line, no truncation */
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.event .job { font-weight: 700; }
+.event .sep { opacity: 0.55; padding: 0 2px; }
+.event.complete {
+  opacity: 0.45;
+  background: #F0F0F0;
+  border-left-color: var(--muted-soft);
+  color: var(--muted);
+}
+
+/* Crew badge (operations calendar) */
+.crew-badge {
+  display: inline-block;
+  background: var(--brand-black);
+  color: #FFFFFF;
+  font-family: 'Oswald', 'Impact', sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: 1px;
+  letter-spacing: 0.5px;
+}
+
+/* Phase-specific event colors (operations calendar uses these per-event) */
+.event.milling         { background: rgba(14, 116, 144, 0.18); border-left-color: #0E7490; }
+.crew-badge.milling    { background: #0E7490; }
+.event.paving          { background: rgba(153, 27, 27, 0.20); border-left-color: #991B1B; }
+.crew-badge.paving     { background: #991B1B; }
+.event.crackfill       { background: rgba(161, 98, 7, 0.20); border-left-color: #A16207; }
+.crew-badge.crackfill  { background: #A16207; }
+.event.hand            { background: rgba(22, 101, 52, 0.20); border-left-color: #166534; }
+.crew-badge.hand       { background: #166534; }
+.event.reclaimgrading  { background: rgba(30, 58, 138, 0.20); border-left-color: #1E3A8A; }
+.crew-badge.reclaimgrading { background: #1E3A8A; }
+.event.pulverizing     { background: rgba(109, 40, 217, 0.20); border-left-color: #6D28D9; }
+.crew-badge.pulverizing { background: #6D28D9; }
+.event.subc            { background: rgba(17, 94, 89, 0.20); border-left-color: #115E59; }
+.crew-badge.subc       { background: #115E59; }
+
+/* ---------- ADAPTIVE DENSITY ----------
+   Applied by applyAdaptiveDensity() in calendar-utils.js when a cell would
+   overflow. Each step shrinks event font/padding/gap so all events fit
+   without truncation. */
+.day-cell.density-2 .events { gap: 2px; }
+.day-cell.density-2 .event {
+  font-size: 0.72rem;
+  padding: 4px 6px;
+  line-height: 1.18;
+}
+.day-cell.density-2 .crew-badge { font-size: 0.62rem; padding: 1px 4px; }
+
+.day-cell.density-3 .events { gap: 2px; }
+.day-cell.density-3 .event {
+  font-size: 0.66rem;
+  padding: 3px 5px;
+  line-height: 1.15;
+  border-left-width: 3px;
+}
+.day-cell.density-3 .crew-badge { font-size: 0.58rem; padding: 0 3px; margin-right: 4px; }
+
+.day-cell.density-4 .events { gap: 1px; }
+.day-cell.density-4 .event {
+  font-size: 0.6rem;
+  padding: 2px 4px;
+  line-height: 1.1;
+  border-left-width: 3px;
+}
+.day-cell.density-4 .crew-badge { font-size: 0.54rem; padding: 0 3px; margin-right: 3px; }
+
+.day-cell.density-max .events { gap: 1px; }
+.day-cell.density-max .event {
+  font-size: 0.55rem;
+  padding: 1px 3px;
+  line-height: 1.08;
+  border-left-width: 2px;
+  border-radius: 3px;
+}
+.day-cell.density-max .crew-badge {
+  font-size: 0.5rem;
+  padding: 0 2px;
+  margin-right: 2px;
+}
+
+/* ---------- STATUS BAR ---------- */
+.status-bar {
+  font-size: 0.72rem;
+  color: var(--muted-soft);
+  text-align: center;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--grid-line);
+  letter-spacing: 0.4px;
+}
+.status-bar .accent { color: var(--brand-red); font-weight: 600; }

@@ -3,376 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cassidy Paving - Operations Calendar</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 100%; height: 100%; overflow: hidden; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #ffffff;
-  color: #1a1a1a;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-/* HEADER */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #e5e5e5;
-}
-.header-left {
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-.header-left span { color: #CC0000; }
-.header-center {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #CC0000;
-}
-.header-right {
-  text-align: right;
-  font-size: 0.85rem;
-  color: #666;
-}
-.header-right .date {
-  font-size: 1rem;
-  color: #1a1a1a;
-  font-weight: 600;
-  margin-top: 2px;
-}
-
-/* CALENDAR GRID */
-.calendar-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-}
-.calendar-month {
-  font-size: 1.3rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 15px;
-  color: #1a1a1a;
-}
-.weekday-header {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-  margin-bottom: 8px;
-}
-.weekday-header div {
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #666;
-  text-transform: uppercase;
-  padding: 8px 0;
-}
-.calendar-grid {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-  min-height: 0;
-}
-.day-cell {
-  background: #fafafa;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  min-height: 0;
-}
-.day-number {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: #999;
-  margin-bottom: 6px;
-}
-.day-cell.current-month .day-number {
-  color: #666;
-}
-.day-cell.current-day {
-  border-left: 3px solid #CC0000;
-  background: #fffafb;
-}
-.day-cell.current-day .day-number {
-  color: #CC0000;
-  font-weight: 700;
-}
-.events {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  overflow: hidden;
-  font-size: 0.6rem;
-}
-.event {
-  color: #1a1a1a;
-  padding: 7px 10px;
-  border-radius: 6px;
-  font-weight: 500;
-  line-height: 1.15;
-  cursor: pointer;
-  transition: all 0.2s;
-  border-left: 3px solid;
-  border: 1px solid;
-  border-left: 3px solid;
-  font-size: 0.85rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-}
-.event:hover {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-.event .job {
-  font-weight: 600;
-}
-.event .sep {
-  opacity: 0.6;
-}
-.event.complete {
-  opacity: 0.5;
-  color: #888;
-}
-
-/* Crew badge pill */
-.crew-badge {
-  display: inline-block;
-  background: #1a1a1a;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 0.7rem;
-  padding: 2px 5px;
-  border-radius: 3px;
-  margin-right: 6px;
-  vertical-align: middle;
-  letter-spacing: -0.3px;
-}
-.crew-badge.milling { background: #C2410C; }
-.crew-badge.paving { background: #991B1B; }
-.crew-badge.crackfill { background: #A16207; }
-.crew-badge.hand { background: #166534; }
-.crew-badge.reclaimgrading { background: #1E3A8A; }
-.crew-badge.pulverizing { background: #6D28D9; }
-.crew-badge.subc { background: #115E59; }
-
-/* Phase-specific colors */
-.event.milling {
-  background: rgba(194, 65, 12, 0.20);
-  border-color: rgba(194, 65, 12, 0.2);
-  border-left-color: #C2410C;
-}
-.event.paving {
-  background: rgba(153, 27, 27, 0.20);
-  border-color: rgba(153, 27, 27, 0.2);
-  border-left-color: #991B1B;
-}
-.event.crackfill {
-  background: rgba(161, 98, 7, 0.20);
-  border-color: rgba(161, 98, 7, 0.2);
-  border-left-color: #A16207;
-}
-.event.hand {
-  background: rgba(22, 101, 52, 0.20);
-  border-color: rgba(22, 101, 52, 0.2);
-  border-left-color: #166534;
-}
-.event.reclaimgrading {
-  background: rgba(30, 58, 138, 0.20);
-  border-color: rgba(30, 58, 138, 0.2);
-  border-left-color: #1E3A8A;
-}
-.event.pulverizing {
-  background: rgba(109, 40, 217, 0.20);
-  border-color: rgba(109, 40, 217, 0.2);
-  border-left-color: #6D28D9;
-}
-.event.subc {
-  background: rgba(17, 94, 89, 0.20);
-  border-color: rgba(17, 94, 89, 0.2);
-  border-left-color: #115E59;
-}
-
-/* COLOR LEGEND */
-.legend {
-  display: flex;
-  gap: 20px;
-  padding: 12px 0;
-  margin-bottom: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.75rem;
-  color: #1a1a1a;
-}
-.legend-color {
-  width: 12px;
-  height: 12px;
-  border-radius: 2px;
-}
-
-/* STATUS INDICATOR */
-.status-bar {
-  font-size: 0.7rem;
-  color: #999;
-  text-align: center;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #e5e5e5;
-}
-</style>
+<title>Cassidy Paving — All Operations Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="calendar-styles.css">
 </head>
 <body>
-<div class="header">
-  <div class="header-left">CASSIDY <span>PAVING</span></div>
-  <div class="header-center">ALL OPERATIONS</div>
-  <div class="header-right">
-    <div>Today</div>
-    <div class="date"></div>
+
+<header class="header">
+  <div class="header-logo">
+    <img src="logo.png" alt="Cassidy Paving">
   </div>
-</div>
+  <div class="header-title">
+    <div class="crew-name">All <span class="accent">Operations</span></div>
+    <div class="date-range" id="date-range"></div>
+  </div>
+  <div class="header-right">
+    <div class="label">Today</div>
+    <div class="date" id="today-date"></div>
+  </div>
+</header>
 
 <div class="legend">
-  <div class="legend-item"><div class="legend-color" style="background: #C2410C;"></div> Milling</div>
-  <div class="legend-item"><div class="legend-color" style="background: #991B1B;"></div> Paving</div>
-  <div class="legend-item"><div class="legend-color" style="background: #A16207;"></div> Crackfill</div>
-  <div class="legend-item"><div class="legend-color" style="background: #166534;"></div> Hand</div>
-  <div class="legend-item"><div class="legend-color" style="background: #1E3A8A;"></div> Reclaim/Grading</div>
-  <div class="legend-item"><div class="legend-color" style="background: #6D28D9;"></div> Pulverizing</div>
-  <div class="legend-item"><div class="legend-color" style="background: #115E59;"></div> SubC</div>
+  <div class="legend-item"><div class="legend-color" style="background:#0E7490"></div> Milling</div>
+  <div class="legend-item"><div class="legend-color" style="background:#991B1B"></div> Paving</div>
+  <div class="legend-item"><div class="legend-color" style="background:#A16207"></div> Crackfill</div>
+  <div class="legend-item"><div class="legend-color" style="background:#166534"></div> Hand</div>
+  <div class="legend-item"><div class="legend-color" style="background:#1E3A8A"></div> Reclaim/Grading</div>
+  <div class="legend-item"><div class="legend-color" style="background:#6D28D9"></div> Pulverizing</div>
 </div>
 
 <div class="calendar-container">
-  <div class="calendar-month"></div>
   <div class="weekday-header">
     <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
   </div>
-  <div class="calendar-grid"></div>
+  <div class="calendar-grid" id="grid"></div>
 </div>
 
-<div class="status-bar">Last updated: <span id="update-time">--:--</span></div>
+<div class="status-bar">
+  Last updated: <span class="accent" id="update-time">--:--</span>
+</div>
 
 <script src="calendar-utils.js"></script>
 <script>
-const CREW_PHASE = null; // null = all phases
-let cachedEvents = [];
-let lastUpdateTime = null;
-
-function getPhaseClass(phase) {
-  const phaseMap = {
-    'Milling': 'milling',
-    'Paving': 'paving',
-    'Crackfill': 'crackfill',
-    'Hand': 'hand',
-    'Reclaim/Grading': 'reclaimgrading',
-    'Pulverizing': 'pulverizing',
-    'SubC': 'subc'
-  };
-  return phaseMap[phase] || 'milling';
-}
-
-function getCrewCode(phase) {
-  const crewCodeMap = {
-    'Milling': 'MILL',
-    'Paving': 'PAVE',
-    'Crackfill': 'CRCK',
-    'Hand': 'HAND',
-    'Reclaim/Grading': 'RECL',
-    'Pulverizing': 'PULV',
-    'SubC': 'SUBC'
-  };
-  return crewCodeMap[phase] || '';
-}
+const CREW_PHASE = null; // null = all phases (operations view)
 
 async function renderCalendar() {
   const today = new Date();
-  document.querySelector('.header-right .date').textContent = today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  document.getElementById('today-date').textContent =
+    today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 
   const allEvents = await loadEvents();
-  cachedEvents = filterEventsByPhase(allEvents, CREW_PHASE);
+  const events = filterEventsByPhase(allEvents, CREW_PHASE);
 
   const calendarDates = getCalendarDates(today);
-  const dateRange = formatDateRange(calendarDates[0], calendarDates[calendarDates.length - 1]);
-  document.querySelector('.calendar-month').textContent = dateRange;
+  document.getElementById('date-range').textContent =
+    formatDateRange(calendarDates[0], calendarDates[calendarDates.length - 1]);
 
-  const grid = document.querySelector('.calendar-grid');
+  const grid = document.getElementById('grid');
   grid.innerHTML = '';
 
   calendarDates.forEach(date => {
     const cell = document.createElement('div');
     cell.className = 'day-cell';
-
-    const isCurrentMonth = date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear();
-    const isCurrentDay = date.toDateString() === today.toDateString();
-
-    if (isCurrentMonth) cell.classList.add('current-month');
-    if (isCurrentDay) cell.classList.add('current-day');
+    if (date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear()) {
+      cell.classList.add('current-month');
+    }
+    if (date.toDateString() === today.toDateString()) {
+      cell.classList.add('current-day');
+    }
 
     const dayNum = document.createElement('div');
     dayNum.className = 'day-number';
     dayNum.textContent = date.getDate();
     cell.appendChild(dayNum);
 
-    const events = document.createElement('div');
-    events.className = 'events';
+    const eventsEl = document.createElement('div');
+    eventsEl.className = 'events';
 
-    const dayEvents = getEventsForDate(cachedEvents, date);
+    const dayEvents = getEventsForDate(events, date);
     dayEvents.forEach(event => {
+      const slug = getPhaseSlug(event.phase);
       const eventEl = document.createElement('div');
-      eventEl.className = 'event ' + getPhaseClass(event.phase);
+      eventEl.className = 'event ' + slug;
       if (event.status === 'Complete') eventEl.classList.add('complete');
 
       const badge = document.createElement('span');
-      badge.className = 'crew-badge ' + getPhaseClass(event.phase);
-      badge.textContent = getCrewCode(event.phase);
+      badge.className = 'crew-badge ' + slug;
+      badge.textContent = getPhaseCode(event.phase);
       eventEl.appendChild(badge);
 
-      const span1 = document.createElement('span');
-      span1.className = 'job';
-      span1.textContent = event.jobNumber;
-      const span2 = document.createElement('span');
-      span2.className = 'sep';
-      span2.textContent = ' · ';
-      const span3 = document.createElement('span');
-      span3.textContent = `${event.client} · ${event.city}`;
-      eventEl.appendChild(span1);
-      eventEl.appendChild(span2);
-      eventEl.appendChild(span3);
-      eventEl.title = `${event.phase} - ${event.status}`;
+      const job = document.createElement('span');
+      job.className = 'job';
+      job.textContent = event.jobNumber;
+      eventEl.appendChild(job);
 
-      events.appendChild(eventEl);
+      const sep = document.createElement('span');
+      sep.className = 'sep';
+      sep.textContent = ' · ';
+      eventEl.appendChild(sep);
+
+      const meta = document.createElement('span');
+      meta.textContent = `${event.client} · ${event.city}`;
+      eventEl.appendChild(meta);
+
+      eventEl.title = `${event.phase} — ${event.status}`;
+      eventsEl.appendChild(eventEl);
     });
 
-    cell.appendChild(events);
+    cell.appendChild(eventsEl);
     grid.appendChild(cell);
   });
 
-  const now = new Date();
-  document.getElementById('update-time').textContent = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-  lastUpdateTime = now;
+  // Future-proof: shrink event styling per-cell so multi-event days never truncate.
+  applyAdaptiveDensity();
+
+  document.getElementById('update-time').textContent =
+    new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
 }
 
 renderCalendar();
 setInterval(renderCalendar, 10 * 60 * 1000);
+bindAdaptiveDensityResize();
 </script>
 </body>
 </html>

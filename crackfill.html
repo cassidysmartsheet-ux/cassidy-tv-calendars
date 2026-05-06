@@ -3,258 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cassidy Paving - Crackfill Crew Calendar</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 100%; height: 100%; overflow: hidden; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #ffffff;
-  color: #1a1a1a;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-/* HEADER */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #e5e5e5;
-}
-.header-left {
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-.header-left span { color: #CC0000; }
-.header-center {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #A16207;
-}
-.header-right {
-  text-align: right;
-  font-size: 0.85rem;
-  color: #666;
-}
-.header-right .date {
-  font-size: 1rem;
-  color: #1a1a1a;
-  font-weight: 600;
-  margin-top: 2px;
-}
-
-/* CALENDAR GRID */
-.calendar-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-}
-.calendar-month {
-  font-size: 1.3rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 15px;
-  color: #1a1a1a;
-}
-.weekday-header {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-  margin-bottom: 8px;
-}
-.weekday-header div {
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #666;
-  text-transform: uppercase;
-  padding: 8px 0;
-}
-.calendar-grid {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-  min-height: 0;
-}
-.day-cell {
-  background: #fafafa;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  min-height: 0;
-}
-.day-number {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: #999;
-  margin-bottom: 6px;
-}
-.day-cell.current-month .day-number {
-  color: #666;
-}
-.day-cell.current-day {
-  border-left: 3px solid #CC0000;
-  background: #fffafb;
-}
-.day-cell.current-day .day-number {
-  color: #CC0000;
-  font-weight: 700;
-}
-.events {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  overflow: hidden;
-}
-.event {
-  background: rgba(161, 98, 7, 0.20);
-  color: #1a1a1a;
-  border: 1px solid rgba(161, 98, 7, 0.2);
-  border-left: 3px solid #A16207;
-  padding: 8px 10px;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 1.2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-  transition: all 0.2s;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-}
-.event:hover {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  background: rgba(161, 98, 7, 0.25);
-}
-.event .job {
-  font-weight: 600;
-}
-.event .sep {
-  opacity: 0.6;
-}
-.event.complete {
-  opacity: 0.5;
-  background: #f0f0f0;
-  border-left-color: #999;
-  color: #888;
-}
-
-/* STATUS INDICATOR */
-.status-bar {
-  font-size: 0.7rem;
-  color: #999;
-  text-align: center;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #e5e5e5;
-}
-</style>
+<title>Cassidy Paving — Crackfill Crew Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="calendar-styles.css">
+<style>:root { --crew-color: #A16207; }</style>
 </head>
 <body>
-<div class="header">
-  <div class="header-left">CASSIDY <span>PAVING</span></div>
-  <div class="header-center">CRACKFILL CREW</div>
-  <div class="header-right">
-    <div>Today</div>
-    <div class="date"></div>
+
+<header class="header">
+  <div class="header-logo">
+    <img src="logo.png" alt="Cassidy Paving">
   </div>
-</div>
+  <div class="header-title">
+    <div class="crew-name"><span class="accent">Crackfill</span> Crew</div>
+    <div class="date-range" id="date-range"></div>
+  </div>
+  <div class="header-right">
+    <div class="label">Today</div>
+    <div class="date" id="today-date"></div>
+  </div>
+</header>
 
 <div class="calendar-container">
-  <div class="calendar-month"></div>
   <div class="weekday-header">
     <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
   </div>
-  <div class="calendar-grid"></div>
+  <div class="calendar-grid" id="grid"></div>
 </div>
 
-<div class="status-bar">Last updated: <span id="update-time">--:--</span></div>
+<div class="status-bar">
+  Last updated: <span class="accent" id="update-time">--:--</span>
+</div>
 
 <script src="calendar-utils.js"></script>
 <script>
 const CREW_PHASE = 'Crackfill';
-const CREW_COLOR = '#A16207';
-let cachedEvents = [];
-let lastUpdateTime = null;
 
 async function renderCalendar() {
   const today = new Date();
-  document.querySelector('.header-right .date').textContent = today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  document.getElementById('today-date').textContent =
+    today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 
   const allEvents = await loadEvents();
-  cachedEvents = filterEventsByPhase(allEvents, CREW_PHASE);
+  const events = filterEventsByPhase(allEvents, CREW_PHASE);
 
   const calendarDates = getCalendarDates(today);
-  const dateRange = formatDateRange(calendarDates[0], calendarDates[calendarDates.length - 1]);
-  document.querySelector('.calendar-month').textContent = dateRange;
+  document.getElementById('date-range').textContent =
+    formatDateRange(calendarDates[0], calendarDates[calendarDates.length - 1]);
 
-  const grid = document.querySelector('.calendar-grid');
+  const grid = document.getElementById('grid');
   grid.innerHTML = '';
 
   calendarDates.forEach(date => {
     const cell = document.createElement('div');
     cell.className = 'day-cell';
-
-    const isCurrentMonth = date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear();
-    const isCurrentDay = date.toDateString() === today.toDateString();
-
-    if (isCurrentMonth) cell.classList.add('current-month');
-    if (isCurrentDay) cell.classList.add('current-day');
+    if (date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear()) {
+      cell.classList.add('current-month');
+    }
+    if (date.toDateString() === today.toDateString()) {
+      cell.classList.add('current-day');
+    }
 
     const dayNum = document.createElement('div');
     dayNum.className = 'day-number';
     dayNum.textContent = date.getDate();
     cell.appendChild(dayNum);
 
-    const events = document.createElement('div');
-    events.className = 'events';
+    const eventsEl = document.createElement('div');
+    eventsEl.className = 'events';
 
-    const dayEvents = getEventsForDate(cachedEvents, date);
+    const dayEvents = getEventsForDate(events, date);
     dayEvents.forEach(event => {
       const eventEl = document.createElement('div');
       eventEl.className = 'event';
       if (event.status === 'Complete') eventEl.classList.add('complete');
 
-      const span1 = document.createElement('span');
-      span1.className = 'job';
-      span1.textContent = event.jobNumber;
-      const span2 = document.createElement('span');
-      span2.className = 'sep';
-      span2.textContent = ' · ';
-      const span3 = document.createElement('span');
-      span3.textContent = `${event.client} ${event.city}`;
-      eventEl.appendChild(span1);
-      eventEl.appendChild(span2);
-      eventEl.appendChild(span3);
-      eventEl.title = `${event.phase} - ${event.status}`;
+      const job = document.createElement('span');
+      job.className = 'job';
+      job.textContent = event.jobNumber;
+      eventEl.appendChild(job);
 
-      events.appendChild(eventEl);
+      const sep = document.createElement('span');
+      sep.className = 'sep';
+      sep.textContent = ' · ';
+      eventEl.appendChild(sep);
+
+      const meta = document.createElement('span');
+      meta.textContent = `${event.client} · ${event.city}`;
+      eventEl.appendChild(meta);
+
+      eventEl.title = `${event.phase} — ${event.status}`;
+      eventsEl.appendChild(eventEl);
     });
 
-    cell.appendChild(events);
+    cell.appendChild(eventsEl);
     grid.appendChild(cell);
   });
 
-  const now = new Date();
-  document.getElementById('update-time').textContent = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-  lastUpdateTime = now;
+  applyAdaptiveDensity();
+
+  document.getElementById('update-time').textContent =
+    new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
 }
 
 renderCalendar();
 setInterval(renderCalendar, 10 * 60 * 1000);
+bindAdaptiveDensityResize();
 </script>
 </body>
 </html>
