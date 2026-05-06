@@ -243,22 +243,22 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-12deg);
+  transform: translate(-50%, -50%) rotate(-10deg);
   font-family: 'Oswald', 'Impact', sans-serif;
   font-weight: 800;
-  font-size: 1.9vh;
-  letter-spacing: 0.35vh;
+  font-size: 1.05vh;
+  letter-spacing: 0.18vh;
   color: var(--done-green);
-  border: 0.35vh solid var(--done-green);
-  padding: 0.15vh 0.7vw;
-  border-radius: 0.3vh;
+  border: 0.22vh solid var(--done-green);
+  padding: 0.05vh 0.35vw;
+  border-radius: 0.22vh;
   text-transform: uppercase;
   pointer-events: none;
   white-space: nowrap;
-  background: rgba(255, 255, 255, 0.55);
-  /* Nudge for legibility */
-  text-shadow: 0 0 0.2vh rgba(255,255,255,0.8);
-  box-shadow: 0 0.2vh 0.3vh rgba(0,0,0,0.05);
+  /* Translucent background so the job # / client / city behind stays readable */
+  background: rgba(255, 255, 255, 0.35);
+  text-shadow: 0 0 0.15vh rgba(255,255,255,0.75);
+  box-shadow: 0 0.1vh 0.2vh rgba(0,0,0,0.04);
 }
 
 /* PAST-INCOMPLETE — past end date, status != Complete. Amber inset outline. */
@@ -284,6 +284,14 @@ body {
   margin-right: 0.35vw;
   vertical-align: 1px;
   letter-spacing: 0.08vh;
+}
+
+
+/* Legend swatch variant for past-incomplete (amber outline only) */
+.legend-color.outline-amber {
+  background: transparent;
+  border: 0.3vh solid var(--past-amber);
+  box-sizing: border-box;
 }
 
 /* Phase-specific event colors (operations calendar uses these per-event) */
@@ -322,7 +330,7 @@ body {
   line-height: 1.15;
 }
 .day-cell.density-2 .crew-badge { font-size: 0.92vh; padding: 0.05vh 0.3vw; margin-right: 0.3vw; }
-.day-cell.density-2 .event.complete::after { font-size: 1.4vh; padding: 0.1vh 0.5vw; }
+.day-cell.density-2 .event.complete::after { font-size: 0.95vh; padding: 0.05vh 0.3vw; letter-spacing: 0.15vh; }
 
 .day-cell.density-3 .events { gap: 0.25vh; }
 .day-cell.density-3 .event {
@@ -336,7 +344,7 @@ body {
   text-overflow: ellipsis;
 }
 .day-cell.density-3 .crew-badge { font-size: 0.85vh; padding: 0 0.25vw; margin-right: 0.25vw; }
-.day-cell.density-3 .event.complete::after { font-size: 1.1vh; padding: 0.05vh 0.4vw; letter-spacing: 0.18vh; }
+.day-cell.density-3 .event.complete::after { font-size: 0.85vh; padding: 0.02vh 0.25vw; letter-spacing: 0.12vh; border-width: 0.18vh; }
 
 .day-cell.density-4 .events { gap: 0.2vh; }
 .day-cell.density-4 .event {
@@ -349,7 +357,7 @@ body {
   text-overflow: ellipsis;
 }
 .day-cell.density-4 .crew-badge { font-size: 0.78vh; padding: 0 0.22vw; margin-right: 0.22vw; }
-.day-cell.density-4 .event.complete::after { font-size: 1.0vh; padding: 0.05vh 0.35vw; letter-spacing: 0.12vh; }
+.day-cell.density-4 .event.complete::after { font-size: 0.78vh; padding: 0.02vh 0.22vw; letter-spacing: 0.1vh; border-width: 0.16vh; }
 .day-cell.density-4 .event.past-incomplete { box-shadow: inset 0 0 0 0.2vh var(--past-amber); }
 
 .day-cell.density-max .events { gap: 0.15vh; }
@@ -369,7 +377,7 @@ body {
   margin-right: 0.18vw;
   letter-spacing: 0.05vh;
 }
-.day-cell.density-max .event.complete::after { font-size: 0.95vh; padding: 0 0.3vw; letter-spacing: 0.12vh; border-width: 0.22vh; }
+.day-cell.density-max .event.complete::after { font-size: 0.7vh; padding: 0 0.18vw; letter-spacing: 0.08vh; border-width: 0.14vh; }
 .day-cell.density-max .event.past-incomplete { box-shadow: inset 0 0 0 0.18vh var(--past-amber); }
 
 
