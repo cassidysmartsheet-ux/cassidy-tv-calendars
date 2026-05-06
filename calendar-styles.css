@@ -1,5 +1,8 @@
 /* ============================================================
    Cassidy Paving — TV Calendar shared styles
+   Optimized for 65" 4K signage displays (TCL Q7K via AbleSign / Yodeck).
+   Sizing is in viewport units so it auto-scales between 1080p
+   (when the player downscales) and full 4K.
    Brand palette pulled from the Cassidy Paving logo:
      --brand-red     #CC0000
      --brand-black   #1A1A1A
@@ -11,11 +14,13 @@
   --brand-red-dark:   #990000;
   --brand-black:      #1A1A1A;
   --brand-ink:        #0F0F0F;
-  --grid-line:        #E5E5E5;
+  --grid-line:        #D5D5D5;
   --cell-bg:          #FAFAFA;
-  --cell-bg-today:    #FFF5F5;
-  --muted:            #6B6B6B;
-  --muted-soft:       #999999;
+  --cell-bg-today:    #FFF1F1;
+  --muted:            #555555;
+  --muted-soft:       #888888;
+  --done-green:       #166534;
+  --past-amber:       #D97706;
 
   /* Per-crew color override — single-crew calendars set this. */
   --crew-color:       var(--brand-red);
@@ -30,7 +35,8 @@ body {
   color: var(--brand-ink);
   display: flex;
   flex-direction: column;
-  padding: 18px 22px;
+  /* 2% safe margin for TV overscan */
+  padding: 2vh 2vw;
 }
 
 /* ---------- HEADER ---------- */
@@ -38,25 +44,16 @@ body {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 28px;
-  margin-bottom: 14px;
-  padding-bottom: 14px;
-  border-bottom: 3px solid var(--brand-black);
-  position: relative;
-}
-.header::after {
-  content: '';
-  position: absolute;
-  left: 0; bottom: -3px;
-  width: 22%;
-  height: 3px;
-  background: var(--brand-red);
+  gap: 2.5vw;
+  margin-bottom: 1.4vh;
+  padding-bottom: 1.4vh;
+  border-bottom: 0.4vh solid var(--brand-black);
 }
 
 .header-logo {
   display: flex;
   align-items: center;
-  height: 72px;
+  height: 8vh;
 }
 .header-logo img {
   height: 100%;
@@ -69,84 +66,71 @@ body {
 }
 .header-title .crew-name {
   font-family: 'Oswald', 'Impact', 'Arial Narrow', sans-serif;
-  font-weight: 700;
-  font-size: clamp(2rem, 4.2vw, 3.4rem);
-  letter-spacing: 1.5px;
+  font-weight: 800;
+  font-size: 5.5vh;
+  letter-spacing: 0.3vh;
   line-height: 1;
   color: var(--brand-black);
   text-transform: uppercase;
   display: inline-block;
-  position: relative;
-  padding: 0 18px 10px;
 }
-.header-title .crew-name::before,
-.header-title .crew-name::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  height: 4px;
-  background: var(--brand-red);
-  width: 36px;
-}
-.header-title .crew-name::before { left: 0; }
-.header-title .crew-name::after  { right: 0; }
 .header-title .crew-name .accent {
   color: var(--brand-red);
 }
 .header-title .date-range {
-  margin-top: 8px;
-  font-size: clamp(0.9rem, 1.1vw, 1.05rem);
-  font-weight: 600;
+  margin-top: 1vh;
+  font-size: 1.7vh;
+  font-weight: 700;
   color: var(--muted);
-  letter-spacing: 0.4px;
+  letter-spacing: 0.15vh;
   text-transform: uppercase;
 }
 
 .header-right {
   text-align: right;
-  min-width: 110px;
+  min-width: 12vw;
 }
 .header-right .label {
   font-family: 'Oswald', 'Impact', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-size: 1.6vh;
+  font-weight: 700;
+  letter-spacing: 0.3vh;
   color: var(--brand-red);
   text-transform: uppercase;
 }
 .header-right .date {
   font-family: 'Oswald', 'Impact', sans-serif;
-  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  font-size: 3.6vh;
   font-weight: 700;
   color: var(--brand-black);
-  line-height: 1.1;
-  letter-spacing: 0.5px;
+  line-height: 1.05;
+  letter-spacing: 0.05vh;
 }
 
 /* ---------- LEGEND (operations calendar only) ---------- */
 .legend {
   display: flex;
-  gap: 22px;
-  padding: 10px 0 12px;
+  gap: 2.5vw;
+  padding: 1vh 0 1.2vh;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid var(--grid-line);
-  margin-bottom: 12px;
+  border-bottom: 0.1vh solid var(--grid-line);
+  margin-bottom: 1.2vh;
 }
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.78rem;
-  font-weight: 600;
+  gap: 0.6vw;
+  font-size: 1.6vh;
+  font-weight: 700;
   color: var(--brand-black);
   text-transform: uppercase;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.1vh;
 }
 .legend-color {
-  width: 14px;
-  height: 14px;
-  border-radius: 3px;
+  width: 1.8vh;
+  height: 1.8vh;
+  border-radius: 0.3vh;
 }
 
 /* ---------- CALENDAR GRID ---------- */
@@ -159,58 +143,58 @@ body {
 .weekday-header {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
-  margin-bottom: 6px;
+  gap: 0.5vw;
+  margin-bottom: 0.5vh;
 }
 .weekday-header div {
   text-align: center;
   font-family: 'Oswald', 'Impact', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 1.8vh;
+  font-weight: 700;
   color: var(--brand-black);
   text-transform: uppercase;
-  letter-spacing: 1.2px;
-  padding: 6px 0;
-  border-bottom: 2px solid var(--brand-black);
+  letter-spacing: 0.3vh;
+  padding: 0.5vh 0;
+  border-bottom: 0.3vh solid var(--brand-black);
 }
 .calendar-grid {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-auto-rows: 1fr;
-  gap: 6px;
+  gap: 0.5vw;
   min-height: 0;
 }
 
 /* ---------- DAY CELL ---------- */
 .day-cell {
   background: var(--cell-bg);
-  border: 1px solid var(--grid-line);
-  border-radius: 6px;
-  padding: 8px 8px 6px;
+  border: 0.15vh solid var(--grid-line);
+  border-radius: 0.6vh;
+  padding: 0.7vh 0.7vw 0.5vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   min-height: 0;
 }
-.day-cell:not(.current-month) { opacity: 0.5; }
+.day-cell:not(.current-month) { opacity: 0.55; }
 .day-cell.current-day {
   background: var(--cell-bg-today);
-  border: 2px solid var(--brand-red);
-  padding: 7px 7px 5px;
+  border: 0.3vh solid var(--brand-red);
+  padding: 0.55vh 0.55vw 0.35vh;
 }
 .day-number {
   font-family: 'Oswald', 'Impact', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1.9vh;
+  font-weight: 700;
   color: var(--muted);
-  margin-bottom: 4px;
+  margin-bottom: 0.4vh;
   line-height: 1;
 }
 .day-cell.current-month .day-number { color: var(--brand-black); }
 .day-cell.current-day .day-number {
   color: var(--brand-red);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* ---------- EVENTS ---------- */
@@ -218,32 +202,64 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 0.4vh;
   overflow: hidden;
   min-height: 0;
 }
 .event {
-  background: rgba(0, 0, 0, 0.04);
+  position: relative;
+  background: rgba(0, 0, 0, 0.05);
   color: var(--brand-ink);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  border-left: 4px solid var(--crew-color);
-  padding: 6px 8px;
-  border-radius: 4px;
-  font-size: 0.78rem;
-  font-weight: 500;
-  line-height: 1.25;
-  /* multi-line, no truncation */
+  border: 0.15vh solid rgba(0, 0, 0, 0.08);
+  border-left: 0.55vh solid var(--crew-color);
+  padding: 0.7vh 0.7vw;
+  border-radius: 0.4vh;
+  font-size: 1.5vh;
+  font-weight: 600;
+  line-height: 1.22;
   white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
-.event .job { font-weight: 700; }
-.event .sep { opacity: 0.55; padding: 0 2px; }
+.event .job { font-weight: 800; }
+.event .sep { opacity: 0.55; padding: 0 0.2vw; }
+
+/* COMPLETE state — content stays readable; ribbon stamp added on top */
 .event.complete {
-  opacity: 0.45;
-  background: #F0F0F0;
-  border-left-color: var(--muted-soft);
-  color: var(--muted);
+  opacity: 0.78;
+  background: rgba(22, 101, 52, 0.08);
+}
+.event.complete::after {
+  content: 'COMPLETE';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-12deg);
+  font-family: 'Oswald', 'Impact', sans-serif;
+  font-weight: 800;
+  font-size: 1.9vh;
+  letter-spacing: 0.35vh;
+  color: var(--done-green);
+  border: 0.35vh solid var(--done-green);
+  padding: 0.15vh 0.7vw;
+  border-radius: 0.3vh;
+  text-transform: uppercase;
+  pointer-events: none;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.55);
+  /* Nudge for legibility */
+  text-shadow: 0 0 0.2vh rgba(255,255,255,0.8);
+  box-shadow: 0 0.2vh 0.3vh rgba(0,0,0,0.05);
+}
+
+/* PAST-INCOMPLETE — past end date, status != Complete. Amber inset outline. */
+.event.past-incomplete {
+  box-shadow: inset 0 0 0 0.3vh var(--past-amber);
+  background: rgba(217, 119, 6, 0.08);
+}
+.event.past-incomplete.complete { /* shouldn't happen but guard */
+  box-shadow: none;
+  background: rgba(22, 101, 52, 0.08);
 }
 
 /* Crew badge (operations calendar) */
@@ -252,83 +268,96 @@ body {
   background: var(--brand-black);
   color: #FFFFFF;
   font-family: 'Oswald', 'Impact', sans-serif;
-  font-weight: 700;
-  font-size: 0.7rem;
-  padding: 1px 5px;
-  border-radius: 3px;
-  margin-right: 6px;
+  font-weight: 800;
+  font-size: 1.35vh;
+  padding: 0.1vh 0.55vw;
+  border-radius: 0.3vh;
+  margin-right: 0.55vw;
   vertical-align: 1px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.12vh;
 }
 
 /* Phase-specific event colors (operations calendar uses these per-event) */
-.event.milling         { background: rgba(14, 116, 144, 0.18); border-left-color: #0E7490; }
+.event.milling         { background: rgba(14, 116, 144, 0.28); border-left-color: #0E7490; }
 .crew-badge.milling    { background: #0E7490; }
-.event.paving          { background: rgba(153, 27, 27, 0.20); border-left-color: #991B1B; }
+.event.paving          { background: rgba(153, 27, 27, 0.30); border-left-color: #991B1B; }
 .crew-badge.paving     { background: #991B1B; }
-.event.crackfill       { background: rgba(161, 98, 7, 0.20); border-left-color: #A16207; }
+.event.crackfill       { background: rgba(161, 98, 7, 0.30); border-left-color: #A16207; }
 .crew-badge.crackfill  { background: #A16207; }
-.event.hand            { background: rgba(22, 101, 52, 0.20); border-left-color: #166534; }
+.event.hand            { background: rgba(22, 101, 52, 0.28); border-left-color: #166534; }
 .crew-badge.hand       { background: #166534; }
-.event.reclaimgrading  { background: rgba(30, 58, 138, 0.20); border-left-color: #1E3A8A; }
+.event.reclaimgrading  { background: rgba(30, 58, 138, 0.28); border-left-color: #1E3A8A; }
 .crew-badge.reclaimgrading { background: #1E3A8A; }
-.event.pulverizing     { background: rgba(109, 40, 217, 0.20); border-left-color: #6D28D9; }
+.event.pulverizing     { background: rgba(109, 40, 217, 0.28); border-left-color: #6D28D9; }
 .crew-badge.pulverizing { background: #6D28D9; }
-.event.subc            { background: rgba(17, 94, 89, 0.20); border-left-color: #115E59; }
+.event.subc            { background: rgba(17, 94, 89, 0.28); border-left-color: #115E59; }
 .crew-badge.subc       { background: #115E59; }
+
+/* Phase event Complete tint overrides — keep some phase color but cooler */
+.event.complete.milling, .event.complete.paving, .event.complete.crackfill,
+.event.complete.hand, .event.complete.reclaimgrading,
+.event.complete.pulverizing, .event.complete.subc {
+  background: rgba(22, 101, 52, 0.10);
+}
 
 /* ---------- ADAPTIVE DENSITY ----------
    Applied by applyAdaptiveDensity() in calendar-utils.js when a cell would
    overflow. Each step shrinks event font/padding/gap so all events fit
-   without truncation. */
-.day-cell.density-2 .events { gap: 2px; }
+   without truncation. Floors are kept generous for TV viewing distance. */
+.day-cell.density-2 .events { gap: 0.3vh; }
 .day-cell.density-2 .event {
-  font-size: 0.72rem;
-  padding: 4px 6px;
+  font-size: 1.3vh;
+  padding: 0.5vh 0.55vw;
   line-height: 1.18;
 }
-.day-cell.density-2 .crew-badge { font-size: 0.62rem; padding: 1px 4px; }
+.day-cell.density-2 .crew-badge { font-size: 1.15vh; padding: 0.05vh 0.45vw; }
+.day-cell.density-2 .event.complete::after { font-size: 1.5vh; padding: 0.1vh 0.5vw; }
 
-.day-cell.density-3 .events { gap: 2px; }
+.day-cell.density-3 .events { gap: 0.25vh; }
 .day-cell.density-3 .event {
-  font-size: 0.66rem;
-  padding: 3px 5px;
+  font-size: 1.18vh;
+  padding: 0.35vh 0.45vw;
   line-height: 1.15;
-  border-left-width: 3px;
+  border-left-width: 0.4vh;
 }
-.day-cell.density-3 .crew-badge { font-size: 0.58rem; padding: 0 3px; margin-right: 4px; }
+.day-cell.density-3 .crew-badge { font-size: 1.0vh; padding: 0 0.35vw; margin-right: 0.4vw; }
+.day-cell.density-3 .event.complete::after { font-size: 1.25vh; padding: 0.05vh 0.4vw; letter-spacing: 0.2vh; }
 
-.day-cell.density-4 .events { gap: 1px; }
+.day-cell.density-4 .events { gap: 0.2vh; }
 .day-cell.density-4 .event {
-  font-size: 0.6rem;
-  padding: 2px 4px;
-  line-height: 1.1;
-  border-left-width: 3px;
+  font-size: 1.05vh;
+  padding: 0.25vh 0.35vw;
+  line-height: 1.12;
+  border-left-width: 0.35vh;
 }
-.day-cell.density-4 .crew-badge { font-size: 0.54rem; padding: 0 3px; margin-right: 3px; }
+.day-cell.density-4 .crew-badge { font-size: 0.9vh; padding: 0 0.3vw; margin-right: 0.3vw; }
+.day-cell.density-4 .event.complete::after { font-size: 1.1vh; padding: 0.05vh 0.35vw; letter-spacing: 0.15vh; }
+.day-cell.density-4 .event.past-incomplete { box-shadow: inset 0 0 0 0.22vh var(--past-amber); }
 
-.day-cell.density-max .events { gap: 1px; }
+.day-cell.density-max .events { gap: 0.15vh; }
 .day-cell.density-max .event {
-  font-size: 0.55rem;
-  padding: 1px 3px;
-  line-height: 1.08;
-  border-left-width: 2px;
-  border-radius: 3px;
+  font-size: 0.95vh;
+  padding: 0.2vh 0.3vw;
+  line-height: 1.1;
+  border-left-width: 0.3vh;
+  border-radius: 0.3vh;
 }
 .day-cell.density-max .crew-badge {
-  font-size: 0.5rem;
-  padding: 0 2px;
-  margin-right: 2px;
+  font-size: 0.82vh;
+  padding: 0 0.25vw;
+  margin-right: 0.25vw;
 }
+.day-cell.density-max .event.complete::after { font-size: 1.0vh; padding: 0 0.3vw; letter-spacing: 0.12vh; border-width: 0.22vh; }
+.day-cell.density-max .event.past-incomplete { box-shadow: inset 0 0 0 0.18vh var(--past-amber); }
 
 /* ---------- STATUS BAR ---------- */
 .status-bar {
-  font-size: 0.72rem;
+  font-size: 1.35vh;
   color: var(--muted-soft);
   text-align: center;
-  margin-top: 8px;
-  padding-top: 8px;
-  border-top: 1px solid var(--grid-line);
-  letter-spacing: 0.4px;
+  margin-top: 0.8vh;
+  padding-top: 0.8vh;
+  border-top: 0.1vh solid var(--grid-line);
+  letter-spacing: 0.12vh;
 }
-.status-bar .accent { color: var(--brand-red); font-weight: 600; }
+.status-bar .accent { color: var(--brand-red); font-weight: 700; }

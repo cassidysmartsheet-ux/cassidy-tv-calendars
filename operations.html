@@ -51,6 +51,7 @@ const CREW_PHASE = null; // null = all phases (operations view)
 
 async function renderCalendar() {
   const today = new Date();
+  const todayStart = new Date(today); todayStart.setHours(0,0,0,0);
   document.getElementById('today-date').textContent =
     today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 
@@ -87,7 +88,12 @@ async function renderCalendar() {
       const slug = getPhaseSlug(event.phase);
       const eventEl = document.createElement('div');
       eventEl.className = 'event ' + slug;
-      if (event.status === 'Complete') eventEl.classList.add('complete');
+      if (event.status === 'Complete') {
+        eventEl.classList.add('complete');
+      } else {
+        const eventEnd = new Date(event.endDate); eventEnd.setHours(23,59,59,999);
+        if (eventEnd < todayStart) eventEl.classList.add('past-incomplete');
+      }
 
       const badge = document.createElement('span');
       badge.className = 'crew-badge ' + slug;
