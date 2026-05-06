@@ -1,11 +1,11 @@
 name: Refresh calendar data
 # Pulls the Operations Calendar Report from Smartsheet and commits a static
 # data.json file to the repo. The TV calendars read this same-origin file
-# (Smartsheet API does not support browser CORS, so we cannot call it directly
-# from the client-side JS).
+# (Smartsheet API does not support browser CORS, so we cannot call it
+# directly from the client-side JS).
 #
-# Runs every 15 minutes on a cron, or on every push, or manually via the
-# Actions tab.
+# Triggers: every 15 min on cron, on every push to main, or manually via
+# the Actions tab.
 
 on:
   schedule:
@@ -14,10 +14,16 @@ on:
   push:
     branches: [ main ]
     paths-ignore:
-      - 'data.json'   # don't loop on our own commits
+      - 'data.json'
 
 permissions:
   contents: write
+
+# Cancel any older queued/running run when a new one starts so we never push
+# stale data on top of newer data.
+concurrency:
+  group: refresh-data
+  cancel-in-progress: true
 
 jobs:
   refresh:
@@ -42,7 +48,7 @@ jobs:
           echo "data.json bytes: $(wc -c < data.json)"
           echo "events: $(python3 -c 'import json,sys;print(len(json.load(open("data.json"))["events"]))')"
 
-      - name: Commit if changed
+      - name: Commit and push (with retry on race)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -52,4 +58,17 @@ jobs:
             exit 0
           fi
           git commit -m "Refresh data.json from Operations Calendar Report ($(date -u +%Y-%m-%dT%H:%MZ))"
-          git push
+          # Retry up to 3 times: pull rebase + push, in case another run pushed
+          # while we were running.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push rejected on attempt $attempt — fetching + rebasing..."
+            git fetch origin main
+            git rebase origin/main || git rebase --abort
+            sleep $((attempt * 2))
+          done
+          echo "Push failed after 3 attempts"
+          exit 1
