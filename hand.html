@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="calendar-styles.css">
-<style>:root { --crew-color: #166534; }</style>
+<style>:root { --crew-color: #8E83BD; }</style>
 </head>
 <body>
 
@@ -100,7 +100,7 @@ async function renderCalendar() {
       meta.textContent = `${event.client} · ${event.city}`;
       eventEl.appendChild(meta);
 
-      eventEl.title = `${event.phase} — ${event.status}`;
+      eventEl.title = `${event.crew} — ${event.status}`;
       eventsEl.appendChild(eventEl);
     });
 

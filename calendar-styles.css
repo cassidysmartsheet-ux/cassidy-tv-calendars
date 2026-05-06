@@ -278,20 +278,20 @@ body {
 }
 
 /* Phase-specific event colors (operations calendar uses these per-event) */
-.event.milling         { background: rgba(14, 116, 144, 0.28); border-left-color: #0E7490; }
-.crew-badge.milling    { background: #0E7490; }
-.event.paving          { background: rgba(153, 27, 27, 0.30); border-left-color: #991B1B; }
-.crew-badge.paving     { background: #991B1B; }
-.event.crackfill       { background: rgba(161, 98, 7, 0.30); border-left-color: #A16207; }
-.crew-badge.crackfill  { background: #A16207; }
-.event.hand            { background: rgba(22, 101, 52, 0.28); border-left-color: #166534; }
-.crew-badge.hand       { background: #166534; }
-.event.reclaimgrading  { background: rgba(30, 58, 138, 0.28); border-left-color: #1E3A8A; }
-.crew-badge.reclaimgrading { background: #1E3A8A; }
-.event.pulverizing     { background: rgba(109, 40, 217, 0.28); border-left-color: #6D28D9; }
-.crew-badge.pulverizing { background: #6D28D9; }
-.event.subc            { background: rgba(17, 94, 89, 0.28); border-left-color: #115E59; }
-.crew-badge.subc       { background: #115E59; }
+.event.milling        { background: rgba(59, 91, 165, 0.28); border-left-color: #3B5BA5; }
+.crew-badge.milling        { background: #3B5BA5; }
+.event.paving         { background: rgba(193, 53, 72, 0.28); border-left-color: #C13548; }
+.crew-badge.paving         { background: #C13548; }
+.event.crackfill      { background: rgba(226, 179, 61, 0.28); border-left-color: #E2B33D; }
+.crew-badge.crackfill      { background: #E2B33D; }
+.event.hand           { background: rgba(142, 131, 189, 0.28); border-left-color: #8E83BD; }
+.crew-badge.hand           { background: #8E83BD; }
+.event.reclaimgrading { background: rgba(197, 111, 135, 0.28); border-left-color: #C56F87; }
+.crew-badge.reclaimgrading { background: #C56F87; }
+.event.pulverizing    { background: rgba(232, 158, 126, 0.28); border-left-color: #E89E7E; }
+.crew-badge.pulverizing    { background: #E89E7E; }
+.event.subc           { background: rgba(168, 177, 67, 0.28); border-left-color: #A8B143; }
+.crew-badge.subc           { background: #A8B143; }
 
 /* Phase event Complete tint overrides — keep some phase color but cooler */
 .event.complete.milling, .event.complete.paving, .event.complete.crackfill,

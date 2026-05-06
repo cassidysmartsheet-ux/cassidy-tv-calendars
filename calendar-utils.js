@@ -1,66 +1,64 @@
 // Shared calendar utilities for TV displays
-// Pulls live data from the Smartsheet Operations Schedule via the
-// public Smartsheet API. Falls back to the local CSV snapshot if the
-// API call fails so the TVs never blank out.
+// Pulls live data from the Smartsheet "Operations Calendar Report" via the
+// public Smartsheet API. The Report is the single source of truth — same
+// rows the Smartsheet Calendar App shows on phones/tablets.
 
-// ============ PHASE COLOR PALETTE ============
-// Milling moved from burnt orange to deep teal/cyan to separate it from
-// Paving (brick red) and Crackfill (warm amber) which sit too close on a TV.
-const PHASE_COLORS = {
-  'Milling': '#0E7490',
-  'Paving': '#991B1B',
-  'Crackfill': '#A16207',
-  'Hand': '#166534',
-  'Reclaim/Grading': '#1E3A8A',
-  'Pulverizing': '#6D28D9',
-  'SubC': '#115E59'
+// ============ CREW COLOR PALETTE ============
+// Colors mirror the Smartsheet Calendar App's per-crew swatches so a crew's
+// jobs look the same on the boardroom TVs and on the user's phone app.
+const CREW_COLORS = {
+  'Milling':         '#3B5BA5', // navy/royal blue
+  'Crackfill':       '#E2B33D', // goldenrod
+  'Paving':          '#C13548', // brick red
+  'Reclaim/Grading': '#C56F87', // rose pink
+  'Hand':            '#8E83BD', // soft lavender
+  'Pulverizing':     '#E89E7E', // salmon/peach
+  'Subcontractor':   '#A8B143'  // olive/chartreuse
 };
 
-const PHASE_SLUGS = {
-  'Milling': 'milling',
-  'Paving': 'paving',
-  'Crackfill': 'crackfill',
-  'Hand': 'hand',
+const CREW_SLUGS = {
+  'Milling':         'milling',
+  'Paving':          'paving',
+  'Crackfill':       'crackfill',
+  'Hand':            'hand',
   'Reclaim/Grading': 'reclaimgrading',
-  'Pulverizing': 'pulverizing',
-  'SubC': 'subc'
+  'Pulverizing':     'pulverizing',
+  'Subcontractor':   'subcontractor'
 };
 
-const PHASE_CODES = {
-  'Milling': 'MILL',
-  'Paving': 'PAVE',
-  'Crackfill': 'CRCK',
-  'Hand': 'HAND',
+const CREW_CODES = {
+  'Milling':         'MILL',
+  'Paving':          'PAVE',
+  'Crackfill':       'CRCK',
+  'Hand':            'HAND',
   'Reclaim/Grading': 'RECL',
-  'Pulverizing': 'PULV',
-  'SubC': 'SUBC'
+  'Pulverizing':     'PULV',
+  'Subcontractor':   'SUBC'
 };
 
-function getPhaseSlug(phase) { return PHASE_SLUGS[phase] || 'milling'; }
-function getPhaseCode(phase) { return PHASE_CODES[phase] || ''; }
+function getCrewSlug(crew) { return CREW_SLUGS[crew] || 'milling'; }
+function getCrewCode(crew) { return CREW_CODES[crew] || ''; }
 
 // ============ SMARTSHEET API CONFIG ============
-// Read-only token "CalendarGit" — internal TV use only.
-// If the token is rotated, replace below and re-deploy.
 const SMARTSHEET_TOKEN = 'p24Cgh1izpdYeclFRk4gE6m9nCuEoBW5Nkywe';
-const SHEET_ID = '1728592246427524'; // Operations Schedule
+// Operations Calendar Report — drives the Smartsheet Calendar App on phones
+// AND these TV calendars. Single source of truth.
+const REPORT_ID = '3854855551537028';
 
-// Column IDs — confirmed against the live sheet on 2026-05-06.
+// Column IDs (from source sheet — report cells include columnId).
+// Verified against report on 2026-05-06.
 const COL = {
-  JOB_NUM:      7358000912879492,
-  CLIENT:       1728501378666372,
-  CITY:         3980301192351620,
-  PHASE:        4824726122483588,
-  START:        8765375796432772, // ABSTRACT_DATETIME (e.g. '2026-04-27T08:00:00')
-  END:          180389006757764,  // ABSTRACT_DATETIME
-  STATUS:       4683988634128260,
-  SPLIT_PARENT: 1575401988771716  // CHECKBOX — TRUE rows are rollups, skip
+  JOB_NUM:       7358000912879492,
+  COMPANY_NAME:  171009385385860,
+  CITY:          3980301192351620,
+  PHASE:         4824726122483588,
+  START:         8765375796432772,
+  END:           180389006757764,
+  STATUS:        4683988634128260,
+  ASSIGNED_CREW: 8202425843011460
 };
 
 // ============ DATE HELPERS ============
-// Parse ISO-ish date string from Smartsheet ABSTRACT_DATETIME column.
-// Treat as a calendar date (ignore the time/timezone) so cell positioning
-// is consistent regardless of the player's TZ setting.
 function parseSmartsheetDate(s) {
   if (!s) return null;
   const m = String(s).match(/^(\d{4})-(\d{2})-(\d{2})/);
@@ -69,8 +67,7 @@ function parseSmartsheetDate(s) {
   return isNaN(d.getTime()) ? null : d;
 }
 
-// Legacy CSV date format MM/DD/YY (used by fallback path).
-function parseDate(dateStr) {
+function parseDate(dateStr) { // CSV fallback (MM/DD/YY)
   if (!dateStr || dateStr.trim() === '') return null;
   const parts = dateStr.trim().split('/');
   if (parts.length !== 3) return null;
@@ -83,24 +80,24 @@ function parseDate(dateStr) {
   return date;
 }
 
-// ============ EVENT LOADING — API + CSV FALLBACK ============
+// ============ EVENT LOADING ============
 async function loadEvents() {
   try {
-    const events = await loadEventsFromAPI();
-    console.log(`[calendar] Loaded ${events.length} events from Smartsheet API`);
+    const events = await loadEventsFromReport();
+    console.log(`[calendar] Loaded ${events.length} events from Operations Calendar Report`);
     return events;
   } catch (err) {
-    console.warn('[calendar] Smartsheet API failed, falling back to CSV:', err);
+    console.warn('[calendar] Report API failed, falling back to CSV:', err);
     return loadEventsFromCSV();
   }
 }
 
-async function loadEventsFromAPI() {
-  const url = `https://api.smartsheet.com/2.0/sheets/${SHEET_ID}?pageSize=10000`;
+async function loadEventsFromReport() {
+  const url = `https://api.smartsheet.com/2.0/reports/${REPORT_ID}?pageSize=10000`;
   const resp = await fetch(url, {
     headers: { 'Authorization': 'Bearer ' + SMARTSHEET_TOKEN }
   });
-  if (!resp.ok) throw new Error('Smartsheet API HTTP ' + resp.status);
+  if (!resp.ok) throw new Error('Report API HTTP ' + resp.status);
   const data = await resp.json();
   const rows = data.rows || [];
 
@@ -116,13 +113,8 @@ async function loadEventsFromAPI() {
 
   const events = [];
   for (const row of rows) {
-    const status = cellValue(row, COL.STATUS);
-    if (status === 'Cancelled') continue;
-
-    const splitParent = cellValue(row, COL.SPLIT_PARENT);
-    if (splitParent === true) continue;
-
-    const jobNum = cellValue(row, COL.JOB_NUM);
+    const status   = cellValue(row, COL.STATUS);
+    const jobNum   = cellValue(row, COL.JOB_NUM);
     const startVal = cellValue(row, COL.START);
     if (!jobNum || !startVal) continue;
 
@@ -130,20 +122,29 @@ async function loadEventsFromAPI() {
     if (!startDate) continue;
     const endDate = parseSmartsheetDate(cellValue(row, COL.END)) || startDate;
 
+    // The Report is what drives the App; trust its filtering.
+    // We only do client-side cancellation skip as a belt-and-suspenders.
+    if (status === 'Cancelled') continue;
+
+    const crewRaw  = cellValue(row, COL.ASSIGNED_CREW);
+    const phaseRaw = cellValue(row, COL.PHASE);
     events.push({
-      jobNumber: String(jobNum),
-      client:    cellValue(row, COL.CLIENT)  || '',
-      city:      cellValue(row, COL.CITY)    || '',
-      phase:     cellValue(row, COL.PHASE)   || '',
-      startDate: startDate,
-      endDate:   endDate,
-      status:    status || ''
+      jobNumber:    String(jobNum),
+      client:       cellValue(row, COL.COMPANY_NAME) || '',
+      city:         cellValue(row, COL.CITY) || '',
+      // Fall back to Phase when Assigned Crew is blank so the event still
+      // gets a color on the operations view.
+      crew:         crewRaw || phaseRaw || '',
+      phase:        phaseRaw || '',
+      startDate:    startDate,
+      endDate:      endDate,
+      status:       status || ''
     });
   }
   return events;
 }
 
-// CSV fallback — reads operations-schedule.csv shipped in the repo.
+// CSV fallback — used only if the Report API call fails.
 async function loadEventsFromCSV() {
   try {
     const response = await fetch('operations-schedule.csv');
@@ -161,9 +162,10 @@ async function loadEventsFromCSV() {
       if (!startDate) return;
       events.push({
         jobNumber: row['Job #'],
-        client:    row['Client'],
-        city:      row['Job City'],
-        phase:     row['Phase'],
+        client:    row['Company Name'] || row['Client'] || '',
+        city:      row['Job City'] || '',
+        crew:      row['Assigned Crew'] || row['Phase'] || '',
+        phase:     row['Phase'] || '',
         startDate: startDate,
         endDate:   endDate || startDate,
         status:    row['Status']
@@ -176,7 +178,7 @@ async function loadEventsFromCSV() {
   }
 }
 
-// CSV parser — handles quoted fields with embedded commas
+// CSV parser
 function parseCSVLine(line) {
   const result = [];
   let current = '';
@@ -195,7 +197,6 @@ function parseCSVLine(line) {
   result.push(current.trim());
   return result;
 }
-
 function parseCSV(csvText) {
   const lines = csvText.split('\n').filter(line => line.trim());
   if (lines.length < 2) return { headers: [], rows: [] };
@@ -210,13 +211,17 @@ function parseCSV(csvText) {
   return { headers, rows };
 }
 
-// ============ FILTERING / DATES / CALENDAR ============
-function filterEventsByPhase(events, phase) {
-  if (!phase) return events;
-  return events.filter(e => e.phase === phase);
+// ============ FILTER / DATE GRID ============
+// Filter by Assigned Crew (was Phase). Each crew calendar passes its
+// crew name (e.g. 'Milling'); operations passes null to show everything.
+function filterEventsByCrew(events, crew) {
+  if (!crew) return events;
+  return events.filter(e => e.crew === crew);
 }
 
-// Rolling 6-week window: Sunday of the week containing (today - 7 days), 42 days.
+// Backwards-compatible alias for any HTML still using the old name.
+function filterEventsByPhase(events, crew) { return filterEventsByCrew(events, crew); }
+
 function getCalendarDates(today) {
   const sevenDaysAgo = new Date(today);
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
@@ -251,10 +256,7 @@ function formatMonthYear(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 }
 
-// ============ ADAPTIVE CELL DENSITY ============
-// After each render, every day cell is measured. If events overflow,
-// progressively heavier density classes are applied so all events fit
-// without truncation. Re-runs on resize.
+// ============ ADAPTIVE DENSITY ============
 function applyAdaptiveDensity() {
   const cells = document.querySelectorAll('.day-cell');
   cells.forEach(cell => {
@@ -278,7 +280,6 @@ function bindAdaptiveDensityResize() {
   });
 }
 
-// ============ DATE-RANGE HEADER FORMATTER ============
 function formatDateRange(startDate, endDate) {
   const start = new Date(startDate);
   const end = new Date(endDate);
@@ -291,9 +292,11 @@ function formatDateRange(startDate, endDate) {
   }
   const startMonthStr = new Date(start).toLocaleDateString('en-US', { month: 'long' });
   const endMonthYearStr = new Date(end).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
-  if (startYear === endYear) {
-    return `${startMonthStr} – ${endMonthYearStr}`;
-  }
+  if (startYear === endYear) return `${startMonthStr} – ${endMonthYearStr}`;
   const startMonthYearStr = new Date(start).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
   return `${startMonthYearStr} – ${endMonthYearStr}`;
 }
+
+// Backwards-compat aliases for templates still using the old phase names.
+function getPhaseSlug(crew) { return getCrewSlug(crew); }
+function getPhaseCode(crew) { return getCrewCode(crew); }
