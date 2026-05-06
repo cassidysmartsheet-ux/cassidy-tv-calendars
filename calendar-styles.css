@@ -365,12 +365,12 @@ body {
 
 /* ---------- STATUS BAR ---------- */
 .status-bar {
-  font-size: 1.35vh;
+  font-size: 1vh;
   color: var(--muted-soft);
   text-align: center;
-  margin-top: 0.8vh;
-  padding-top: 0.8vh;
+  margin-top: 0.4vh;
+  padding-top: 0.4vh;
   border-top: 0.1vh solid var(--grid-line);
-  letter-spacing: 0.12vh;
+  letter-spacing: 0.3px;
 }
 .status-bar .accent { color: var(--brand-red); font-weight: 700; }
