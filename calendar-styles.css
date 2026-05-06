@@ -171,9 +171,12 @@ body {
   background: var(--cell-bg);
   border: 0.15vh solid var(--grid-line);
   border-radius: 0.6vh;
-  padding: 0.7vh 0.7vw 0.5vh;
+  padding: 0.5vh 0.6vw 0.4vh;
+  /* Horizontal: tiny day-number column on the left, events column on the right.
+     This gives events the FULL cell height instead of (cell - day number). */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 0.5vw;
   overflow: hidden;
   min-height: 0;
 }
@@ -181,15 +184,21 @@ body {
 .day-cell.current-day {
   background: var(--cell-bg-today);
   border: 0.3vh solid var(--brand-red);
-  padding: 0.55vh 0.55vw 0.35vh;
+  padding: 0.35vh 0.45vw 0.25vh;
 }
 .day-number {
   font-family: 'Oswald', 'Impact', sans-serif;
-  font-size: 1.9vh;
+  font-size: 1.5vh;
   font-weight: 700;
   color: var(--muted);
-  margin-bottom: 0.4vh;
   line-height: 1;
+  /* Narrow left column — width grows slightly with viewport */
+  flex: 0 0 auto;
+  width: 1.8vw;
+  min-width: 1.8vw;
+  text-align: center;
+  padding-top: 0.2vh;
+  align-self: flex-start;
 }
 .day-cell.current-month .day-number { color: var(--brand-black); }
 .day-cell.current-day .day-number {
@@ -212,11 +221,11 @@ body {
   color: var(--brand-ink);
   border: 0.15vh solid rgba(0, 0, 0, 0.08);
   border-left: 0.55vh solid var(--crew-color);
-  padding: 0.7vh 0.7vw;
+  padding: 0.55vh 0.55vw;
   border-radius: 0.4vh;
-  font-size: 1.5vh;
+  font-size: 1.55vh;
   font-weight: 600;
-  line-height: 1.22;
+  line-height: 1.2;
   white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
@@ -317,7 +326,7 @@ body {
 
 .day-cell.density-3 .events { gap: 0.25vh; }
 .day-cell.density-3 .event {
-  font-size: 1.18vh;
+  font-size: 1.3vh;
   padding: 0.35vh 0.45vw;
   line-height: 1.15;
   border-left-width: 0.4vh;
@@ -331,7 +340,7 @@ body {
 
 .day-cell.density-4 .events { gap: 0.2vh; }
 .day-cell.density-4 .event {
-  font-size: 1.05vh;
+  font-size: 1.18vh;
   padding: 0.25vh 0.35vw;
   line-height: 1.12;
   border-left-width: 0.35vh;
@@ -345,10 +354,10 @@ body {
 
 .day-cell.density-max .events { gap: 0.15vh; }
 .day-cell.density-max .event {
-  font-size: 0.95vh;
-  padding: 0.15vh 0.3vw;
-  line-height: 1.08;
-  border-left-width: 0.3vh;
+  font-size: 1.1vh;
+  padding: 0.2vh 0.35vw;
+  line-height: 1.1;
+  border-left-width: 0.35vh;
   border-radius: 0.3vh;
   white-space: nowrap;
   overflow: hidden;
