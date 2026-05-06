@@ -302,8 +302,10 @@ body {
 
 /* ---------- ADAPTIVE DENSITY ----------
    Applied by applyAdaptiveDensity() in calendar-utils.js when a cell would
-   overflow. Each step shrinks event font/padding/gap so all events fit
-   without truncation. Floors are kept generous for TV viewing distance. */
+   overflow. Each step shrinks event font/padding/gap and progressively
+   removes wrapping so EVERY event stays visible — long text gets ellipsised
+   rather than the row being clipped entirely.
+   Floors are kept generous for TV viewing distance. */
 .day-cell.density-2 .events { gap: 0.3vh; }
 .day-cell.density-2 .event {
   font-size: 1.3vh;
@@ -319,6 +321,10 @@ body {
   padding: 0.35vh 0.45vw;
   line-height: 1.15;
   border-left-width: 0.4vh;
+  /* Single-line from here on so multi-event days never clip a row */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .day-cell.density-3 .crew-badge { font-size: 1.0vh; padding: 0 0.35vw; margin-right: 0.4vw; }
 .day-cell.density-3 .event.complete::after { font-size: 1.25vh; padding: 0.05vh 0.4vw; letter-spacing: 0.2vh; }
@@ -329,6 +335,9 @@ body {
   padding: 0.25vh 0.35vw;
   line-height: 1.12;
   border-left-width: 0.35vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .day-cell.density-4 .crew-badge { font-size: 0.9vh; padding: 0 0.3vw; margin-right: 0.3vw; }
 .day-cell.density-4 .event.complete::after { font-size: 1.1vh; padding: 0.05vh 0.35vw; letter-spacing: 0.15vh; }
@@ -336,19 +345,23 @@ body {
 
 .day-cell.density-max .events { gap: 0.15vh; }
 .day-cell.density-max .event {
-  font-size: 0.95vh;
-  padding: 0.2vh 0.3vw;
-  line-height: 1.1;
+  font-size: 0.85vh;
+  padding: 0.15vh 0.3vw;
+  line-height: 1.08;
   border-left-width: 0.3vh;
   border-radius: 0.3vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .day-cell.density-max .crew-badge {
-  font-size: 0.82vh;
-  padding: 0 0.25vw;
-  margin-right: 0.25vw;
+  font-size: 0.78vh;
+  padding: 0 0.22vw;
+  margin-right: 0.22vw;
 }
-.day-cell.density-max .event.complete::after { font-size: 1.0vh; padding: 0 0.3vw; letter-spacing: 0.12vh; border-width: 0.22vh; }
+.day-cell.density-max .event.complete::after { font-size: 0.95vh; padding: 0 0.3vw; letter-spacing: 0.12vh; border-width: 0.22vh; }
 .day-cell.density-max .event.past-incomplete { box-shadow: inset 0 0 0 0.18vh var(--past-amber); }
+
 
 /* ---------- STATUS BAR ---------- */
 .status-bar {
