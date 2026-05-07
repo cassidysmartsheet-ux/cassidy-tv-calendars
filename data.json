@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T16:19:11+00:00",
+  "generatedAt": "2026-05-07T18:06:09+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 141,
   "events": [
@@ -381,7 +381,7 @@
       "phase": "Hand",
       "startDate": "2026-05-18",
       "endDate": "2026-05-18",
-      "status": ""
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3664-26",
@@ -834,6 +834,16 @@
       "status": "Complete"
     },
     {
+      "jobNumber": "3802-26",
+      "client": "Perth Road - M. Hallet",
+      "city": "Arlington",
+      "crew": "No Category",
+      "phase": "Paving",
+      "startDate": "2026-05-27",
+      "endDate": "2026-05-27",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3296-25",
       "client": "Wilder",
       "city": "North Andover",
@@ -991,7 +1001,7 @@
       "phase": "Hand",
       "startDate": "2026-05-13",
       "endDate": "2026-05-13",
-      "status": ""
+      "status": "Scheduled"
     },
     {
       "jobNumber": "FJ-0231-26",
@@ -1001,7 +1011,7 @@
       "phase": "Hand",
       "startDate": "2026-05-14",
       "endDate": "2026-05-14",
-      "status": ""
+      "status": "Scheduled"
     },
     {
       "jobNumber": "FJ-0235-26",
@@ -1211,7 +1221,7 @@
       "phase": "Paving",
       "startDate": "2026-05-15",
       "endDate": "2026-05-15",
-      "status": ""
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3743-26",
@@ -1397,21 +1407,11 @@
       "jobNumber": "3802-26",
       "client": "Perth Road - M. Hallet",
       "city": "Arlington",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-05-27",
-      "endDate": "2026-05-27",
-      "status": ""
-    },
-    {
-      "jobNumber": "3802-26",
-      "client": "Perth Road - M. Hallet",
-      "city": "Arlington",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
       "startDate": "2026-05-26",
       "endDate": "2026-05-26",
-      "status": ""
+      "status": "Scheduled"
     }
   ]
 }
