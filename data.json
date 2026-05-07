@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T22:15:43+00:00",
+  "generatedAt": "2026-05-07T23:26:49+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 141,
   "events": [
@@ -441,7 +441,7 @@
       "phase": "Hand",
       "startDate": "2026-05-07",
       "endDate": "2026-05-07",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0268-26",
@@ -471,7 +471,7 @@
       "phase": "Hand",
       "startDate": "2026-05-06",
       "endDate": "2026-05-06",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3662-26",
