@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-08T20:05:29+00:00",
+  "generatedAt": "2026-05-08T21:15:39+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 151,
+  "totalRows": 153,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -979,8 +979,8 @@
       "city": "Brockton",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-05-21",
-      "endDate": "2026-05-23",
+      "startDate": "2026-05-20",
+      "endDate": "2026-05-22",
       "status": "Scheduled"
     },
     {
@@ -1324,6 +1324,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3853-26",
+      "client": "Freeman Manzo",
+      "city": "Hudson",
+      "crew": "Paving",
+      "phase": "Hand",
+      "startDate": "2026-05-19",
+      "endDate": "2026-05-19",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3452-25",
       "client": "Leewood realty",
       "city": "Haverhill",
@@ -1461,6 +1471,16 @@
       "phase": "Hand",
       "startDate": "2026-05-07",
       "endDate": "2026-05-07",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3853-26",
+      "client": "Freeman Manzo",
+      "city": "Hudson",
+      "crew": "Reclaim/Grading",
+      "phase": "Hand",
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-15",
       "status": "Scheduled"
     },
     {
