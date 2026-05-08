@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-08T15:58:20+00:00",
+  "generatedAt": "2026-05-08T17:25:10+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 142,
+  "totalRows": 151,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -574,6 +574,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3759-26",
+      "client": "Delaware Valley",
+      "city": "Concord",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-05-11",
+      "endDate": "2026-05-11",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3296-25",
       "client": "Wilder",
       "city": "North Andover",
@@ -634,6 +644,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3505-25",
+      "client": "Deulis",
+      "city": "Marblehead",
+      "crew": "Milling",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-04-27",
+      "endDate": "2026-04-27",
+      "status": "Complete"
+    },
+    {
       "jobNumber": "FJ-0223-26",
       "client": "MAssport",
       "city": "",
@@ -642,6 +662,26 @@
       "startDate": "2026-04-17",
       "endDate": "2026-04-17",
       "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3344-25",
+      "client": "Boston Scientific",
+      "city": "Coventry",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-01",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "3505-25",
+      "client": "Deulis",
+      "city": "Marblehead",
+      "crew": "Milling",
+      "phase": "Hand",
+      "startDate": "2026-04-27",
+      "endDate": "2026-04-27",
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0229-26",
@@ -684,6 +724,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3505-25",
+      "client": "Deulis",
+      "city": "Marblehead",
+      "crew": "Milling",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-04-27",
+      "endDate": "2026-04-27",
+      "status": "Complete"
+    },
+    {
       "jobNumber": "FJ-0232-26",
       "client": "Natick",
       "city": "Natick",
@@ -692,6 +742,36 @@
       "startDate": "2026-04-21",
       "endDate": "2026-04-22",
       "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3344-25",
+      "client": "Boston Scientific",
+      "city": "Coventry",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-01",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "3344-25",
+      "client": "Boston Scientific",
+      "city": "Coventry",
+      "crew": "Milling",
+      "phase": "Paving",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-01",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "3505-25",
+      "client": "Deulis",
+      "city": "Marblehead",
+      "crew": "Milling",
+      "phase": "Paving",
+      "startDate": "2026-04-27",
+      "endDate": "2026-04-27",
+      "status": "Complete"
     },
     {
       "jobNumber": "3697-26",
@@ -1412,6 +1492,16 @@
       "startDate": "2026-04-16",
       "endDate": "2026-04-16",
       "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3641-26",
+      "client": "Evergreen Management Group",
+      "city": "Hudson",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-01",
+      "status": "Complete"
     },
     {
       "jobNumber": "3802-26",
