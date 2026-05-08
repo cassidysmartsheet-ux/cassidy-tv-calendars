@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-08T11:10:49+00:00",
+  "generatedAt": "2026-05-08T12:18:47+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 141,
+  "totalRows": 142,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -832,6 +832,16 @@
       "startDate": "2026-05-04",
       "endDate": "2026-05-04",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "3866-26",
+      "client": "Golini Brothers",
+      "city": "Stoneham",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-05-11",
+      "endDate": "2026-05-11",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3802-26",
