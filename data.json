@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-09T17:47:55+00:00",
+  "generatedAt": "2026-05-09T18:56:48+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 156,
+  "totalRows": 164,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -571,6 +571,16 @@
       "phase": "",
       "startDate": "2026-05-19",
       "endDate": "2026-05-19",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3790-26",
+      "client": "Merrimack health",
+      "city": "Methuen",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-05-18",
+      "endDate": "2026-05-18",
       "status": "Scheduled"
     },
     {
@@ -1354,6 +1364,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3814-26",
+      "client": "OESL Automotive USA LLC",
+      "city": "Somersworth",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-10",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3853-26",
       "client": "Freeman Manzo",
       "city": "Hudson",
@@ -1510,8 +1530,18 @@
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
       "startDate": "2026-07-01",
-      "endDate": "2026-07-01",
-      "status": ""
+      "endDate": "2026-07-02",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3814-26",
+      "client": "OESL Automotive USA LLC",
+      "city": "Somersworth",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-07-06",
+      "endDate": "2026-07-07",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3853-26",
