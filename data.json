@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-08T23:30:42+00:00",
+  "generatedAt": "2026-05-09T01:22:37+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 154,
+  "totalRows": 156,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -1124,6 +1124,36 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0232-26",
+      "client": "Natick",
+      "city": "Natick",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-04-16",
+      "endDate": "2026-04-16",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "FJ-0233-26",
+      "client": "Natick",
+      "city": "Natick",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-05-19",
+      "endDate": "2026-05-19",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0234-26",
+      "client": "Natick",
+      "city": "Natick",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-05-18",
+      "endDate": "2026-05-18",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3669-26",
       "client": "Front Row Realty, LLC",
       "city": "Woburn",
@@ -1511,16 +1541,6 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-05-11",
       "endDate": "2026-05-14",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "FJ-0232-26",
-      "client": "Natick",
-      "city": "Natick",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-04-16",
-      "endDate": "2026-04-16",
       "status": "Scheduled"
     },
     {
