@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-09T19:57:49+00:00",
+  "generatedAt": "2026-05-09T20:51:17+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 166,
+  "totalRows": 169,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -1404,6 +1404,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3592-26",
+      "client": "Rl Construction",
+      "city": "Waltham",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-07-17",
+      "endDate": "2026-07-17",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3870-26",
       "client": "-Town Of holliston ( Pinecrest Golf Course)",
       "city": "Holliston",
@@ -1439,8 +1449,18 @@
       "city": "Haverhill",
       "crew": "Reclaim/Grading",
       "phase": "Pulverizing",
-      "startDate": "2026-07-07",
+      "startDate": "2026-07-08",
       "endDate": "2026-07-10",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3452-25",
+      "client": "Leewood realty",
+      "city": "Haverhill",
+      "crew": "Reclaim/Grading",
+      "phase": "Pulverizing",
+      "startDate": "2026-07-13",
+      "endDate": "2026-07-13",
       "status": "Scheduled"
     },
     {
@@ -1591,6 +1611,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-07-06",
       "endDate": "2026-07-07",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3592-26",
+      "client": "Rl Construction",
+      "city": "Waltham",
+      "crew": "Reclaim/Grading",
+      "phase": "Hand",
+      "startDate": "2026-07-16",
+      "endDate": "2026-07-16",
       "status": "Scheduled"
     },
     {
