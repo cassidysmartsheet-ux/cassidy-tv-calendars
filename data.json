@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-09T18:56:48+00:00",
+  "generatedAt": "2026-05-09T19:57:49+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 164,
+  "totalRows": 166,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -11,6 +11,16 @@
       "phase": "Crackfill",
       "startDate": "2026-04-27",
       "endDate": "2026-04-27",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0303-26",
+      "client": "Cassidy Corp",
+      "city": "Haverhill",
+      "crew": "Crackfill",
+      "phase": "Crackfill",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-03",
       "status": "Scheduled"
     },
     {
@@ -379,8 +389,8 @@
       "city": "North Attleboro",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-05-18",
-      "endDate": "2026-05-18",
+      "startDate": "2026-05-13",
+      "endDate": "2026-05-13",
       "status": "Scheduled"
     },
     {
@@ -509,8 +519,8 @@
       "city": "Allston",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-05-13",
-      "endDate": "2026-05-13",
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-22",
       "status": "Scheduled"
     },
     {
@@ -591,6 +601,16 @@
       "phase": "Hand",
       "startDate": "2026-05-11",
       "endDate": "2026-05-11",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0303-26",
+      "client": "Cassidy Corp",
+      "city": "Haverhill",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-03",
       "status": "Scheduled"
     },
     {
@@ -931,6 +951,16 @@
       "phase": "Milling",
       "startDate": "2026-05-11",
       "endDate": "2026-05-11",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0303-26",
+      "client": "Cassidy Corp",
+      "city": "Haverhill",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-03",
       "status": "Scheduled"
     },
     {
@@ -1374,6 +1404,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3870-26",
+      "client": "-Town Of holliston ( Pinecrest Golf Course)",
+      "city": "Holliston",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-05-27",
+      "endDate": "2026-05-27",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3853-26",
       "client": "Freeman Manzo",
       "city": "Hudson",
@@ -1381,6 +1421,16 @@
       "phase": "Hand",
       "startDate": "2026-05-19",
       "endDate": "2026-05-19",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0303-26",
+      "client": "Cassidy Corp",
+      "city": "Haverhill",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-03",
       "status": "Scheduled"
     },
     {
@@ -1564,6 +1614,16 @@
       "status": "Complete"
     },
     {
+      "jobNumber": "3870-26",
+      "client": "-Town Of holliston ( Pinecrest Golf Course)",
+      "city": "Holliston",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-22",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "FJ-0299-26",
       "client": "massport logan",
       "city": "boston",
@@ -1571,6 +1631,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-05-11",
       "endDate": "2026-05-14",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0303-26",
+      "client": "Cassidy Corp",
+      "city": "Haverhill",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-03",
       "status": "Scheduled"
     },
     {
