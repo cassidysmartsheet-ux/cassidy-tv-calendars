@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-09T23:12:01+00:00",
+  "generatedAt": "2026-05-10T00:05:15+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 173,
+  "totalRows": 174,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -1018,9 +1018,19 @@
       "client": "Berkley",
       "city": "Stoughton",
       "crew": "Paving",
-      "phase": "Milling",
-      "startDate": "2026-06-30",
+      "phase": "Paving",
+      "startDate": "2026-07-01",
       "endDate": "2026-07-02",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "2994-25",
+      "client": "Berkley",
+      "city": "Stoughton",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-07-06",
+      "endDate": "2026-07-06",
       "status": "Scheduled"
     },
     {
@@ -1279,8 +1289,8 @@
       "city": "Hudson",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-07-22",
-      "endDate": "2026-07-23",
+      "startDate": "2026-06-29",
+      "endDate": "2026-06-30",
       "status": "Scheduled"
     },
     {
@@ -1579,8 +1589,8 @@
       "city": "Hudson",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-07-20",
-      "endDate": "2026-07-21",
+      "startDate": "2026-06-25",
+      "endDate": "2026-06-26",
       "status": "Complete"
     },
     {
