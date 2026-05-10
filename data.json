@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-10T00:05:15+00:00",
+  "generatedAt": "2026-05-10T04:14:31+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 174,
+  "totalRows": 177,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -1444,6 +1444,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3936-26",
+      "client": "RP Saxon",
+      "city": "Derry",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-29",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3936-26",
+      "client": "RP Saxon",
+      "city": "Derry",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-02",
+      "endDate": "2026-06-02",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "FJ-0303-26",
       "client": "Cassidy Corp",
       "city": "Haverhill",
@@ -1711,6 +1731,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-05-11",
       "endDate": "2026-05-14",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3936-26",
+      "client": "RP Saxon",
+      "city": "Derry",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-05-26",
+      "endDate": "2026-05-28",
       "status": "Scheduled"
     },
     {
