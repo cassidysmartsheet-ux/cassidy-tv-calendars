@@ -4,12 +4,12 @@ name: Refresh calendar data
 # (Smartsheet API does not support browser CORS, so we cannot call it
 # directly from the client-side JS).
 #
-# Triggers: every 15 min on cron, on every push to main, or manually via
+# Triggers: every 5 min on cron, on every push to main, or manually via
 # the Actions tab.
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch: {}
   push:
     branches: [ main ]

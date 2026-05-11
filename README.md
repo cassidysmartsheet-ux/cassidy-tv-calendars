@@ -18,14 +18,14 @@ Full-screen month-view calendars for 60" 4K TV displays at Cassidy headquarters.
 
 ## Data Source & Updates
 
-The calendars now load from **operations-schedule.csv** rather than the Smartsheet API. This file is included in the deployment and automatically refreshed by the site every 10 minutes.
+The calendars now load from **operations-schedule.csv** rather than the Smartsheet API. This file is included in the deployment and automatically refreshed by the site every 1 minute.
 
 **To update the schedule:**
 
 1. Export the latest Operations Schedule from Smartsheet as CSV
 2. Replace **operations-schedule.csv** in this folder with the new export
 3. Commit and push to the GitHub Pages repository
-4. The TV displays will fetch the new CSV on their next 10-minute refresh
+4. The TV displays will fetch the new CSV on their next 1-minute refresh
 
 **CSV columns used:**
 - Job # → jobNumber
@@ -69,7 +69,7 @@ This design allows **easy future migration to Smartsheet API** — just swap out
 - **Complete jobs**: 50% opacity, muted gray styling
 - **Month range**: Current calendar month extended 7 days prior to show preceding week
 - **Filtering**: Crew pages show only that phase; Operations shows all phases
-- **Auto-refresh**: Every 10 minutes (re-fetches CSV)
+- **Auto-refresh**: Every 1 minute (re-fetches CSV)
 - **No scrolling**: Full calendar fits 1920×1080 viewport with `overflow: hidden`
 - **Text size**: Event text >=16-18px; day numbers, labels proportionally larger; readable from 10-15 feet
 - **No external dependencies**: Pure HTML/CSS/JavaScript, no CDN imports

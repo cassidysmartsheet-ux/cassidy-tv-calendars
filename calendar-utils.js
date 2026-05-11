@@ -1,5 +1,5 @@
 // Shared calendar utilities for TV displays
-// Reads from data.json which is refreshed every 15 min by a GitHub Action
+// Reads from data.json which is refreshed every 5 min by a GitHub Action
 // that calls the Smartsheet "Operations Calendar Report" server-side.
 //
 // Why not call the Smartsheet API from the browser directly?
