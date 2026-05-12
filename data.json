@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-12T19:18:53+00:00",
+  "generatedAt": "2026-05-12T20:54:03+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 180,
+  "totalRows": 184,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -21,6 +21,26 @@
       "phase": "Crackfill",
       "startDate": "2026-07-03",
       "endDate": "2026-07-03",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3947-26",
+      "client": "Nordblom",
+      "city": "Burlington",
+      "crew": "Crackfill",
+      "phase": "Crackfill",
+      "startDate": "2026-05-23",
+      "endDate": "2026-05-23",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3948-26",
+      "client": "Nordblom - Blue Sky Drive",
+      "city": "Burlington",
+      "crew": "Crackfill",
+      "phase": "Crackfill",
+      "startDate": "2026-05-30",
+      "endDate": "2026-05-30",
       "status": "Scheduled"
     },
     {
@@ -501,7 +521,7 @@
       "phase": "Hand",
       "startDate": "2026-05-12",
       "endDate": "2026-05-12",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0275-26",
@@ -541,7 +561,7 @@
       "phase": "Hand",
       "startDate": "2026-05-11",
       "endDate": "2026-05-11",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3528-25",
@@ -611,6 +631,26 @@
       "phase": "Hand",
       "startDate": "2026-07-03",
       "endDate": "2026-07-03",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3947-26",
+      "client": "Nordblom",
+      "city": "Burlington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-05-28",
+      "endDate": "2026-05-29",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3948-26",
+      "client": "Nordblom - Blue Sky Drive",
+      "city": "Burlington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-05-30",
+      "endDate": "2026-06-02",
       "status": "Scheduled"
     },
     {
