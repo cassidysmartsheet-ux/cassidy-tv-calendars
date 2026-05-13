@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T22:21:08+00:00",
+  "generatedAt": "2026-05-13T23:34:45+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 184,
   "events": [
@@ -12,6 +12,16 @@
       "startDate": "2026-04-27",
       "endDate": "2026-04-27",
       "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3330-25",
+      "client": "PMA - Brickett Hill",
+      "city": "Haverhill",
+      "crew": "Crackfill",
+      "phase": "Crackfill",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-01",
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0303-26",
@@ -181,6 +191,16 @@
       "phase": "Paving",
       "startDate": "2026-04-20",
       "endDate": "2026-04-20",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "3337-25",
+      "client": "Pma- Indian Ridge",
+      "city": "Tewksbury",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-01-01",
+      "endDate": "2026-05-01",
       "status": "Complete"
     },
     {
@@ -411,7 +431,7 @@
       "phase": "Hand",
       "startDate": "2026-05-13",
       "endDate": "2026-05-13",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3664-26",
@@ -1181,7 +1201,7 @@
       "phase": "Paving",
       "startDate": "2026-04-15",
       "endDate": "2026-04-15",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0230-26",
@@ -1191,7 +1211,7 @@
       "phase": "Hand",
       "startDate": "2026-04-13",
       "endDate": "2026-04-13",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0230-26",
@@ -1201,7 +1221,7 @@
       "phase": "Hand",
       "startDate": "2026-04-14",
       "endDate": "2026-04-14",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0230-26",
@@ -1239,8 +1259,8 @@
       "city": "Natick",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-04-16",
-      "endDate": "2026-04-17",
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-29",
       "status": "Scheduled"
     },
     {
@@ -1504,16 +1524,6 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "3853-26",
-      "client": "Freeman Manzo",
-      "city": "Hudson",
-      "crew": "Paving",
-      "phase": "Hand",
-      "startDate": "2026-05-19",
-      "endDate": "2026-05-19",
-      "status": "Scheduled"
-    },
-    {
       "jobNumber": "3936-26",
       "client": "RP Saxon",
       "city": "Derry",
@@ -1771,16 +1781,6 @@
       "phase": "Hand",
       "startDate": "2026-07-16",
       "endDate": "2026-07-16",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3853-26",
-      "client": "Freeman Manzo",
-      "city": "Hudson",
-      "crew": "Reclaim/Grading",
-      "phase": "Hand",
-      "startDate": "2026-05-15",
-      "endDate": "2026-05-15",
       "status": "Scheduled"
     },
     {
