@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-14T22:40:47+00:00",
+  "generatedAt": "2026-05-14T23:37:34+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 184,
+  "totalRows": 189,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -51,6 +51,16 @@
       "phase": "Crackfill",
       "startDate": "2026-05-30",
       "endDate": "2026-05-30",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "2994-25",
+      "client": "Berkley",
+      "city": "Stoughton",
+      "crew": "Hand",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-05-18",
+      "endDate": "2026-05-18",
       "status": "Scheduled"
     },
     {
@@ -200,7 +210,7 @@
       "crew": "Hand",
       "phase": "Hand",
       "startDate": "2026-01-01",
-      "endDate": "2026-05-01",
+      "endDate": "2026-01-01",
       "status": "Complete"
     },
     {
@@ -671,6 +681,26 @@
       "phase": "Hand",
       "startDate": "2026-05-30",
       "endDate": "2026-06-02",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3932-26",
+      "client": "Key point",
+      "city": "Ashland",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-05",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3933-26",
+      "client": "KeyPoint Partners",
+      "city": "Hudson",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-05",
       "status": "Scheduled"
     },
     {
@@ -1842,6 +1872,16 @@
       "startDate": "2026-01-01",
       "endDate": "2026-01-01",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "3887-26",
+      "client": "Onyx Corporation",
+      "city": "Devens",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-15",
+      "status": "Scheduled"
     }
   ]
 }
