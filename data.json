@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-15T10:58:02+00:00",
+  "generatedAt": "2026-05-15T12:58:53+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 189,
+  "totalRows": 191,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -681,6 +681,26 @@
       "phase": "Hand",
       "startDate": "2026-05-30",
       "endDate": "2026-06-02",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3789-26",
+      "client": "Shrewsbury Commons",
+      "city": "Shrewsbury",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-09",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3931-26",
+      "client": "Key point",
+      "city": "Billerica",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-10",
+      "endDate": "2026-06-10",
       "status": "Scheduled"
     },
     {
