@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-15T22:14:45+00:00",
+  "generatedAt": "2026-05-15T23:14:14+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 212,
+  "totalRows": 208,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -69,8 +69,8 @@
       "city": "Brockton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-04-23",
-      "endDate": "2026-04-23",
+      "startDate": "2026-05-18",
+      "endDate": "2026-05-18",
       "status": "Scheduled"
     },
     {
@@ -79,8 +79,8 @@
       "city": "Brockton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-24",
+      "startDate": "2026-05-19",
+      "endDate": "2026-05-19",
       "status": "Scheduled"
     },
     {
@@ -89,8 +89,8 @@
       "city": "Brockton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-04-27",
-      "endDate": "2026-04-27",
+      "startDate": "2026-05-20",
+      "endDate": "2026-05-20",
       "status": "Scheduled"
     },
     {
@@ -99,8 +99,8 @@
       "city": "Brockton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-04-28",
-      "endDate": "2026-04-28",
+      "startDate": "2026-05-21",
+      "endDate": "2026-05-21",
       "status": "Scheduled"
     },
     {
@@ -109,28 +109,8 @@
       "city": "Brockton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-04-29",
-      "endDate": "2026-04-29",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "2820-25",
-      "client": "Davis commons",
-      "city": "Brockton",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-04-30",
-      "endDate": "2026-04-30",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "2820-25",
-      "client": "Davis commons",
-      "city": "Brockton",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-01",
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-22",
       "status": "Scheduled"
     },
     {
@@ -804,16 +784,6 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "FJ-0223-26",
-      "client": "MAssport",
-      "city": "",
-      "crew": "Milling",
-      "phase": "Hand",
-      "startDate": "2026-05-13",
-      "endDate": "2026-05-13",
-      "status": "Scheduled"
-    },
-    {
       "jobNumber": "3344-25",
       "client": "Boston Scientific",
       "city": "Coventry",
@@ -851,7 +821,7 @@
       "phase": "Milling",
       "startDate": "2026-04-08",
       "endDate": "2026-04-08",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0231-26",
@@ -861,7 +831,7 @@
       "phase": "Milling",
       "startDate": "2026-04-10",
       "endDate": "2026-04-10",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0230-26",
@@ -871,7 +841,7 @@
       "phase": "Milling",
       "startDate": "2026-04-09",
       "endDate": "2026-04-09",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3505-25",
@@ -1341,7 +1311,7 @@
       "phase": "Hand",
       "startDate": "2026-05-13",
       "endDate": "2026-05-13",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0231-26",
@@ -1351,7 +1321,7 @@
       "phase": "Hand",
       "startDate": "2026-05-14",
       "endDate": "2026-05-14",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0235-26",
@@ -1811,7 +1781,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-04-13",
       "endDate": "2026-04-17",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3640-26",
@@ -1851,16 +1821,6 @@
       "phase": "Hand",
       "startDate": "2026-05-18",
       "endDate": "2026-05-18",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "FJ-0248-26",
-      "client": "MAssport",
-      "city": "Boston",
-      "crew": "Reclaim/Grading",
-      "phase": "Hand",
-      "startDate": "2026-05-19",
-      "endDate": "2026-05-19",
       "status": "Scheduled"
     },
     {
