@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-15T15:22:55+00:00",
+  "generatedAt": "2026-05-15T17:07:19+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 206,
+  "totalRows": 212,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -1674,6 +1674,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0310-26",
+      "client": "Town of tewksbury",
+      "city": "Tewksbury",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-15",
+      "endDate": "2026-06-15",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "FJ-0312-26",
       "client": "Tewksbury Town of",
       "city": "Tewskbury",
@@ -1691,6 +1701,46 @@
       "phase": "Paving",
       "startDate": "2026-06-05",
       "endDate": "2026-06-05",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0313-26",
+      "client": "Town of tewksbury",
+      "city": "tewksbury",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-16",
+      "endDate": "2026-06-16",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0314-26",
+      "client": "Tewksbury Town of",
+      "city": "Tewskbury",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-11",
+      "endDate": "2026-06-11",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0315-26",
+      "client": "Tewksbury Town of",
+      "city": "Tewskbury",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-12",
+      "endDate": "2026-06-12",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0316-26",
+      "client": "Tewksbury Town of",
+      "city": "Tewskbury",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-10",
+      "endDate": "2026-06-10",
       "status": "Scheduled"
     },
     {
@@ -2042,6 +2092,16 @@
       "startDate": "2026-01-01",
       "endDate": "2026-01-01",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "FJ-0309-26",
+      "client": "Massachusetts Trial Court",
+      "city": "Somerville",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-09",
+      "endDate": "2026-06-09",
+      "status": ""
     },
     {
       "jobNumber": "3887-26",
