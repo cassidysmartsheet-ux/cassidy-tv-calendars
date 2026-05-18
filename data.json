@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-18T18:18:11+00:00",
+  "generatedAt": "2026-05-18T20:06:21+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 210,
+  "totalRows": 213,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -71,7 +71,7 @@
       "phase": "Hand",
       "startDate": "2026-05-18",
       "endDate": "2026-05-18",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "2820-25",
@@ -394,6 +394,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0248-26",
+      "client": "MAssport",
+      "city": "Boston",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-22",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3617-26",
       "client": "Evergreen Mgt",
       "city": "Manchester",
@@ -634,6 +644,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3853-26",
+      "client": "Freeman Manzo",
+      "city": "Hudson",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-01",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3853-26",
+      "client": "Freeman Manzo",
+      "city": "Hudson",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-02",
+      "endDate": "2026-06-02",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3759-26",
       "client": "Delaware Valley",
       "city": "Concord",
@@ -669,8 +699,38 @@
       "city": "Burlington",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-05-30",
-      "endDate": "2026-06-02",
+      "startDate": "2026-05-18",
+      "endDate": "2026-05-18",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3948-26",
+      "client": "Nordblom - Blue Sky Drive",
+      "city": "Burlington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-05-19",
+      "endDate": "2026-05-19",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3948-26",
+      "client": "Nordblom - Blue Sky Drive",
+      "city": "Burlington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-03",
+      "endDate": "2026-06-03",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3948-26",
+      "client": "Nordblom - Blue Sky Drive",
+      "city": "Burlington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-04",
       "status": "Scheduled"
     },
     {
@@ -1844,36 +1904,6 @@
       "status": "Complete"
     },
     {
-      "jobNumber": "FJ-0248-26",
-      "client": "MAssport",
-      "city": "Boston",
-      "crew": "Reclaim/Grading",
-      "phase": "Hand",
-      "startDate": "2026-05-18",
-      "endDate": "2026-05-18",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "FJ-0248-26",
-      "client": "MAssport",
-      "city": "Boston",
-      "crew": "Reclaim/Grading",
-      "phase": "Hand",
-      "startDate": "2026-05-20",
-      "endDate": "2026-05-20",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "FJ-0248-26",
-      "client": "MAssport",
-      "city": "Boston",
-      "crew": "Reclaim/Grading",
-      "phase": "Hand",
-      "startDate": "2026-05-21",
-      "endDate": "2026-05-21",
-      "status": "Scheduled"
-    },
-    {
       "jobNumber": "3505-25",
       "client": "Deulis",
       "city": "Marblehead",
@@ -2021,7 +2051,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-05-11",
       "endDate": "2026-05-14",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3936-26",
@@ -2072,6 +2102,16 @@
       "startDate": "2026-06-03",
       "endDate": "2026-06-04",
       "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0223-26",
+      "client": "MassPort",
+      "city": "Boston",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-22",
+      "status": ""
     },
     {
       "jobNumber": "3641-26",
