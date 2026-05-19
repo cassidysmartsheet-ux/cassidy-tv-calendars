@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-19T22:48:55+00:00",
+  "generatedAt": "2026-05-19T23:48:49+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 213,
+  "totalRows": 212,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -1249,8 +1249,8 @@
       "city": "West Roxbury",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-05-26",
-      "endDate": "2026-05-26",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
       "status": "Scheduled"
     },
     {
@@ -1872,16 +1872,6 @@
       "startDate": "2026-04-13",
       "endDate": "2026-04-17",
       "status": "Complete"
-    },
-    {
-      "jobNumber": "3640-26",
-      "client": "GRP Paving & Construction",
-      "city": "Amesbury",
-      "crew": "Reclaim/Grading",
-      "phase": "Reclaim/Grading",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-02",
-      "status": "Scheduled"
     },
     {
       "jobNumber": "3641-26",
