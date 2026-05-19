@@ -1,6 +1,43 @@
 {
-  "generatedAt": "2026-05-19T21:15:38+00:00",
+  "generatedAt": "2026-05-19T21:16:59+00:00",
   "source": "Smartsheet Subcontractor Schedule sheet (id 1314998310621060)",
-  "totalRows": 4,
-  "events": []
+  "totalRows": 7,
+  "events": [
+    {
+      "jobNumber": "TEST-001",
+      "client": "Test Co A",
+      "clientFirst": "Alice",
+      "city": "Boston",
+      "crew": "Cassidy Landscaping",
+      "scope": "Landscaping",
+      "phase": "Subcontractor",
+      "startDate": "2026-05-20",
+      "endDate": "2026-05-20",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "TEST-002",
+      "client": "Test Co B",
+      "clientFirst": "Bob",
+      "city": "Cambridge",
+      "crew": "\"H & N Pavement Marking, INC\"",
+      "scope": "Striping",
+      "phase": "Subcontractor",
+      "startDate": "2026-05-21",
+      "endDate": "2026-05-21",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "TEST-003",
+      "client": "Test Co C",
+      "clientFirst": "Charlie",
+      "city": "Newton",
+      "crew": "City Sealcoating",
+      "scope": "Sealcoat",
+      "phase": "Subcontractor",
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-22",
+      "status": "Scheduled"
+    }
+  ]
 }
