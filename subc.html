@@ -181,4 +181,17 @@ async function renderCalendar() {
     grid.appendChild(cell);
   });
 
+  applyAdaptiveDensity();
+
+  document.getElementById('update-time').textContent =
+    new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+}
+
+renderCalendar();
+setInterval(renderCalendar, 1 * 60 * 1000);
+bindAdaptiveDensityResize();
+</script>
+</body>
+</html>
+
  
