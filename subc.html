@@ -141,19 +141,23 @@ async function renderCalendar() {
     dayEvents.forEach(event => {
       const eventEl = document.createElement('div');
       eventEl.className = 'event';
-      if (event.status === 'Complete') {
-        eventEl.classList.add('complete');
-      } else {
-        const eventEnd = new Date(event.endDate); eventEnd.setHours(23,59,59,999);
-        if (eventEnd < todayStart) eventEl.classList.add('past-incomplete');
-      }
+      const isComplete = event.status === 'Complete';
+      const eventEnd = new Date(event.endDate); eventEnd.setHours(23,59,59,999);
+      const isPastIncomplete = !isComplete && eventEnd < todayStart;
 
-      // Per-subcontractor color: override the CSS var and background tint
-      // inline so each sub's events read as a coherent set across the grid.
+      if (isComplete) eventEl.classList.add('complete');
+      if (isPastIncomplete) eventEl.classList.add('past-incomplete');
+
+      // Per-subcontractor color: only apply for normal (future/active) events.
+      // For .complete or .past-incomplete, the state classes in calendar-styles.css
+      // own the visual treatment (gray-out + COMPLETE stamp; gold/amber border).
+      // Inline styles would otherwise override the state classes.
       const subColor = colorForSub(event.crew);
       eventEl.style.setProperty('--crew-color', subColor);
-      eventEl.style.background = hexToRgba(subColor, 0.28);
-      eventEl.style.borderLeftColor = subColor;
+      if (!isComplete && !isPastIncomplete) {
+        eventEl.style.background = hexToRgba(subColor, 0.28);
+        eventEl.style.borderLeftColor = subColor;
+      }
 
       const job = document.createElement('span');
       job.className = 'job';
@@ -177,15 +181,4 @@ async function renderCalendar() {
     grid.appendChild(cell);
   });
 
-  applyAdaptiveDensity();
-
-  document.getElementById('update-time').textContent =
-    new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-}
-
-renderCalendar();
-setInterval(renderCalendar, 1 * 60 * 1000);
-bindAdaptiveDensityResize();
-</script>
-</body>
-</html>
+ 
