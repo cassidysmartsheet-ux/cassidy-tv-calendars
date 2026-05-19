@@ -1,0 +1,70 @@
+name: Refresh subcontractor calendar data
+# SILOED pipeline for the subcontractor calendar.
+# Pulls the Subcontractor Schedule sheet (id 1314998310621060) directly via
+# the Smartsheet Sheets API and commits data-subcontractor.json.
+#
+# Independent of the main refresh-data.yml workflow — if either fails, the
+# other still runs.
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch: {}
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'data.json'
+      - 'data-subcontractor.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-subcontractor-data
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch Subcontractor Schedule sheet from Smartsheet API
+        env:
+          TOKEN: 'p24Cgh1izpdYeclFRk4gE6m9nCuEoBW5Nkywe'
+          SHEET_ID: '1314998310621060'
+        run: |
+          curl -sS -H "Authorization: Bearer $TOKEN" \
+            "https://api.smartsheet.com/2.0/sheets/${SHEET_ID}?pageSize=10000" \
+            -o raw-subcontractor.json
+          echo "raw-subcontractor.json size: $(wc -c < raw-subcontractor.json) bytes"
+
+      - name: Transform to data-subcontractor.json
+        run: |
+          python3 .github/scripts/transform-subcontractor.py < raw-subcontractor.json > data-subcontractor.json.new
+          mv data-subcontractor.json.new data-subcontractor.json
+          echo "data-subcontractor.json bytes: $(wc -c < data-subcontractor.json)"
+          echo "events: $(python3 -c 'import json,sys;print(len(json.load(open("data-subcontractor.json"))["events"]))')"
+
+      - name: Commit and push (with retry on race)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data-subcontractor.json
+          if git diff --cached --quiet; then
+            echo "No changes — skipping commit"
+            exit 0
+          fi
+          git commit -m "Refresh data-subcontractor.json from Subcontractor Schedule ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push rejected on attempt $attempt — fetching + rebasing..."
+            git fetch origin main
+            git rebase origin/main || git rebase --abort
+            sleep $((attempt * 2))
+          done
+          echo "Push failed after 3 attempts"
+          exit 1
