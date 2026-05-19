@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-19T21:36:40+00:00",
+  "generatedAt": "2026-05-19T21:37:58+00:00",
   "source": "Smartsheet Subcontractor Schedule sheet (id 1314998310621060)",
-  "totalRows": 7,
+  "totalRows": 9,
   "events": [
     {
       "jobNumber": "TEST-001",
@@ -38,6 +38,30 @@
       "startDate": "2026-05-22",
       "endDate": "2026-05-22",
       "status": "Scheduled"
+    },
+    {
+      "jobNumber": "TEST-004",
+      "client": "Test Co D",
+      "clientFirst": "Dave",
+      "city": "Quincy",
+      "crew": "Matt & Bro hardscape",
+      "scope": "Hardscape",
+      "phase": "Subcontractor",
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-15",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "TEST-005",
+      "client": "Test Co E",
+      "clientFirst": "Erin",
+      "city": "Lowell",
+      "crew": "S and M Farms Inc",
+      "scope": "Site Work",
+      "phase": "Subcontractor",
+      "startDate": "2026-05-12",
+      "endDate": "2026-05-12",
+      "status": "Complete"
     }
   ]
 }
