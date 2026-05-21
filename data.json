@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-21T15:51:10+00:00",
+  "generatedAt": "2026-05-21T17:48:20+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 217,
+  "totalRows": 221,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -1274,6 +1274,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3875-26",
+      "client": "Repro",
+      "city": "Salem",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-04",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3296-25",
       "client": "Wilder",
       "city": "North Andover",
@@ -1884,6 +1894,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3747-26",
+      "client": "Jewish Community Center",
+      "city": "Marblehead",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-28",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3875-26",
+      "client": "Repro",
+      "city": "Salem",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-18",
+      "endDate": "2026-06-18",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3452-25",
       "client": "Leewood realty",
       "city": "Haverhill",
@@ -2141,6 +2171,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-05-27",
       "endDate": "2026-05-28",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3747-26",
+      "client": "Jewish Community Center",
+      "city": "Marblehead",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-08-24",
+      "endDate": "2026-08-28",
       "status": "Scheduled"
     },
     {
