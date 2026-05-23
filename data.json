@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-23T13:48:33+00:00",
+  "generatedAt": "2026-05-23T14:51:39+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 221,
+  "totalRows": 220,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -649,16 +649,6 @@
       "city": "Hudson",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-01",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3853-26",
-      "client": "Freeman Manzo",
-      "city": "Hudson",
-      "crew": "Hand",
-      "phase": "Hand",
       "startDate": "2026-06-02",
       "endDate": "2026-06-02",
       "status": "Scheduled"
@@ -690,7 +680,7 @@
       "crew": "Hand",
       "phase": "Hand",
       "startDate": "2026-05-26",
-      "endDate": "2026-05-27",
+      "endDate": "2026-05-26",
       "status": "Scheduled"
     },
     {
@@ -1474,16 +1464,6 @@
       "status": "Complete"
     },
     {
-      "jobNumber": "FJ-0231-26",
-      "client": "Natick",
-      "city": "Natick",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-05-29",
-      "endDate": "2026-05-29",
-      "status": "Complete"
-    },
-    {
       "jobNumber": "FJ-0232-26",
       "client": "Natick",
       "city": "Natick",
@@ -1789,18 +1769,8 @@
       "city": "Tewksbury",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-06-09",
-      "endDate": "2026-06-09",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "FJ-0310-26",
-      "client": "Town of tewksbury",
-      "city": "Tewksbury",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-06-15",
-      "endDate": "2026-06-15",
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-29",
       "status": "Scheduled"
     },
     {
@@ -1819,8 +1789,8 @@
       "city": "tewksbury",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-06-05",
-      "endDate": "2026-06-05",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-01",
       "status": "Scheduled"
     },
     {
@@ -1829,8 +1799,8 @@
       "city": "tewksbury",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-06-16",
-      "endDate": "2026-06-16",
+      "startDate": "2026-06-15",
+      "endDate": "2026-06-15",
       "status": "Scheduled"
     },
     {
@@ -1889,8 +1859,8 @@
       "city": "Tewksbury",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-06-04",
-      "endDate": "2026-06-04",
+      "startDate": "2026-06-03",
+      "endDate": "2026-06-03",
       "status": "Scheduled"
     },
     {
@@ -2094,6 +2064,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3853-26",
+      "client": "Freeman Manzo",
+      "city": "Hudson",
+      "crew": "Reclaim/Grading",
+      "phase": "Hand",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-01",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3902-26",
       "client": "Tascon Corporation",
       "city": "South Easton",
@@ -2149,8 +2129,8 @@
       "city": "Tewksbury",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-05-29",
-      "endDate": "2026-05-29",
+      "startDate": "2026-05-27",
+      "endDate": "2026-05-27",
       "status": "Scheduled"
     },
     {
@@ -2159,8 +2139,8 @@
       "city": "Tewksbury",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-01",
+      "startDate": "2026-05-28",
+      "endDate": "2026-05-28",
       "status": "Scheduled"
     },
     {
@@ -2169,8 +2149,8 @@
       "city": "tewksbury",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-05-27",
-      "endDate": "2026-05-28",
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-29",
       "status": "Scheduled"
     },
     {
