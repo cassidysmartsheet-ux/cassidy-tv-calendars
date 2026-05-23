@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-23T18:00:59+00:00",
+  "generatedAt": "2026-05-23T19:24:13+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 225,
+  "totalRows": 224,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -61,7 +61,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-05-18",
       "endDate": "2026-05-18",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "2820-25",
@@ -81,7 +81,7 @@
       "phase": "Hand",
       "startDate": "2026-05-19",
       "endDate": "2026-05-19",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "2820-25",
@@ -91,7 +91,7 @@
       "phase": "Hand",
       "startDate": "2026-05-20",
       "endDate": "2026-05-20",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "2820-25",
@@ -101,7 +101,7 @@
       "phase": "Hand",
       "startDate": "2026-05-21",
       "endDate": "2026-05-21",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "2820-25",
@@ -111,7 +111,7 @@
       "phase": "Hand",
       "startDate": "2026-05-22",
       "endDate": "2026-05-22",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "2932-25",
@@ -291,7 +291,7 @@
       "phase": "Hand",
       "startDate": "2026-05-21",
       "endDate": "2026-05-21",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0224-26",
@@ -391,16 +391,6 @@
       "phase": "Hand",
       "startDate": "2026-04-09",
       "endDate": "2026-04-09",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "FJ-0248-26",
-      "client": "MAssport",
-      "city": "Boston",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-05-22",
-      "endDate": "2026-05-22",
       "status": "Scheduled"
     },
     {
@@ -641,7 +631,7 @@
       "phase": "",
       "startDate": "2026-05-19",
       "endDate": "2026-05-19",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3853-26",
@@ -701,7 +691,7 @@
       "phase": "Hand",
       "startDate": "2026-05-18",
       "endDate": "2026-05-18",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3948-26",
@@ -711,7 +701,7 @@
       "phase": "Hand",
       "startDate": "2026-05-19",
       "endDate": "2026-05-19",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3789-26",
@@ -1041,7 +1031,7 @@
       "phase": "Milling",
       "startDate": "2026-05-18",
       "endDate": "2026-05-19",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3755-26",
@@ -1321,7 +1311,7 @@
       "phase": "Paving",
       "startDate": "2026-05-20",
       "endDate": "2026-05-22",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3442-25",
@@ -1469,8 +1459,8 @@
       "city": "Natick",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-05-19",
-      "endDate": "2026-05-19",
+      "startDate": "2026-05-28",
+      "endDate": "2026-05-28",
       "status": "Scheduled"
     },
     {
