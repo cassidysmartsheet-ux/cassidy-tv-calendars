@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-26T22:09:27+00:00",
+  "generatedAt": "2026-05-26T23:33:12+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 227,
+  "totalRows": 228,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -2191,6 +2191,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-24",
       "endDate": "2026-08-28",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3699-26",
+      "client": "American Asphalt Paving",
+      "city": "Nashua",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-06-15",
+      "endDate": "2026-06-17",
       "status": "Scheduled"
     },
     {
