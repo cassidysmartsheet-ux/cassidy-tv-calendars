@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-26T23:33:12+00:00",
+  "generatedAt": "2026-05-27T01:36:15+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 228,
+  "totalRows": 232,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -62,6 +62,16 @@
       "startDate": "2026-05-18",
       "endDate": "2026-05-18",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "2994-25",
+      "client": "Berkley",
+      "city": "Stoughton",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-19",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "2820-25",
@@ -799,8 +809,8 @@
       "city": "Danvers",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-05-05",
-      "endDate": "2026-05-05",
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-05",
       "status": "Scheduled"
     },
     {
@@ -1274,6 +1284,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3960-26",
+      "client": "American Asphalt Paving",
+      "city": "Hooksett",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-06-18",
+      "endDate": "2026-06-18",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3296-25",
       "client": "Wilder",
       "city": "North Andover",
@@ -1299,8 +1319,8 @@
       "city": "West Roxbury",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-10-05",
-      "endDate": "2026-10-05",
+      "startDate": "2026-06-22",
+      "endDate": "2026-06-22",
       "status": "Scheduled"
     },
     {
@@ -1901,6 +1921,26 @@
       "phase": "Paving",
       "startDate": "2026-06-18",
       "endDate": "2026-06-18",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3977-26",
+      "client": "Grasso construction co Llc",
+      "city": "Hampstead",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-29",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3819-26",
+      "client": "Ardent Group",
+      "city": "Tewksbury",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-03",
+      "endDate": "2026-08-03",
       "status": "Scheduled"
     },
     {
