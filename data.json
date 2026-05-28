@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T18:14:23+00:00",
+  "generatedAt": "2026-05-28T20:38:54+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 234,
   "events": [
@@ -62,16 +62,6 @@
       "startDate": "2026-05-18",
       "endDate": "2026-05-18",
       "status": "Complete"
-    },
-    {
-      "jobNumber": "2994-25",
-      "client": "Berkley",
-      "city": "Stoughton",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-06-19",
-      "endDate": "2026-06-19",
-      "status": "Scheduled"
     },
     {
       "jobNumber": "2820-25",
@@ -569,8 +559,8 @@
       "city": "Fitchburg",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-06-18",
-      "endDate": "2026-06-18",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-08",
       "status": "Scheduled"
     },
     {
@@ -811,6 +801,16 @@
       "phase": "Hand",
       "startDate": "2026-06-05",
       "endDate": "2026-06-05",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3946-26",
+      "client": "JJ Phelan",
+      "city": "Malden",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-06-18",
+      "endDate": "2026-06-19",
       "status": "Scheduled"
     },
     {
@@ -1621,7 +1621,7 @@
       "phase": "Paving",
       "startDate": "2026-05-27",
       "endDate": "2026-05-27",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0268-26",
@@ -1954,6 +1954,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "2994-25",
+      "client": "Berkley",
+      "city": "Stoughton",
+      "crew": "Reclaim/Grading",
+      "phase": "Hand",
+      "startDate": "2026-06-24",
+      "endDate": "2026-06-24",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3452-25",
       "client": "Leewood realty",
       "city": "Haverhill",
@@ -2241,16 +2251,6 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-24",
       "endDate": "2026-08-28",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3946-26",
-      "client": "JJ Phelan",
-      "city": "Malden",
-      "crew": "Reclaim/Grading",
-      "phase": "Paving",
-      "startDate": "2026-06-24",
-      "endDate": "2026-06-24",
       "status": "Scheduled"
     },
     {
