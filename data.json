@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-28T14:57:17+00:00",
+  "generatedAt": "2026-05-28T18:14:23+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 232,
+  "totalRows": 234,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -1589,8 +1589,8 @@
       "city": "Hudson",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-06-29",
-      "endDate": "2026-06-30",
+      "startDate": "2026-06-24",
+      "endDate": "2026-06-25",
       "status": "Scheduled"
     },
     {
@@ -1924,6 +1924,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3869-26",
+      "client": "Trinity Lutheran",
+      "city": "Chelmsford",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-22",
+      "endDate": "2026-06-22",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3977-26",
       "client": "Grasso construction co Llc",
       "city": "Hampstead",
@@ -2029,9 +2039,9 @@
       "city": "Hudson",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-06-25",
-      "endDate": "2026-06-26",
-      "status": "Complete"
+      "startDate": "2026-06-18",
+      "endDate": "2026-06-19",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3709-26",
@@ -2231,6 +2241,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-24",
       "endDate": "2026-08-28",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3946-26",
+      "client": "JJ Phelan",
+      "city": "Malden",
+      "crew": "Reclaim/Grading",
+      "phase": "Paving",
+      "startDate": "2026-06-24",
+      "endDate": "2026-06-24",
       "status": "Scheduled"
     },
     {
