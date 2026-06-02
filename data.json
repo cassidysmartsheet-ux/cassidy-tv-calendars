@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T21:38:11+00:00",
+  "generatedAt": "2026-06-02T23:20:28+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 234,
   "events": [
@@ -791,16 +791,6 @@
       "phase": "Hand",
       "startDate": "2026-06-17",
       "endDate": "2026-06-17",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3650-26",
-      "client": "Simon Malls ( Liberty Tree Mall)",
-      "city": "Danvers",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-06-05",
-      "endDate": "2026-06-05",
       "status": "Scheduled"
     },
     {
@@ -1859,8 +1849,8 @@
       "city": "Tewskbury",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-06-05",
-      "endDate": "2026-06-05",
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-08",
       "status": "Scheduled"
     },
     {
@@ -1921,6 +1911,16 @@
       "phase": "Paving",
       "startDate": "2026-06-18",
       "endDate": "2026-06-18",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3650-26",
+      "client": "Simon Malls ( Liberty Tree Mall)",
+      "city": "Danvers",
+      "crew": "Paving",
+      "phase": "Hand",
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-05",
       "status": "Scheduled"
     },
     {
