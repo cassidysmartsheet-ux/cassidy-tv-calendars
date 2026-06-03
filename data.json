@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T17:10:28+00:00",
+  "generatedAt": "2026-06-03T20:27:10+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 242,
   "events": [
@@ -699,8 +699,8 @@
       "city": "Burlington",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-06-11",
-      "endDate": "2026-06-11",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-04",
       "status": "Scheduled"
     },
     {
