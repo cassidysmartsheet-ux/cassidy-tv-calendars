@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-05T11:48:38+00:00",
+  "generatedAt": "2026-06-05T14:12:53+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 242,
+  "totalRows": 243,
   "events": [
     {
       "jobNumber": "3395-25",
@@ -2341,6 +2341,16 @@
       "phase": "Paving",
       "startDate": "2026-06-29",
       "endDate": "2026-06-29",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3970-26",
+      "client": "Ardent Group",
+      "city": "Canton",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-10",
+      "endDate": "2026-06-10",
       "status": "Scheduled"
     }
   ]
