@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-08T16:15:33+00:00",
+  "generatedAt": "2026-06-08T18:37:58+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 249,
+  "totalRows": 252,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -824,6 +824,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3701-26",
+      "client": "Kadima",
+      "city": "Woburn",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-29",
+      "endDate": "2026-07-29",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "4040-26",
       "client": "Thayer Associates",
       "city": "Boston",
@@ -1331,6 +1341,16 @@
       "phase": "Hand",
       "startDate": "2026-06-29",
       "endDate": "2026-06-29",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4017-26",
+      "client": "Wilder co",
+      "city": "Newton",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-07-28",
+      "endDate": "2026-07-29",
       "status": "Scheduled"
     },
     {
@@ -2031,6 +2051,16 @@
       "phase": "Paving",
       "startDate": "2026-06-30",
       "endDate": "2026-06-30",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4017-26",
+      "client": "Wilder co",
+      "city": "Newton",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-07-30",
+      "endDate": "2026-07-31",
       "status": "Scheduled"
     },
     {
