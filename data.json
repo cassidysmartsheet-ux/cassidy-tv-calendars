@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T18:37:58+00:00",
+  "generatedAt": "2026-06-08T21:05:30+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 252,
   "events": [
@@ -1334,6 +1334,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0349-26",
+      "client": "mass dot",
+      "city": "tewksbury",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-06-22",
+      "endDate": "2026-06-23",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3937-26",
       "client": "BXP - 33 Hayden Ave",
       "city": "Lexington",
@@ -2024,6 +2034,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0349-26",
+      "client": "mass dot",
+      "city": "tewksbury",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-25",
+      "endDate": "2026-06-26",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3792-26",
       "client": "Rapiscan",
       "city": "Billerica",
@@ -2381,6 +2401,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-07-20",
       "endDate": "2026-07-23",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0349-26",
+      "client": "mass dot",
+      "city": "tewksbury",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-06-24",
+      "endDate": "2026-06-24",
       "status": "Scheduled"
     },
     {
