@@ -1,18 +1,8 @@
 {
-  "generatedAt": "2026-06-08T12:05:11+00:00",
+  "generatedAt": "2026-06-08T16:15:33+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 244,
+  "totalRows": 249,
   "events": [
-    {
-      "jobNumber": "3395-25",
-      "client": "Hilton Hotel",
-      "city": "East Boston",
-      "crew": ".",
-      "phase": "Reclaim/Grading",
-      "startDate": "2026-06-25",
-      "endDate": "2026-06-25",
-      "status": "Scheduled"
-    },
     {
       "jobNumber": "3224-25",
       "client": "AAM15",
@@ -844,6 +834,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4028-26",
+      "client": "",
+      "city": "Haverhill",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-26",
+      "endDate": "2026-06-26",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3296-25",
       "client": "Wilder",
       "city": "North Andover",
@@ -1321,6 +1321,16 @@
       "phase": "Milling",
       "startDate": "2026-06-15",
       "endDate": "2026-06-15",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3937-26",
+      "client": "BXP - 33 Hayden Ave",
+      "city": "Lexington",
+      "crew": "Milling",
+      "phase": "Hand",
+      "startDate": "2026-06-29",
+      "endDate": "2026-06-29",
       "status": "Scheduled"
     },
     {
@@ -1994,6 +2004,36 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3792-26",
+      "client": "Rapiscan",
+      "city": "Billerica",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3395-25",
+      "client": "Hilton Hotel",
+      "city": "East Boston",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-29",
+      "endDate": "2026-06-29",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3937-26",
+      "client": "BXP - 33 Hayden Ave",
+      "city": "Lexington",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-30",
+      "endDate": "2026-06-30",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "2994-25",
       "client": "Berkley",
       "city": "Stoughton",
@@ -2324,6 +2364,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3792-26",
+      "client": "Rapiscan",
+      "city": "Billerica",
+      "crew": "Reclaim/Grading",
+      "phase": "Pulverizing",
+      "startDate": "2026-07-30",
+      "endDate": "2026-07-31",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3395-25",
+      "client": "Hilton Hotel",
+      "city": "East Boston",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-06-25",
+      "endDate": "2026-06-25",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "FJ-0223-26",
       "client": "MassPort",
       "city": "Boston",
@@ -2352,16 +2412,6 @@
       "startDate": "2026-05-15",
       "endDate": "2026-05-15",
       "status": "Complete"
-    },
-    {
-      "jobNumber": "3395-25",
-      "client": "Hilton Hotel",
-      "city": "East Boston",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-06-29",
-      "endDate": "2026-06-29",
-      "status": "Scheduled"
     }
   ]
 }
