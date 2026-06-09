@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-09T16:14:38+00:00",
+  "generatedAt": "2026-06-09T18:22:59+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 252,
+  "totalRows": 259,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -312,6 +312,16 @@
       "startDate": "2026-03-25",
       "endDate": "2026-03-25",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "3641-26",
+      "client": "Evergreen Management Group",
+      "city": "Hudson",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-02",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3644-26",
@@ -801,6 +811,16 @@
       "phase": "Paving",
       "startDate": "2026-06-18",
       "endDate": "2026-06-19",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3779-26",
+      "client": "Russo Brothers",
+      "city": "",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-11",
       "status": "Scheduled"
     },
     {
@@ -2004,6 +2024,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3779-26",
+      "client": "Russo Brothers",
+      "city": "",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-15",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3779-26",
+      "client": "Russo Brothers",
+      "city": "",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-17",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3869-26",
       "client": "Trinity Lutheran",
       "city": "Chelmsford",
@@ -2051,6 +2091,16 @@
       "phase": "Paving",
       "startDate": "2026-08-01",
       "endDate": "2026-08-01",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3729-26",
+      "client": "Russo Bros",
+      "city": "Westborough",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-24",
+      "endDate": "2026-08-25",
       "status": "Scheduled"
     },
     {
@@ -2179,7 +2229,7 @@
       "city": "Hudson",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-06-18",
+      "startDate": "2026-06-17",
       "endDate": "2026-06-19",
       "status": "Scheduled"
     },
@@ -2404,6 +2454,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3779-26",
+      "client": "Russo Brothers",
+      "city": "",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-14",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "FJ-0349-26",
       "client": "mass dot",
       "city": "tewksbury",
@@ -2411,6 +2471,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-06-24",
       "endDate": "2026-06-24",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3729-26",
+      "client": "Russo Bros",
+      "city": "Westborough",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-21",
       "status": "Scheduled"
     },
     {
