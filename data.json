@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-11T15:22:00+00:00",
+  "generatedAt": "2026-06-11T18:29:40+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 259,
+  "totalRows": 261,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -189,8 +189,8 @@
       "city": "Billerica",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-06",
-      "endDate": "2026-07-07",
+      "startDate": "2026-06-22",
+      "endDate": "2026-06-23",
       "status": "Scheduled"
     },
     {
@@ -2514,6 +2514,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3938-26",
+      "client": "SLT Construction",
+      "city": "Hyaniss",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "FJ-0223-26",
       "client": "MassPort",
       "city": "Boston",
@@ -2542,6 +2552,16 @@
       "startDate": "2026-05-15",
       "endDate": "2026-05-15",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "3938-26",
+      "client": "SLT Construction",
+      "city": "Hyaniss",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-09-14",
+      "endDate": "2026-09-18",
+      "status": "Scheduled"
     }
   ]
 }
