@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-12T17:55:18+00:00",
+  "generatedAt": "2026-06-12T20:09:14+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 261,
+  "totalRows": 265,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -824,6 +824,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0350-26",
+      "client": "pepperell",
+      "city": "pepperell",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-06-25",
+      "endDate": "2026-06-25",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3794-26",
       "client": "Macleod Construction",
       "city": "Lexington",
@@ -831,6 +841,16 @@
       "phase": "Paving",
       "startDate": "2026-06-24",
       "endDate": "2026-06-24",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3395-25",
+      "client": "Hilton Hotel",
+      "city": "East Boston",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-06-29",
+      "endDate": "2026-06-29",
       "status": "Scheduled"
     },
     {
@@ -871,6 +891,26 @@
       "phase": "Hand",
       "startDate": "2026-06-26",
       "endDate": "2026-06-26",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4017-26",
+      "client": "Wilder co",
+      "city": "Newton",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-07-17",
+      "endDate": "2026-07-17",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4017-26",
+      "client": "Wilder co",
+      "city": "Newton",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-20",
       "status": "Scheduled"
     },
     {
@@ -1364,6 +1404,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0350-26",
+      "client": "pepperell",
+      "city": "pepperell",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-06-24",
+      "endDate": "2026-06-24",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3937-26",
       "client": "BXP - 33 Hayden Ave",
       "city": "Lexington",
@@ -1379,8 +1429,18 @@
       "city": "Newton",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-07-28",
-      "endDate": "2026-07-29",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-16",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0374-26",
+      "client": "Hawthorne brook middle school",
+      "city": "townsend",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-06-25",
+      "endDate": "2026-06-26",
       "status": "Scheduled"
     },
     {
@@ -2104,16 +2164,6 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "3395-25",
-      "client": "Hilton Hotel",
-      "city": "East Boston",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-06-29",
-      "endDate": "2026-06-29",
-      "status": "Scheduled"
-    },
-    {
       "jobNumber": "3937-26",
       "client": "BXP - 33 Hayden Ave",
       "city": "Lexington",
@@ -2121,16 +2171,6 @@
       "phase": "Paving",
       "startDate": "2026-06-30",
       "endDate": "2026-06-30",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "4017-26",
-      "client": "Wilder co",
-      "city": "Newton",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-07-30",
-      "endDate": "2026-07-31",
       "status": "Scheduled"
     },
     {
@@ -2501,16 +2541,6 @@
       "phase": "Pulverizing",
       "startDate": "2026-07-30",
       "endDate": "2026-07-31",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3395-25",
-      "client": "Hilton Hotel",
-      "city": "East Boston",
-      "crew": "Reclaim/Grading",
-      "phase": "Reclaim/Grading",
-      "startDate": "2026-06-25",
-      "endDate": "2026-06-25",
       "status": "Scheduled"
     },
     {
