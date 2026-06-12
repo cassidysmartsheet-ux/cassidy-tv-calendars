@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T20:09:14+00:00",
+  "generatedAt": "2026-06-12T22:00:01+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 265,
   "events": [
@@ -1431,16 +1431,6 @@
       "phase": "Milling",
       "startDate": "2026-07-15",
       "endDate": "2026-07-16",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "FJ-0374-26",
-      "client": "Hawthorne brook middle school",
-      "city": "townsend",
-      "crew": "Milling",
-      "phase": "Milling",
-      "startDate": "2026-06-25",
-      "endDate": "2026-06-26",
       "status": "Scheduled"
     },
     {
