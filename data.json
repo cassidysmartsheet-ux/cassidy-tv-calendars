@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T17:58:41+00:00",
+  "generatedAt": "2026-06-13T19:47:15+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 265,
   "events": [
@@ -121,7 +121,7 @@
       "phase": "Hand",
       "startDate": "2026-03-27",
       "endDate": "2026-03-27",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0222-26",
@@ -131,7 +131,7 @@
       "phase": "Hand",
       "startDate": "2026-02-27",
       "endDate": "2026-02-27",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0222-26",
@@ -141,7 +141,7 @@
       "phase": "Hand",
       "startDate": "2026-04-17",
       "endDate": "2026-04-17",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0222-26",
@@ -151,7 +151,7 @@
       "phase": "Hand",
       "startDate": "2026-04-24",
       "endDate": "2026-04-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3330-25",
@@ -651,7 +651,7 @@
       "phase": "Paving",
       "startDate": "2026-06-12",
       "endDate": "2026-06-12",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0303-26",
@@ -711,7 +711,7 @@
       "phase": "Hand",
       "startDate": "2026-06-08",
       "endDate": "2026-06-08",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3931-26",
@@ -721,7 +721,7 @@
       "phase": "Hand",
       "startDate": "2026-06-11",
       "endDate": "2026-06-11",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3932-26",
@@ -751,7 +751,7 @@
       "phase": "Hand",
       "startDate": "2026-06-09",
       "endDate": "2026-06-09",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3583-26",
@@ -771,7 +771,7 @@
       "phase": "Hand",
       "startDate": "2026-06-05",
       "endDate": "2026-06-05",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3925-26",
@@ -861,7 +861,7 @@
       "phase": "Hand",
       "startDate": "2026-06-10",
       "endDate": "2026-06-10",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3701-26",
@@ -881,7 +881,7 @@
       "phase": "Hand",
       "startDate": "2026-06-11",
       "endDate": "2026-06-11",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4028-26",
@@ -1301,7 +1301,7 @@
       "phase": "Milling",
       "startDate": "2026-06-13",
       "endDate": "2026-06-13",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0312-26",
@@ -1331,7 +1331,7 @@
       "phase": "Milling",
       "startDate": "2026-06-03",
       "endDate": "2026-06-03",
-      "status": "Complete"
+      "status": "Scheduled"
     },
     {
       "jobNumber": "FJ-0316-26",
@@ -1381,7 +1381,7 @@
       "phase": "Milling",
       "startDate": "2026-06-11",
       "endDate": "2026-06-12",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3960-26",
@@ -1891,7 +1891,7 @@
       "phase": "Paving",
       "startDate": "2026-06-11",
       "endDate": "2026-06-11",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3936-26",
@@ -1951,7 +1951,7 @@
       "phase": "Paving",
       "startDate": "2026-06-04",
       "endDate": "2026-06-04",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0313-26",
@@ -1971,7 +1971,7 @@
       "phase": "Paving",
       "startDate": "2026-06-10",
       "endDate": "2026-06-10",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0314-26",
@@ -1981,7 +1981,7 @@
       "phase": "Paving",
       "startDate": "2026-06-08",
       "endDate": "2026-06-08",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0315-26",
@@ -2001,7 +2001,7 @@
       "phase": "Paving",
       "startDate": "2026-06-08",
       "endDate": "2026-06-08",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0317-26",
@@ -2011,7 +2011,7 @@
       "phase": "Paving",
       "startDate": "2026-06-02",
       "endDate": "2026-06-02",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0318-26",
@@ -2021,7 +2021,7 @@
       "phase": "Paving",
       "startDate": "2026-06-02",
       "endDate": "2026-06-02",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0318-26",
@@ -2031,7 +2031,7 @@
       "phase": "Paving",
       "startDate": "2026-06-03",
       "endDate": "2026-06-03",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3650-26",
@@ -2171,7 +2171,7 @@
       "phase": "Hand",
       "startDate": "2026-06-04",
       "endDate": "2026-06-04",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3452-25",
@@ -2401,7 +2401,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-06-08",
       "endDate": "2026-06-10",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0303-26",
@@ -2451,7 +2451,7 @@
       "phase": "Hand",
       "startDate": "2026-06-05",
       "endDate": "2026-06-05",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3650-26",
