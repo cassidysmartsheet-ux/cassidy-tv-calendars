@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-16T15:28:56+00:00",
+  "generatedAt": "2026-06-16T19:04:09+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 270,
+  "totalRows": 278,
   "events": [
     {
       "jobNumber": "3224-25",
@@ -921,6 +921,66 @@
       "phase": "Paving",
       "startDate": "2026-07-20",
       "endDate": "2026-07-20",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4013-26",
+      "client": "Hub",
+      "city": "Wilmington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-21",
+      "endDate": "2026-07-22",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4012-26",
+      "client": "Hub",
+      "city": "Wilmington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-22",
+      "endDate": "2026-07-22",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4011-26",
+      "client": "Hub",
+      "city": "Wilmington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-23",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4006-26",
+      "client": "",
+      "city": "Wilmington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-23",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4005-26",
+      "client": "Hub",
+      "city": "Wilmington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-23",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4087-26",
+      "client": "RMP Emory rd LLC",
+      "city": "attleboro",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-30",
+      "endDate": "2026-06-30",
       "status": "Scheduled"
     },
     {
@@ -2194,6 +2254,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4095-26",
+      "client": "Silva Associates Poroperty Management",
+      "city": "Andover",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-29",
+      "endDate": "2026-06-29",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "2994-25",
       "client": "Berkley",
       "city": "Stoughton",
@@ -2571,6 +2641,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-09-08",
       "endDate": "2026-09-11",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4095-26",
+      "client": "Silva Associates Poroperty Management",
+      "city": "Andover",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-06-25",
+      "endDate": "2026-06-26",
       "status": "Scheduled"
     },
     {
