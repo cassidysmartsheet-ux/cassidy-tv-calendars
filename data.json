@@ -1,18 +1,8 @@
 {
-  "generatedAt": "2026-06-18T17:29:30+00:00",
+  "generatedAt": "2026-06-18T19:40:29+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 278,
+  "totalRows": 260,
   "events": [
-    {
-      "jobNumber": "3224-25",
-      "client": "AAM15",
-      "city": "Portsmouth",
-      "crew": "Crackfill",
-      "phase": "Crackfill",
-      "startDate": "2026-04-27",
-      "endDate": "2026-04-27",
-      "status": "Scheduled"
-    },
     {
       "jobNumber": "3330-25",
       "client": "PMA - Brickett Hill",
@@ -44,54 +34,14 @@
       "status": "Complete"
     },
     {
-      "jobNumber": "2820-25",
-      "client": "Davis commons",
-      "city": "Brockton",
+      "jobNumber": "2994-25",
+      "client": "Berkley",
+      "city": "Stoughton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-05-18",
-      "endDate": "2026-05-18",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "2820-25",
-      "client": "Davis commons",
-      "city": "Brockton",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-05-19",
-      "endDate": "2026-05-19",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "2820-25",
-      "client": "Davis commons",
-      "city": "Brockton",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-05-20",
-      "endDate": "2026-05-20",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "2820-25",
-      "client": "Davis commons",
-      "city": "Brockton",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-05-21",
-      "endDate": "2026-05-21",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "2820-25",
-      "client": "Davis commons",
-      "city": "Brockton",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-05-22",
-      "endDate": "2026-05-22",
-      "status": "Complete"
+      "startDate": "2026-06-22",
+      "endDate": "2026-06-22",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "2932-25",
@@ -101,56 +51,6 @@
       "phase": "Hand",
       "startDate": "2026-04-10",
       "endDate": "2026-04-10",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "3224-25",
-      "client": "AAM15",
-      "city": "Portsmouth",
-      "crew": "Hand",
-      "phase": "Paving",
-      "startDate": "2026-04-09",
-      "endDate": "2026-04-09",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "FJ-0222-26",
-      "client": "Medford DPW",
-      "city": "",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-03-27",
-      "endDate": "2026-03-27",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "FJ-0222-26",
-      "client": "Medford DPW",
-      "city": "",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-02-27",
-      "endDate": "2026-02-27",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "FJ-0222-26",
-      "client": "Medford DPW",
-      "city": "",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-04-17",
-      "endDate": "2026-04-17",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "FJ-0222-26",
-      "client": "Medford DPW",
-      "city": "",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-24",
       "status": "Complete"
     },
     {
@@ -189,8 +89,8 @@
       "city": "Billerica",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-06-22",
-      "endDate": "2026-06-23",
+      "startDate": "2026-07-13",
+      "endDate": "2026-07-14",
       "status": "Scheduled"
     },
     {
@@ -984,36 +884,6 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "3296-25",
-      "client": "Wilder",
-      "city": "North Andover",
-      "crew": "Milling",
-      "phase": "",
-      "startDate": "2026-04-27",
-      "endDate": "2026-04-29",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "2820-25",
-      "client": "Davis commons",
-      "city": "Brockton",
-      "crew": "Milling",
-      "phase": "Milling",
-      "startDate": "2026-04-13",
-      "endDate": "2026-04-15",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "3442-25",
-      "client": "GEN3RE",
-      "city": "South Easton",
-      "crew": "Milling",
-      "phase": "Milling",
-      "startDate": "2026-05-07",
-      "endDate": "2026-05-07",
-      "status": "Complete"
-    },
-    {
       "jobNumber": "3194-25",
       "client": "Gemini - Greenbriar",
       "city": "North Reading",
@@ -1022,16 +892,6 @@
       "startDate": "2026-08-03",
       "endDate": "2026-08-04",
       "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3299-25",
-      "client": "ISGL TEMPLE",
-      "city": "Chelmsford",
-      "crew": "Milling",
-      "phase": "Milling",
-      "startDate": "2026-04-16",
-      "endDate": "2026-04-16",
-      "status": "Complete"
     },
     {
       "jobNumber": "3452-25",
@@ -1514,26 +1374,6 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "3296-25",
-      "client": "Wilder",
-      "city": "North Andover",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-01",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "3296-25",
-      "client": "Wilder",
-      "city": "North Andover",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-05-04",
-      "endDate": "2026-05-05",
-      "status": "Complete"
-    },
-    {
       "jobNumber": "3112-25",
       "client": "CW Contracting",
       "city": "West Roxbury",
@@ -1554,16 +1394,6 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "2820-25",
-      "client": "Davis commons",
-      "city": "Brockton",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-05-20",
-      "endDate": "2026-05-22",
-      "status": "Complete"
-    },
-    {
       "jobNumber": "3442-25",
       "client": "GEN3RE",
       "city": "South Easton",
@@ -1582,16 +1412,6 @@
       "startDate": "2026-08-05",
       "endDate": "2026-08-06",
       "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3299-25",
-      "client": "ISGL TEMPLE",
-      "city": "Chelmsford",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-04-22",
-      "endDate": "2026-04-22",
-      "status": "Complete"
     },
     {
       "jobNumber": "3452-25",
