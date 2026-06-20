@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-20T15:16:36+00:00",
+  "generatedAt": "2026-06-20T16:55:05+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 182,
+  "totalRows": 185,
   "events": [
     {
       "jobNumber": "FJ-0303-26",
@@ -361,7 +361,7 @@
       "phase": "Hand",
       "startDate": "2026-06-17",
       "endDate": "2026-06-17",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3650-26",
@@ -371,7 +371,7 @@
       "phase": "Hand",
       "startDate": "2026-06-15",
       "endDate": "2026-06-15",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3869-26",
@@ -411,16 +411,6 @@
       "phase": "Paving",
       "startDate": "2026-06-25",
       "endDate": "2026-06-25",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3794-26",
-      "client": "Macleod Construction",
-      "city": "Lexington",
-      "crew": "Hand",
-      "phase": "Paving",
-      "startDate": "2026-06-24",
-      "endDate": "2026-06-24",
       "status": "Scheduled"
     },
     {
@@ -551,6 +541,36 @@
       "phase": "Hand",
       "startDate": "2026-06-30",
       "endDate": "2026-06-30",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4030-26",
+      "client": "Gold Properties",
+      "city": "Billerica",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-22",
+      "endDate": "2026-06-22",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4086-26",
+      "client": "FOXFIELD LLC",
+      "city": "Northborough,",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-26",
+      "endDate": "2026-06-26",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4031-26",
+      "client": "FOXFIELD LLC",
+      "city": "Andover",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-26",
+      "endDate": "2026-06-26",
       "status": "Scheduled"
     },
     {
@@ -1091,7 +1111,7 @@
       "phase": "Paving",
       "startDate": "2026-06-19",
       "endDate": "2026-06-19",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0310-26",
@@ -1101,7 +1121,7 @@
       "phase": "Paving",
       "startDate": "2026-05-29",
       "endDate": "2026-05-29",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0310-26",
@@ -1111,7 +1131,7 @@
       "phase": "Paving",
       "startDate": "2026-06-09",
       "endDate": "2026-06-09",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0312-26",
@@ -1221,7 +1241,7 @@
       "phase": "Paving",
       "startDate": "2026-06-16",
       "endDate": "2026-06-17",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3747-26",
@@ -1241,7 +1261,7 @@
       "phase": "Paving",
       "startDate": "2026-06-18",
       "endDate": "2026-06-18",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3779-26",
@@ -1291,6 +1311,16 @@
       "phase": "Paving",
       "startDate": "2026-06-25",
       "endDate": "2026-06-26",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3794-26",
+      "client": "Macleod Construction",
+      "city": "Lexington",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-24",
+      "endDate": "2026-06-24",
       "status": "Scheduled"
     },
     {
