@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-20T19:55:16+00:00",
+  "generatedAt": "2026-06-20T21:17:50+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 185,
+  "totalRows": 188,
   "events": [
     {
       "jobNumber": "FJ-0303-26",
@@ -31,6 +31,26 @@
       "phase": "Hand",
       "startDate": "2026-06-24",
       "endDate": "2026-06-24",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "2994-25",
+      "client": "Berkley",
+      "city": "Stoughton",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-25",
+      "endDate": "2026-06-25",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "2994-25",
+      "client": "Berkley",
+      "city": "Stoughton",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-29",
+      "endDate": "2026-06-29",
       "status": "Scheduled"
     },
     {
@@ -149,8 +169,8 @@
       "city": "Allston",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-24",
-      "endDate": "2026-07-24",
+      "startDate": "2026-09-04",
+      "endDate": "2026-09-04",
       "status": "Scheduled"
     },
     {
@@ -404,16 +424,6 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "FJ-0350-26",
-      "client": "pepperell",
-      "city": "pepperell",
-      "crew": "Hand",
-      "phase": "Paving",
-      "startDate": "2026-06-25",
-      "endDate": "2026-06-25",
-      "status": "Scheduled"
-    },
-    {
       "jobNumber": "3395-25",
       "client": "Hilton Hotel",
       "city": "East Boston",
@@ -489,8 +499,8 @@
       "city": "Wilmington",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-21",
-      "endDate": "2026-07-22",
+      "startDate": "2026-07-22",
+      "endDate": "2026-07-23",
       "status": "Scheduled"
     },
     {
@@ -499,8 +509,8 @@
       "city": "Wilmington",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-22",
-      "endDate": "2026-07-22",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-23",
       "status": "Scheduled"
     },
     {
@@ -509,8 +519,8 @@
       "city": "Wilmington",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-23",
-      "endDate": "2026-07-23",
+      "startDate": "2026-07-24",
+      "endDate": "2026-07-24",
       "status": "Scheduled"
     },
     {
@@ -519,8 +529,8 @@
       "city": "Wilmington",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-23",
-      "endDate": "2026-07-23",
+      "startDate": "2026-07-24",
+      "endDate": "2026-07-24",
       "status": "Scheduled"
     },
     {
@@ -529,8 +539,8 @@
       "city": "Wilmington",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-23",
-      "endDate": "2026-07-23",
+      "startDate": "2026-07-24",
+      "endDate": "2026-07-24",
       "status": "Scheduled"
     },
     {
@@ -571,6 +581,16 @@
       "phase": "Hand",
       "startDate": "2026-06-26",
       "endDate": "2026-06-26",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3964-26",
+      "client": "PMA - Stone castle",
+      "city": "Methuen",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-10",
       "status": "Scheduled"
     },
     {
@@ -1314,6 +1334,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0350-26",
+      "client": "pepperell",
+      "city": "pepperell",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-06-29",
+      "endDate": "2026-06-29",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3794-26",
       "client": "Macleod Construction",
       "city": "Lexington",
@@ -1379,8 +1409,8 @@
       "city": "Andover",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-06-29",
-      "endDate": "2026-06-29",
+      "startDate": "2026-06-30",
+      "endDate": "2026-06-30",
       "status": "Scheduled"
     },
     {
