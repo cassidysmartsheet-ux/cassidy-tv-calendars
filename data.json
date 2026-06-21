@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-21T12:30:35+00:00",
+  "generatedAt": "2026-06-21T14:58:41+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 188,
+  "totalRows": 189,
   "events": [
     {
       "jobNumber": "FJ-0303-26",
@@ -321,7 +321,7 @@
       "phase": "Hand",
       "startDate": "2026-06-16",
       "endDate": "2026-06-16",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3933-26",
@@ -331,7 +331,7 @@
       "phase": "Hand",
       "startDate": "2026-06-16",
       "endDate": "2026-06-16",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3976-26",
@@ -411,7 +411,7 @@
       "phase": "Paving",
       "startDate": "2026-06-18",
       "endDate": "2026-06-19",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3779-26",
@@ -841,7 +841,7 @@
       "phase": "Milling",
       "startDate": "2026-06-15",
       "endDate": "2026-06-15",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0349-26",
@@ -1122,6 +1122,16 @@
       "startDate": "2026-07-03",
       "endDate": "2026-07-03",
       "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0309-26",
+      "client": "Massachusetts Trial Court",
+      "city": "Somerville",
+      "crew": "Paving",
+      "phase": "Hand",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-19",
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0309-26",
@@ -1721,7 +1731,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-17",
       "endDate": "2026-08-21",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3794-26",
