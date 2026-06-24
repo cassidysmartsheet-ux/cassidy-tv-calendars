@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-23T23:16:12+00:00",
+  "generatedAt": "2026-06-24T00:13:33+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 206,
+  "totalRows": 205,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -141,6 +141,16 @@
       "phase": "Hand",
       "startDate": "2026-03-08",
       "endDate": "2026-03-08",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "3641-26",
+      "client": "Evergreen Management Group",
+      "city": "Hudson",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-01",
       "status": "Complete"
     },
     {
@@ -641,16 +651,6 @@
       "phase": "Paving",
       "startDate": "2026-07-02",
       "endDate": "2026-07-02",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "4064-26",
-      "client": "Current Path Consulting",
-      "city": "Bedford",
-      "crew": "Hand",
-      "phase": "Paving",
-      "startDate": "2026-07-06",
-      "endDate": "2026-07-06",
       "status": "Scheduled"
     },
     {
@@ -1941,16 +1941,6 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-09-14",
       "endDate": "2026-09-15",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "4064-26",
-      "client": "Current Path Consulting",
-      "city": "Bedford",
-      "crew": "Reclaim/Grading",
-      "phase": "Reclaim/Grading",
-      "startDate": "2026-07-02",
-      "endDate": "2026-07-02",
       "status": "Scheduled"
     },
     {
