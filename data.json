@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T18:38:16+00:00",
+  "generatedAt": "2026-06-27T19:56:37+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 205,
+  "totalRows": 206,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -32,6 +32,16 @@
       "startDate": "2026-05-18",
       "endDate": "2026-05-18",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "2994-25",
+      "client": "Berkley",
+      "city": "Stoughton",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-29",
+      "endDate": "2026-06-29",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "2994-25",
@@ -1019,8 +1029,8 @@
       "city": "Stoughton",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-02",
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-01",
       "status": "Scheduled"
     },
     {
