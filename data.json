@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T21:05:54+00:00",
+  "generatedAt": "2026-06-27T22:14:17+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 206,
+  "totalRows": 208,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -142,26 +142,6 @@
       "startDate": "2026-07-01",
       "endDate": "2026-07-01",
       "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3617-26",
-      "client": "Evergreen Mgt",
-      "city": "Manchester",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-03-08",
-      "endDate": "2026-03-08",
-      "status": "Complete"
-    },
-    {
-      "jobNumber": "3641-26",
-      "client": "Evergreen Management Group",
-      "city": "Hudson",
-      "crew": "Hand",
-      "phase": "Paving",
-      "startDate": "2026-01-01",
-      "endDate": "2026-01-01",
-      "status": "Complete"
     },
     {
       "jobNumber": "3655-26",
@@ -674,6 +654,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4124-26",
+      "client": "Keypoint Partners",
+      "city": "Littleton",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-01",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3194-25",
       "client": "Gemini - Greenbriar",
       "city": "North Reading",
@@ -941,7 +931,7 @@
       "phase": "Milling",
       "startDate": "2026-06-22",
       "endDate": "2026-06-22",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0349-26",
@@ -951,7 +941,7 @@
       "phase": "Milling",
       "startDate": "2026-06-24",
       "endDate": "2026-06-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0350-26",
@@ -1072,6 +1062,26 @@
       "startDate": "2026-06-23",
       "endDate": "2026-06-23",
       "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3617-26",
+      "client": "Evergreen Mgt",
+      "city": "Manchester",
+      "crew": "Paving",
+      "phase": "Hand",
+      "startDate": "2026-03-08",
+      "endDate": "2026-03-08",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "3641-26",
+      "client": "Evergreen Management Group",
+      "city": "Hudson",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-01",
+      "status": "Complete"
     },
     {
       "jobNumber": "3695-26",
@@ -1480,7 +1490,17 @@
       "crew": "Paving",
       "phase": "Paving",
       "startDate": "2026-06-25",
-      "endDate": "2026-06-26",
+      "endDate": "2026-06-25",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "FJ-0349-26",
+      "client": "mass dot",
+      "city": "tewksbury",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-01",
       "status": "Scheduled"
     },
     {
@@ -1891,7 +1911,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-06-24",
       "endDate": "2026-06-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3729-26",
