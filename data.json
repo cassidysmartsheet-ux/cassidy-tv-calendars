@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T19:42:53+00:00",
+  "generatedAt": "2026-06-28T20:45:10+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 208,
   "events": [
@@ -461,7 +461,7 @@
       "phase": "Paving",
       "startDate": "2026-06-24",
       "endDate": "2026-06-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3970-26",
@@ -621,7 +621,7 @@
       "phase": "Hand",
       "startDate": "2026-06-26",
       "endDate": "2026-06-26",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4031-26",
@@ -631,7 +631,7 @@
       "phase": "Hand",
       "startDate": "2026-06-26",
       "endDate": "2026-06-26",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3965-26",
