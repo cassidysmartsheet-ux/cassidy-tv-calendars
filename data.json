@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T18:23:27+00:00",
+  "generatedAt": "2026-06-29T20:21:08+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 209,
   "events": [
@@ -499,8 +499,8 @@
       "city": "Haverhill",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-06-26",
-      "endDate": "2026-06-26",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-10",
       "status": "Scheduled"
     },
     {
@@ -659,8 +659,8 @@
       "city": "Littleton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-01",
-      "endDate": "2026-07-01",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-02",
       "status": "Scheduled"
     },
     {
@@ -999,8 +999,8 @@
       "city": "Southborough",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-07-09",
-      "endDate": "2026-07-09",
+      "startDate": "2026-09-02",
+      "endDate": "2026-09-02",
       "status": "Scheduled"
     },
     {
@@ -1009,8 +1009,8 @@
       "city": "West Roxbury",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-12-04",
-      "endDate": "2026-12-04",
+      "startDate": "2026-07-30",
+      "endDate": "2026-07-30",
       "status": "Scheduled"
     },
     {
@@ -1599,8 +1599,8 @@
       "city": "Southborough",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-07-10",
-      "endDate": "2026-07-10",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-03",
       "status": "Scheduled"
     },
     {
