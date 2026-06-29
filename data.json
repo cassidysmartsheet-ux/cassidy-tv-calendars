@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T22:42:53+00:00",
+  "generatedAt": "2026-06-29T23:43:03+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 209,
   "events": [
@@ -109,8 +109,8 @@
       "city": "Natick",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-07",
-      "endDate": "2026-07-10",
+      "startDate": "2026-07-09",
+      "endDate": "2026-07-09",
       "status": "Scheduled"
     },
     {
