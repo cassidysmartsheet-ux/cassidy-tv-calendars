@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T16:11:29+00:00",
+  "generatedAt": "2026-06-29T18:23:27+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 208,
+  "totalRows": 209,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -72,6 +72,16 @@
       "startDate": "2026-04-10",
       "endDate": "2026-04-10",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "3476-25",
+      "client": "The Guild of human services",
+      "city": "Billerica",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-13",
+      "endDate": "2026-07-13",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3617-26",
@@ -1034,16 +1044,6 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "3476-25",
-      "client": "The Guild of human services",
-      "city": "Billerica",
-      "crew": "Paving",
-      "phase": "Hand",
-      "startDate": "2026-07-02",
-      "endDate": "2026-07-02",
-      "status": "Scheduled"
-    },
-    {
       "jobNumber": "FJ-0229-26",
       "client": "Natick",
       "city": "Natick",
@@ -1614,6 +1614,16 @@
       "status": "Complete"
     },
     {
+      "jobNumber": "2994-25",
+      "client": "Berkley",
+      "city": "Stoughton",
+      "crew": "Reclaim/Grading",
+      "phase": "Pulverizing",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-02",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3452-25",
       "client": "Leewood realty",
       "city": "Haverhill",
@@ -1650,7 +1660,7 @@
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
       "startDate": "2026-06-29",
-      "endDate": "2026-06-30",
+      "endDate": "2026-07-01",
       "status": "Scheduled"
     },
     {
