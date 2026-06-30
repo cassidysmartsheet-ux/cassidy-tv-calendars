@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T16:52:50+00:00",
+  "generatedAt": "2026-06-30T18:29:44+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 211,
+  "totalRows": 212,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -141,6 +141,16 @@
       "phase": "Hand",
       "startDate": "2026-07-01",
       "endDate": "2026-07-01",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3641-26",
+      "client": "Evergreen Management Group",
+      "city": "Hudson",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-06",
+      "endDate": "2026-07-06",
       "status": "Scheduled"
     },
     {
