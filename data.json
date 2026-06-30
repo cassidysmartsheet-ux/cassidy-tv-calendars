@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T23:43:03+00:00",
+  "generatedAt": "2026-06-30T01:50:31+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 209,
+  "totalRows": 211,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -454,6 +454,16 @@
       "status": "Complete"
     },
     {
+      "jobNumber": "3701-26",
+      "client": "Kadima",
+      "city": "Woburn",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-07-18",
+      "endDate": "2026-07-18",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3395-25",
       "client": "Hilton Hotel",
       "city": "East Boston",
@@ -479,8 +489,8 @@
       "city": "Woburn",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-29",
-      "endDate": "2026-07-29",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-08",
       "status": "Scheduled"
     },
     {
@@ -1048,6 +1058,26 @@
       "client": "Natick",
       "city": "Natick",
       "crew": "Paving",
+      "phase": "Hand",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-08",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0229-26",
+      "client": "Natick",
+      "city": "Natick",
+      "crew": "Paving",
+      "phase": "Hand",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-10",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0229-26",
+      "client": "Natick",
+      "city": "Natick",
+      "crew": "Paving",
       "phase": "Paving",
       "startDate": "2026-07-28",
       "endDate": "2026-07-29",
@@ -1531,16 +1561,6 @@
       "phase": "Paving",
       "startDate": "2026-08-24",
       "endDate": "2026-08-25",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3701-26",
-      "client": "Kadima",
-      "city": "Woburn",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-07-08",
-      "endDate": "2026-07-08",
       "status": "Scheduled"
     },
     {
