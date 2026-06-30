@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T20:31:15+00:00",
+  "generatedAt": "2026-06-30T22:00:48+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 212,
+  "totalRows": 211,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -141,16 +141,6 @@
       "phase": "Hand",
       "startDate": "2026-07-01",
       "endDate": "2026-07-01",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3641-26",
-      "client": "Evergreen Management Group",
-      "city": "Hudson",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-07-06",
-      "endDate": "2026-07-06",
       "status": "Scheduled"
     },
     {
@@ -464,16 +454,6 @@
       "status": "Complete"
     },
     {
-      "jobNumber": "3701-26",
-      "client": "Kadima",
-      "city": "Woburn",
-      "crew": "Hand",
-      "phase": "Paving",
-      "startDate": "2026-07-18",
-      "endDate": "2026-07-18",
-      "status": "Scheduled"
-    },
-    {
       "jobNumber": "3395-25",
       "client": "Hilton Hotel",
       "city": "East Boston",
@@ -499,8 +479,8 @@
       "city": "Woburn",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-08",
-      "endDate": "2026-07-08",
+      "startDate": "2026-07-11",
+      "endDate": "2026-07-11",
       "status": "Scheduled"
     },
     {
@@ -1104,6 +1084,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3641-26",
+      "client": "Evergreen Management Group",
+      "city": "Hudson",
+      "crew": "Paving",
+      "phase": "Hand",
+      "startDate": "2026-07-06",
+      "endDate": "2026-07-06",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3617-26",
       "client": "Evergreen Mgt",
       "city": "Manchester",
@@ -1579,8 +1569,8 @@
       "city": "Woburn",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-07-11",
-      "endDate": "2026-07-11",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-25",
       "status": "Scheduled"
     },
     {
