@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T15:32:39+00:00",
+  "generatedAt": "2026-07-01T17:31:35+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 221,
+  "totalRows": 223,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -61,6 +61,16 @@
       "phase": "Hand",
       "startDate": "2026-06-26",
       "endDate": "2026-06-26",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3194-25",
+      "client": "Gemini - Greenbriar",
+      "city": "North Reading",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-08-05",
+      "endDate": "2026-08-06",
       "status": "Scheduled"
     },
     {
@@ -699,8 +709,8 @@
       "city": "Littleton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-02",
-      "endDate": "2026-07-02",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-15",
       "status": "Scheduled"
     },
     {
@@ -1054,6 +1064,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3445-25",
+      "client": "JLL",
+      "city": "Wilmington",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-07-30",
+      "endDate": "2026-08-01",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3264-25",
       "client": "JLL-Wilmington",
       "city": "Wilmington",
@@ -1081,16 +1101,6 @@
       "phase": "Paving",
       "startDate": "2026-07-31",
       "endDate": "2026-08-01",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3194-25",
-      "client": "Gemini - Greenbriar",
-      "city": "North Reading",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-08-05",
-      "endDate": "2026-08-06",
       "status": "Scheduled"
     },
     {
@@ -1671,6 +1681,16 @@
       "phase": "Paving",
       "startDate": "2026-08-11",
       "endDate": "2026-08-11",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3445-25",
+      "client": "JLL",
+      "city": "Wilmington",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-05",
+      "endDate": "2026-08-06",
       "status": "Scheduled"
     },
     {
