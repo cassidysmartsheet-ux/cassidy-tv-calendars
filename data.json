@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-03T13:06:28+00:00",
+  "generatedAt": "2026-07-03T15:23:13+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 223,
+  "totalRows": 228,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -242,6 +242,16 @@
       "startDate": "2026-05-19",
       "endDate": "2026-05-19",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "3592-26",
+      "client": "Rl Construction",
+      "city": "Waltham",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-08-18",
+      "endDate": "2026-08-18",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3870-26",
@@ -724,6 +734,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3712-26",
+      "client": "Intergrated Site & Development",
+      "city": "Sunapee",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-07-16",
+      "endDate": "2026-07-16",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3194-25",
       "client": "Gemini - Greenbriar",
       "city": "North Reading",
@@ -1084,6 +1104,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3262-25",
+      "client": "JLL- Wilmington",
+      "city": "Wilmington",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-07",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3262-25",
+      "client": "JLL- Wilmington",
+      "city": "Wilmington",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-13",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3112-25",
       "client": "CW Contracting",
       "city": "West Roxbury",
@@ -1321,16 +1361,6 @@
       "phase": "Paving",
       "startDate": "2026-09-08",
       "endDate": "2026-09-10",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3592-26",
-      "client": "Rl Construction",
-      "city": "Waltham",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-08-18",
-      "endDate": "2026-08-18",
       "status": "Scheduled"
     },
     {
@@ -1701,6 +1731,16 @@
       "phase": "Paving",
       "startDate": "2026-08-03",
       "endDate": "2026-08-04",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3262-25",
+      "client": "JLL- Wilmington",
+      "city": "Wilmington",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-18",
+      "endDate": "2026-08-21",
       "status": "Scheduled"
     },
     {
@@ -2101,6 +2141,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-04",
       "endDate": "2026-08-04",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3712-26",
+      "client": "Intergrated Site & Development",
+      "city": "Sunapee",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-14",
       "status": "Scheduled"
     },
     {
