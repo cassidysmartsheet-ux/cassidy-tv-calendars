@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T16:37:48+00:00",
+  "generatedAt": "2026-07-04T17:42:16+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 228,
   "events": [
@@ -19,8 +19,8 @@
       "city": "Haverhill",
       "crew": "Crackfill",
       "phase": "Crackfill",
-      "startDate": "2026-07-03",
-      "endDate": "2026-07-03",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-07",
       "status": "Scheduled"
     },
     {
@@ -299,8 +299,8 @@
       "city": "Haverhill",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-03",
-      "endDate": "2026-07-03",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-07",
       "status": "Scheduled"
     },
     {
@@ -879,8 +879,8 @@
       "city": "Haverhill",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-07-03",
-      "endDate": "2026-07-03",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-07",
       "status": "Scheduled"
     },
     {
@@ -1389,8 +1389,8 @@
       "city": "Haverhill",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-07-03",
-      "endDate": "2026-07-03",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-07",
       "status": "Scheduled"
     },
     {
@@ -1969,8 +1969,8 @@
       "city": "Haverhill",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-07-03",
-      "endDate": "2026-07-03",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-07",
       "status": "Scheduled"
     },
     {
