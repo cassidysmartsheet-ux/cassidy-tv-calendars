@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T14:23:53+00:00",
+  "generatedAt": "2026-07-05T15:44:25+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 228,
   "events": [
@@ -151,7 +151,7 @@
       "phase": "Hand",
       "startDate": "2026-07-01",
       "endDate": "2026-07-01",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3655-26",
@@ -551,7 +551,7 @@
       "phase": "Paving",
       "startDate": "2026-06-30",
       "endDate": "2026-06-30",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3880-26",
@@ -641,7 +641,7 @@
       "phase": "Hand",
       "startDate": "2026-07-02",
       "endDate": "2026-07-02",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4030-26",
@@ -681,7 +681,7 @@
       "phase": "Paving",
       "startDate": "2026-07-02",
       "endDate": "2026-07-02",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4064-26",
@@ -1041,7 +1041,7 @@
       "phase": "Milling",
       "startDate": "2026-06-30",
       "endDate": "2026-07-02",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3937-26",
@@ -1051,7 +1051,7 @@
       "phase": "Hand",
       "startDate": "2026-06-29",
       "endDate": "2026-06-29",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3918-26",
@@ -1611,7 +1611,7 @@
       "phase": "Paving",
       "startDate": "2026-07-01",
       "endDate": "2026-07-01",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0350-26",
@@ -1621,7 +1621,7 @@
       "phase": "Paving",
       "startDate": "2026-06-29",
       "endDate": "2026-06-29",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3792-26",
@@ -1801,7 +1801,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-06-29",
       "endDate": "2026-07-01",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3705-26",
