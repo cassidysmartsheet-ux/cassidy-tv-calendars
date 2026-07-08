@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-08T21:21:43+00:00",
+  "generatedAt": "2026-07-08T22:29:14+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 235,
+  "totalRows": 237,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -504,6 +504,16 @@
       "status": "Complete"
     },
     {
+      "jobNumber": "3792-26",
+      "client": "Rapiscan",
+      "city": "Billerica",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3729-26",
       "client": "Russo Bros",
       "city": "Westborough",
@@ -721,7 +731,7 @@
       "phase": "Hand",
       "startDate": "2026-07-08",
       "endDate": "2026-07-08",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4035-26",
@@ -761,6 +771,16 @@
       "phase": "Paving",
       "startDate": "2026-07-16",
       "endDate": "2026-07-16",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "2765-25",
+      "client": "Gemini",
+      "city": "Salem",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-08-27",
+      "endDate": "2026-08-27",
       "status": "Scheduled"
     },
     {
@@ -1081,7 +1101,7 @@
       "phase": "Milling",
       "startDate": "2026-07-08",
       "endDate": "2026-07-08",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4017-26",
@@ -1194,6 +1214,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "2765-25",
+      "client": "Gemini",
+      "city": "Salem",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-08-25",
+      "endDate": "2026-08-25",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3112-25",
       "client": "CW Contracting",
       "city": "West Roxbury",
@@ -1271,7 +1301,7 @@
       "phase": "Hand",
       "startDate": "2026-07-06",
       "endDate": "2026-07-06",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3617-26",
@@ -1682,16 +1712,6 @@
       "startDate": "2026-06-29",
       "endDate": "2026-06-29",
       "status": "Complete"
-    },
-    {
-      "jobNumber": "3792-26",
-      "client": "Rapiscan",
-      "city": "Billerica",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-01",
-      "status": "Scheduled"
     },
     {
       "jobNumber": "3701-26",
@@ -2181,7 +2201,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-07-06",
       "endDate": "2026-07-07",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3938-26",
