@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-08T13:06:18+00:00",
+  "generatedAt": "2026-07-08T15:31:09+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 233,
+  "totalRows": 235,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -504,6 +504,16 @@
       "status": "Complete"
     },
     {
+      "jobNumber": "3729-26",
+      "client": "Russo Bros",
+      "city": "Westborough",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-08-24",
+      "endDate": "2026-08-25",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3395-25",
       "client": "Hilton Hotel",
       "city": "East Boston",
@@ -711,6 +721,16 @@
       "phase": "Hand",
       "startDate": "2026-07-08",
       "endDate": "2026-07-08",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4035-26",
+      "client": "Alfred Taney PE",
+      "city": "Salem",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-26",
       "status": "Scheduled"
     },
     {
@@ -1081,6 +1101,16 @@
       "phase": "Milling",
       "startDate": "2026-09-02",
       "endDate": "2026-09-02",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4035-26",
+      "client": "Alfred Taney PE",
+      "city": "Salem",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-08-24",
+      "endDate": "2026-08-24",
       "status": "Scheduled"
     },
     {
@@ -1661,16 +1691,6 @@
       "phase": "Paving",
       "startDate": "2026-08-01",
       "endDate": "2026-08-01",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3729-26",
-      "client": "Russo Bros",
-      "city": "Westborough",
-      "crew": "Paving",
-      "phase": "Paving",
-      "startDate": "2026-08-24",
-      "endDate": "2026-08-25",
       "status": "Scheduled"
     },
     {
