@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-09T20:22:06+00:00",
+  "generatedAt": "2026-07-09T21:53:13+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 237,
+  "totalRows": 238,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -91,7 +91,7 @@
       "phase": "Hand",
       "startDate": "2026-07-07",
       "endDate": "2026-07-08",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3617-26",
@@ -599,8 +599,18 @@
       "city": "Newton",
       "crew": "Hand",
       "phase": "Paving",
-      "startDate": "2026-07-20",
-      "endDate": "2026-07-20",
+      "startDate": "2026-08-28",
+      "endDate": "2026-08-28",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4017-26",
+      "client": "Wilder co",
+      "city": "Newton",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-08-31",
+      "endDate": "2026-08-31",
       "status": "Scheduled"
     },
     {
@@ -1084,6 +1094,16 @@
       "status": "Complete"
     },
     {
+      "jobNumber": "3296-25",
+      "client": "Wilder",
+      "city": "North Andover",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-27",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3937-26",
       "client": "BXP - 33 Hayden Ave",
       "city": "Lexington",
@@ -1102,16 +1122,6 @@
       "startDate": "2026-07-08",
       "endDate": "2026-07-08",
       "status": "Complete"
-    },
-    {
-      "jobNumber": "4017-26",
-      "client": "Wilder co",
-      "city": "Newton",
-      "crew": "Milling",
-      "phase": "Milling",
-      "startDate": "2026-07-15",
-      "endDate": "2026-07-16",
-      "status": "Scheduled"
     },
     {
       "jobNumber": "4059-26",
@@ -1734,9 +1744,9 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "4017-26",
-      "client": "Wilder co",
-      "city": "Newton",
+      "jobNumber": "3918-26",
+      "client": "Silva Associates poroperty Management",
+      "city": "Tewksbury",
       "crew": "Paving",
       "phase": "Paving",
       "startDate": "2026-07-17",
