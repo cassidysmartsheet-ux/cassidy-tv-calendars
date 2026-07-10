@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-10T17:27:24+00:00",
+  "generatedAt": "2026-07-10T19:03:55+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 238,
+  "totalRows": 240,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -1259,7 +1259,7 @@
       "city": "Haverhill",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-07-13",
+      "startDate": "2026-07-16",
       "endDate": "2026-07-16",
       "status": "Scheduled"
     },
@@ -2149,8 +2149,8 @@
       "city": "Nashua",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-07-20",
-      "endDate": "2026-07-23",
+      "startDate": "2026-08-05",
+      "endDate": "2026-08-08",
       "status": "Scheduled"
     },
     {
@@ -2251,6 +2251,26 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-04",
       "endDate": "2026-08-04",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3981-26",
+      "client": "City Sealcoating",
+      "city": "Leominster",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-16",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3981-26",
+      "client": "City Sealcoating",
+      "city": "Leominster",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-24",
       "status": "Scheduled"
     },
     {
