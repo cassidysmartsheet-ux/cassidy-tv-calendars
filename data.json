@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-10T19:03:55+00:00",
+  "generatedAt": "2026-07-10T20:39:31+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 240,
+  "totalRows": 241,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -82,6 +82,16 @@
       "startDate": "2026-04-10",
       "endDate": "2026-04-10",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "3452-25",
+      "client": "Leewood realty",
+      "city": "Haverhill",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-07-13",
+      "endDate": "2026-07-15",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3476-25",
@@ -759,8 +769,8 @@
       "city": "Littleton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-15",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-17",
+      "endDate": "2026-07-17",
       "status": "Scheduled"
     },
     {
