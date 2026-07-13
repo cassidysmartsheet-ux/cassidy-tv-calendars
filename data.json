@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-13T22:27:50+00:00",
+  "generatedAt": "2026-07-13T23:26:57+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 252,
+  "totalRows": 253,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -779,8 +779,8 @@
       "city": "Littleton",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-17",
-      "endDate": "2026-07-17",
+      "startDate": "2026-07-16",
+      "endDate": "2026-07-16",
       "status": "Scheduled"
     },
     {
@@ -851,6 +851,16 @@
       "phase": "Paving",
       "startDate": "2026-10-05",
       "endDate": "2026-10-06",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3589-26",
+      "client": "Uni-cast llc",
+      "city": "Londonderry",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-31",
+      "endDate": "2026-07-31",
       "status": "Scheduled"
     },
     {
