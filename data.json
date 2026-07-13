@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-13T20:22:58+00:00",
+  "generatedAt": "2026-07-13T21:26:28+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 244,
+  "totalRows": 245,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -2311,6 +2311,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-07-29",
       "endDate": "2026-07-29",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3996-26",
+      "client": "",
+      "city": "Everett",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-02",
       "status": "Scheduled"
     },
     {
