@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-13T10:40:03+00:00",
+  "generatedAt": "2026-07-13T13:03:49+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 241,
+  "totalRows": 243,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -131,7 +131,7 @@
       "phase": "Hand",
       "startDate": "2026-07-09",
       "endDate": "2026-07-09",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0229-26",
@@ -141,6 +141,16 @@
       "phase": "Hand",
       "startDate": "2026-07-15",
       "endDate": "2026-07-16",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0229-26",
+      "client": "Natick",
+      "city": "Natick",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-20",
       "status": "Scheduled"
     },
     {
@@ -561,7 +571,7 @@
       "phase": "Hand",
       "startDate": "2026-07-11",
       "endDate": "2026-07-11",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4040-26",
@@ -581,7 +591,7 @@
       "phase": "Hand",
       "startDate": "2026-07-10",
       "endDate": "2026-07-10",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3937-26",
@@ -691,7 +701,7 @@
       "phase": "Hand",
       "startDate": "2026-07-10",
       "endDate": "2026-07-10",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4086-26",
@@ -794,6 +804,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4115-26",
+      "client": "EQT- 27 Otis Street",
+      "city": "Westborough",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-17",
+      "endDate": "2026-07-17",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "2765-25",
       "client": "Gemini",
       "city": "Salem",
@@ -821,7 +841,7 @@
       "phase": "Milling",
       "startDate": "2026-07-06",
       "endDate": "2026-07-06",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3344-25",
@@ -1751,7 +1771,7 @@
       "phase": "Paving",
       "startDate": "2026-07-09",
       "endDate": "2026-07-09",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3918-26",
@@ -1879,8 +1899,8 @@
       "city": "Stoughton",
       "crew": "Reclaim/Grading",
       "phase": "Pulverizing",
-      "startDate": "2026-07-02",
-      "endDate": "2026-07-02",
+      "startDate": "2026-07-27",
+      "endDate": "2026-07-28",
       "status": "Scheduled"
     },
     {
@@ -1891,7 +1911,7 @@
       "phase": "Pulverizing",
       "startDate": "2026-07-08",
       "endDate": "2026-07-10",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3452-25",
@@ -1900,7 +1920,7 @@
       "crew": "Reclaim/Grading",
       "phase": "Pulverizing",
       "startDate": "2026-07-13",
-      "endDate": "2026-07-13",
+      "endDate": "2026-07-14",
       "status": "Scheduled"
     },
     {
@@ -2269,7 +2289,7 @@
       "city": "Leominster",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-07-15",
+      "startDate": "2026-07-16",
       "endDate": "2026-07-16",
       "status": "Scheduled"
     },
@@ -2289,8 +2309,8 @@
       "city": "Sunapee",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-07-14",
-      "endDate": "2026-07-14",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-15",
       "status": "Scheduled"
     },
     {
