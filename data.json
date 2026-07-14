@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-14T18:43:41+00:00",
+  "generatedAt": "2026-07-14T19:57:06+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 253,
+  "totalRows": 254,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -1321,6 +1321,16 @@
       "phase": "Milling",
       "startDate": "2026-08-31",
       "endDate": "2026-08-31",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4194-26",
+      "client": "Greener Group LLC",
+      "city": "North Andover",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-07-16",
+      "endDate": "2026-07-16",
       "status": "Scheduled"
     },
     {
