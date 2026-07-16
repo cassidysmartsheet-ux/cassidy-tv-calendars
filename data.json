@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T18:07:30+00:00",
+  "generatedAt": "2026-07-16T19:32:53+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 261,
+  "totalRows": 267,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -844,6 +844,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3809-26",
+      "client": "PMA - Village Green West",
+      "city": "North Andover",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-09-17",
+      "endDate": "2026-09-18",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3884-26",
+      "client": "PMA (village Green 2026 Walks)",
+      "city": "North Andover",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-22",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "2765-25",
       "client": "Gemini",
       "city": "Salem",
@@ -871,6 +891,16 @@
       "phase": "Paving",
       "startDate": "2026-09-01",
       "endDate": "2026-09-02",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4089-26",
+      "client": "Pma",
+      "city": "North Andover",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-15",
       "status": "Scheduled"
     },
     {
@@ -1381,6 +1411,16 @@
       "phase": "Milling",
       "startDate": "2026-08-31",
       "endDate": "2026-08-31",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4089-26",
+      "client": "Pma",
+      "city": "North Andover",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-09-11",
+      "endDate": "2026-09-11",
       "status": "Scheduled"
     },
     {
@@ -2454,6 +2494,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3884-26",
+      "client": "PMA (village Green 2026 Walks)",
+      "city": "North Andover",
+      "crew": "Reclaim/Grading",
+      "phase": "Hand",
+      "startDate": "2026-09-17",
+      "endDate": "2026-09-18",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3884-26",
+      "client": "PMA (village Green 2026 Walks)",
+      "city": "North Andover",
+      "crew": "Reclaim/Grading",
+      "phase": "Hand",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3996-26",
       "client": "",
       "city": "Everett",
@@ -2479,8 +2539,8 @@
       "city": "Milford",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-09-15",
-      "endDate": "2026-09-15",
+      "startDate": "2026-09-16",
+      "endDate": "2026-09-16",
       "status": "Scheduled"
     },
     {
