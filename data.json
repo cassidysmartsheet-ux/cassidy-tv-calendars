@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T15:49:07+00:00",
+  "generatedAt": "2026-07-16T16:56:50+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 257,
+  "totalRows": 259,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -1994,6 +1994,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3863-26",
+      "client": "CW Contracting LLC",
+      "city": "Milford",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-18",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "2994-25",
       "client": "Berkley",
       "city": "Stoughton",
@@ -2441,6 +2451,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-10-05",
       "endDate": "2026-10-06",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3863-26",
+      "client": "CW Contracting LLC",
+      "city": "Milford",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-15",
       "status": "Scheduled"
     },
     {
