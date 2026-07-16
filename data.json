@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T16:56:50+00:00",
+  "generatedAt": "2026-07-16T18:07:30+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 259,
+  "totalRows": 261,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -891,6 +891,26 @@
       "phase": "Hand",
       "startDate": "2026-07-31",
       "endDate": "2026-07-31",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4102-26",
+      "client": "The Dartmouth group",
+      "city": "Acton",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-07",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0488-26",
+      "client": "Town of lexington",
+      "city": "lexington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-14",
       "status": "Scheduled"
     },
     {
