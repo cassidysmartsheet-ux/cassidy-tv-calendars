@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-18T00:10:59+00:00",
+  "generatedAt": "2026-07-18T03:31:37+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 268,
+  "totalRows": 269,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -91,7 +91,7 @@
       "phase": "Paving",
       "startDate": "2026-07-13",
       "endDate": "2026-07-15",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3476-25",
@@ -841,7 +841,7 @@
       "phase": "Hand",
       "startDate": "2026-07-17",
       "endDate": "2026-07-17",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3809-26",
@@ -1431,7 +1431,7 @@
       "phase": "Milling",
       "startDate": "2026-07-16",
       "endDate": "2026-07-16",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3112-25",
@@ -1461,7 +1461,7 @@
       "phase": "Paving",
       "startDate": "2026-07-16",
       "endDate": "2026-07-16",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0229-26",
@@ -1951,7 +1951,7 @@
       "phase": "Paving",
       "startDate": "2026-07-17",
       "endDate": "2026-07-17",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3938-26",
@@ -2101,7 +2101,7 @@
       "phase": "Pulverizing",
       "startDate": "2026-07-13",
       "endDate": "2026-07-14",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "RO-001",
@@ -2542,6 +2542,16 @@
       "startDate": "2026-09-16",
       "endDate": "2026-09-16",
       "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4197-26",
+      "client": "JT Lynch Construction",
+      "city": "Chelsea",
+      "crew": "Reclaim/Grading",
+      "phase": "Pulverizing",
+      "startDate": "2026-07-16",
+      "endDate": "2026-07-16",
+      "status": "Complete"
     },
     {
       "jobNumber": "3641-26",
