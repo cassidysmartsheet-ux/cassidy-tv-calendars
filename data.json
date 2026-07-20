@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-20T16:19:28+00:00",
+  "generatedAt": "2026-07-20T18:24:56+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 272,
+  "totalRows": 275,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -1680,7 +1680,17 @@
       "crew": "Paving",
       "phase": "Paving",
       "startDate": "2026-09-08",
-      "endDate": "2026-09-10",
+      "endDate": "2026-09-08",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3814-26",
+      "client": "OESL Automotive USA LLC",
+      "city": "Somersworth",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-22",
       "status": "Scheduled"
     },
     {
