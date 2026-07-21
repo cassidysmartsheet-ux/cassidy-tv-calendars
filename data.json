@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-21T21:46:00+00:00",
+  "generatedAt": "2026-07-21T22:39:09+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 275,
+  "totalRows": 274,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -509,8 +509,8 @@
       "city": "Tewksbury",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-08-03",
-      "endDate": "2026-08-03",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
       "status": "Scheduled"
     },
     {
@@ -1889,8 +1889,8 @@
       "city": "",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-08-15",
-      "endDate": "2026-08-15",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-14",
       "status": "Scheduled"
     },
     {
@@ -2381,16 +2381,6 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-24",
       "endDate": "2026-08-28",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3699-26",
-      "client": "American Asphalt Paving",
-      "city": "Nashua",
-      "crew": "Reclaim/Grading",
-      "phase": "Reclaim/Grading",
-      "startDate": "2026-08-05",
-      "endDate": "2026-08-08",
       "status": "Scheduled"
     },
     {
