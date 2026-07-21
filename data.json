@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T22:39:09+00:00",
+  "generatedAt": "2026-07-21T23:40:05+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 274,
   "events": [
@@ -804,26 +804,6 @@
       "status": "Scheduled"
     },
     {
-      "jobNumber": "3445-25",
-      "client": "JLL",
-      "city": "Wilmington",
-      "crew": "Hand",
-      "phase": "Paving",
-      "startDate": "2026-09-10",
-      "endDate": "2026-09-11",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3445-25",
-      "client": "JLL",
-      "city": "Wilmington",
-      "crew": "Hand",
-      "phase": "Paving",
-      "startDate": "2026-09-14",
-      "endDate": "2026-09-14",
-      "status": "Scheduled"
-    },
-    {
       "jobNumber": "3264-25",
       "client": "JLL-Wilmington",
       "city": "Wilmington",
@@ -1299,8 +1279,18 @@
       "city": "Wilmington",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-09-08",
-      "endDate": "2026-09-10",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-14",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3445-25",
+      "client": "JLL",
+      "city": "Wilmington",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-18",
       "status": "Scheduled"
     },
     {
@@ -1309,8 +1299,8 @@
       "city": "Wilmington",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-09-03",
-      "endDate": "2026-09-04",
+      "startDate": "2026-08-19",
+      "endDate": "2026-08-20",
       "status": "Scheduled"
     },
     {
@@ -1339,8 +1329,8 @@
       "city": "North Billerica",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-08-20",
-      "endDate": "2026-08-20",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-03",
       "status": "Scheduled"
     },
     {
@@ -1349,8 +1339,8 @@
       "city": "North Billerica",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-08-21",
-      "endDate": "2026-08-21",
+      "startDate": "2026-09-04",
+      "endDate": "2026-09-04",
       "status": "Scheduled"
     },
     {
@@ -1359,18 +1349,8 @@
       "city": "North Billerica",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-08-14",
-      "endDate": "2026-08-14",
-      "status": "Scheduled"
-    },
-    {
-      "jobNumber": "3258-25",
-      "client": "JLL- north Billerica",
-      "city": "North Billerica",
-      "crew": "Milling",
-      "phase": "Milling",
-      "startDate": "2026-08-17",
-      "endDate": "2026-08-19",
+      "startDate": "2026-09-08",
+      "endDate": "2026-09-11",
       "status": "Scheduled"
     },
     {
@@ -1419,8 +1399,8 @@
       "city": "North Andover",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-09-11",
-      "endDate": "2026-09-11",
+      "startDate": "2026-09-14",
+      "endDate": "2026-09-14",
       "status": "Scheduled"
     },
     {
@@ -2024,6 +2004,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3445-25",
+      "client": "JLL",
+      "city": "Wilmington",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-24",
+      "endDate": "2026-08-25",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3262-25",
       "client": "JLL- Wilmington",
       "city": "Wilmington",
@@ -2602,6 +2592,16 @@
       "startDate": "2026-05-15",
       "endDate": "2026-05-15",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "4182-26",
+      "client": "Certified Safe Electric Inc",
+      "city": "Bedford",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-23",
+      "status": ""
     }
   ]
 }
