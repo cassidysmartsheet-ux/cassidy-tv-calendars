@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-22T20:36:22+00:00",
+  "generatedAt": "2026-07-22T21:41:22+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 286,
+  "totalRows": 289,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -940,6 +940,16 @@
       "crew": "Hand",
       "phase": "Hand",
       "startDate": "2026-08-12",
+      "endDate": "2026-08-14",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4130-26",
+      "client": "JLL",
+      "city": "Canton",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-08-14",
       "endDate": "2026-08-14",
       "status": "Scheduled"
     },
@@ -2194,6 +2204,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4003-26",
+      "client": "",
+      "city": "Sterling",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-01",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "2994-25",
       "client": "Berkley",
       "city": "Stoughton",
@@ -2691,6 +2711,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-10-07",
       "endDate": "2026-10-07",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3710-26",
+      "client": "Grasso construction",
+      "city": "Burlington",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-08-05",
+      "endDate": "2026-08-07",
       "status": "Scheduled"
     },
     {
