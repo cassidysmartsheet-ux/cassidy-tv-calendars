@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-22T19:24:11+00:00",
+  "generatedAt": "2026-07-22T20:36:22+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 283,
+  "totalRows": 286,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -2174,6 +2174,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4159-26",
+      "client": "Nevex",
+      "city": "Essex",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3710-26",
+      "client": "Grasso construction",
+      "city": "Burlington",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-09-09",
+      "endDate": "2026-09-10",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "2994-25",
       "client": "Berkley",
       "city": "Stoughton",
@@ -2662,6 +2682,16 @@
       "startDate": "2026-07-21",
       "endDate": "2026-07-21",
       "status": ""
+    },
+    {
+      "jobNumber": "4159-26",
+      "client": "Nevex",
+      "city": "Essex",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3641-26",
