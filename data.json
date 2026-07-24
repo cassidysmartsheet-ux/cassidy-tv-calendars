@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T20:49:30+00:00",
+  "generatedAt": "2026-07-24T21:49:47+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 301,
   "events": [
@@ -371,7 +371,7 @@
       "phase": "Paving",
       "startDate": "2026-07-22",
       "endDate": "2026-07-22",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3789-26",
@@ -651,7 +651,7 @@
       "phase": "Hand",
       "startDate": "2026-07-23",
       "endDate": "2026-07-23",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4012-26",
@@ -661,7 +661,7 @@
       "phase": "Hand",
       "startDate": "2026-07-23",
       "endDate": "2026-07-23",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4011-26",
@@ -671,7 +671,7 @@
       "phase": "Hand",
       "startDate": "2026-07-24",
       "endDate": "2026-07-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4006-26",
@@ -681,7 +681,7 @@
       "phase": "Hand",
       "startDate": "2026-07-24",
       "endDate": "2026-07-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4005-26",
@@ -691,7 +691,7 @@
       "phase": "Hand",
       "startDate": "2026-07-24",
       "endDate": "2026-07-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4087-26",
@@ -751,7 +751,7 @@
       "phase": "Paving",
       "startDate": "2026-07-21",
       "endDate": "2026-07-21",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4064-26",
@@ -791,7 +791,7 @@
       "phase": "Hand",
       "startDate": "2026-07-16",
       "endDate": "2026-07-16",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4136-26",
@@ -801,7 +801,7 @@
       "phase": "Hand",
       "startDate": "2026-07-24",
       "endDate": "2026-07-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3712-26",
@@ -954,6 +954,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4182-26",
+      "client": "Certified Safe Electric Inc",
+      "city": "Bedford",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-23",
+      "status": "Complete"
+    },
+    {
       "jobNumber": "4094-26",
       "client": "Prime Group - Shetland Park",
       "city": "Salem",
@@ -1039,8 +1049,8 @@
       "city": "Methuen",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-10-02",
-      "endDate": "2026-10-02",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
       "status": "Scheduled"
     },
     {
@@ -1181,7 +1191,7 @@
       "phase": "Milling",
       "startDate": "2026-07-17",
       "endDate": "2026-07-17",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0316-26",
@@ -1679,8 +1689,8 @@
       "city": "Methuen",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-10-05",
-      "endDate": "2026-10-05",
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-25",
       "status": "Scheduled"
     },
     {
@@ -2449,8 +2459,8 @@
       "city": "Methuen",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-08-24",
-      "endDate": "2026-08-25",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-20",
       "status": "Scheduled"
     },
     {
@@ -2691,7 +2701,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-07-17",
       "endDate": "2026-07-17",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4079-26",
@@ -2811,7 +2821,7 @@
       "phase": "Pulverizing",
       "startDate": "2026-07-21",
       "endDate": "2026-07-21",
-      "status": ""
+      "status": "Complete"
     },
     {
       "jobNumber": "4159-26",
@@ -2862,16 +2872,6 @@
       "startDate": "2026-05-15",
       "endDate": "2026-05-15",
       "status": "Complete"
-    },
-    {
-      "jobNumber": "4182-26",
-      "client": "Certified Safe Electric Inc",
-      "city": "Bedford",
-      "crew": "Hand",
-      "phase": "Hand",
-      "startDate": "2026-07-23",
-      "endDate": "2026-07-23",
-      "status": ""
     }
   ]
 }
