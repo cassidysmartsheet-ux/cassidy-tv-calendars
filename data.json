@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-24T17:59:08+00:00",
+  "generatedAt": "2026-07-24T19:40:52+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 291,
+  "totalRows": 299,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -474,6 +474,16 @@
       "status": "Complete"
     },
     {
+      "jobNumber": "3779-26",
+      "client": "Russo Brothers",
+      "city": "",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-08-19",
+      "endDate": "2026-08-19",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3869-26",
       "client": "Trinity Lutheran",
       "city": "Chelmsford",
@@ -944,6 +954,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4094-26",
+      "client": "Prime Group - Shetland Park",
+      "city": "Salem",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-09",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "4130-26",
       "client": "JLL",
       "city": "Canton",
@@ -951,6 +971,16 @@
       "phase": "Hand",
       "startDate": "2026-08-14",
       "endDate": "2026-08-14",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0501-26",
+      "client": "Norblom",
+      "city": "Burlington",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
       "status": "Scheduled"
     },
     {
@@ -1202,6 +1232,16 @@
       "startDate": "2026-06-11",
       "endDate": "2026-06-12",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "3779-26",
+      "client": "Russo Brothers",
+      "city": "",
+      "crew": "Milling",
+      "phase": "",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-08",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "3960-26",
@@ -1464,6 +1504,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4094-26",
+      "client": "Prime Group - Shetland Park",
+      "city": "Salem",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-08-21",
+      "endDate": "2026-08-21",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4094-26",
+      "client": "Prime Group - Shetland Park",
+      "city": "Salem",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-07",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3848-26",
       "client": "JLL - Bellingham",
       "city": "Bellingham",
@@ -1491,6 +1551,26 @@
       "phase": "Milling",
       "startDate": "2026-09-22",
       "endDate": "2026-09-24",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0500-26",
+      "client": "City of winchester",
+      "city": "Winchester",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0500-26",
+      "client": "City of winchester",
+      "city": "Winchester",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-09-28",
+      "endDate": "2026-10-01",
       "status": "Scheduled"
     },
     {
@@ -2214,6 +2294,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0500-26",
+      "client": "City of winchester",
+      "city": "Winchester",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-16",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "2994-25",
       "client": "Berkley",
       "city": "Stoughton",
@@ -2721,6 +2811,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-05",
       "endDate": "2026-08-07",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3710-26",
+      "client": "Grasso construction",
+      "city": "Burlington",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-08-27",
+      "endDate": "2026-08-28",
       "status": "Scheduled"
     },
     {
