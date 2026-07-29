@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-29T20:51:41+00:00",
+  "generatedAt": "2026-07-29T21:45:10+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 314,
+  "totalRows": 317,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -544,6 +544,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3792-26",
+      "client": "Rapiscan",
+      "city": "Billerica",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-08-03",
+      "endDate": "2026-08-03",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3729-26",
       "client": "Russo Bros",
       "city": "Westborough",
@@ -989,8 +999,8 @@
       "city": "Burlington",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-08-22",
-      "endDate": "2026-08-22",
+      "startDate": "2026-08-21",
+      "endDate": "2026-08-21",
       "status": "Scheduled"
     },
     {
