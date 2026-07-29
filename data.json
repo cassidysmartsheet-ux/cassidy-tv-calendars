@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-29T12:08:14+00:00",
+  "generatedAt": "2026-07-29T14:29:21+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 311,
+  "totalRows": 314,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -991,6 +991,16 @@
       "phase": "Hand",
       "startDate": "2026-08-22",
       "endDate": "2026-08-22",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0502-26",
+      "client": "Wenham, Town of",
+      "city": "Wenham",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-08-20",
+      "endDate": "2026-08-20",
       "status": "Scheduled"
     },
     {
@@ -2891,6 +2901,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-27",
       "endDate": "2026-08-28",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4216-26",
+      "client": "Dandel Construction",
+      "city": "Holliston",
+      "crew": "Reclaim/Grading",
+      "phase": "Milling",
+      "startDate": "2026-08-03",
+      "endDate": "2026-08-03",
       "status": "Scheduled"
     },
     {
