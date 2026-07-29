@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-29T09:58:52+00:00",
+  "generatedAt": "2026-07-29T12:08:14+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 310,
+  "totalRows": 311,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -2091,6 +2091,16 @@
       "phase": "Paving",
       "startDate": "2026-07-25",
       "endDate": "2026-07-25",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3701-26",
+      "client": "Kadima",
+      "city": "Woburn",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-08",
       "status": "Scheduled"
     },
     {
