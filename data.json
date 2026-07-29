@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-29T22:42:05+00:00",
+  "generatedAt": "2026-07-29T23:43:21+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 317,
+  "totalRows": 322,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -1014,6 +1014,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "4075-26",
+      "client": "Mj Cataldo",
+      "city": "Worcester",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3619-26",
+      "client": "Heritage House",
+      "city": "Newburyport",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-08-28",
+      "endDate": "2026-08-28",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3194-25",
       "client": "Gemini - Greenbriar",
       "city": "North Reading",
@@ -1352,6 +1372,16 @@
       "startDate": "2026-07-08",
       "endDate": "2026-07-08",
       "status": "Complete"
+    },
+    {
+      "jobNumber": "3455-25",
+      "client": "SLT Construction",
+      "city": "Walpole",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-12",
+      "status": "Scheduled"
     },
     {
       "jobNumber": "4059-26",
@@ -2169,8 +2199,8 @@
       "city": "Walpole",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-09-15",
-      "endDate": "2026-09-16",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
       "status": "Scheduled"
     },
     {
@@ -2179,8 +2209,8 @@
       "city": "Walpole",
       "crew": "Paving",
       "phase": "Paving",
-      "startDate": "2026-09-15",
-      "endDate": "2026-09-16",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
       "status": "Scheduled"
     },
     {
@@ -2734,6 +2764,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3455-25",
+      "client": "SLT Construction",
+      "city": "Walpole",
+      "crew": "Reclaim/Grading",
+      "phase": "Hand",
+      "startDate": "2026-09-24",
+      "endDate": "2026-09-25",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "4064-26",
       "client": "Current Path Consulting",
       "city": "Bedford",
@@ -2921,6 +2961,16 @@
       "phase": "Milling",
       "startDate": "2026-08-03",
       "endDate": "2026-08-03",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4075-26",
+      "client": "Mj Cataldo",
+      "city": "Worcester",
+      "crew": "Reclaim/Grading",
+      "phase": "Reclaim/Grading",
+      "startDate": "2026-09-24",
+      "endDate": "2026-09-24",
       "status": "Scheduled"
     },
     {
