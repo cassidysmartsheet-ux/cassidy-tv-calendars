@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-30T21:02:40+00:00",
+  "generatedAt": "2026-07-30T22:15:18+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 323,
+  "totalRows": 328,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -1644,6 +1644,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3781-26",
+      "client": "Key point",
+      "city": "Billerica",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-09",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4189-26",
+      "client": "RJKELLY",
+      "city": "Methuen",
+      "crew": "Milling",
+      "phase": "Milling",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-13",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "3112-25",
       "client": "CW Contracting",
       "city": "West Roxbury",
@@ -2414,6 +2434,26 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3781-26",
+      "client": "Key point",
+      "city": "Billerica",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-20",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4189-26",
+      "client": "RJKELLY",
+      "city": "Methuen",
+      "crew": "Paving",
+      "phase": "Paving",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-22",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "2994-25",
       "client": "Berkley",
       "city": "Stoughton",
@@ -2971,6 +3011,16 @@
       "phase": "Milling",
       "startDate": "2026-08-03",
       "endDate": "2026-08-03",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4189-26",
+      "client": "RJKELLY",
+      "city": "Methuen",
+      "crew": "Reclaim/Grading",
+      "phase": "Hand",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
       "status": "Scheduled"
     },
     {
