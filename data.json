@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-31T16:22:01+00:00",
+  "generatedAt": "2026-07-31T17:58:59+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 328,
+  "totalRows": 331,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -1041,6 +1041,26 @@
       "phase": "Hand",
       "startDate": "2026-08-28",
       "endDate": "2026-08-28",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4185-26",
+      "client": "Obayashi Corporation",
+      "city": "Manchester",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4173-26",
+      "client": "Keypointt",
+      "city": "Dartmouth",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-09-16",
+      "endDate": "2026-09-16",
       "status": "Scheduled"
     },
     {
@@ -3031,6 +3051,16 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-09-24",
       "endDate": "2026-09-24",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "4185-26",
+      "client": "Obayashi Corporation",
+      "city": "Manchester",
+      "crew": "Reclaim/Grading",
+      "phase": "Milling",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
       "status": "Scheduled"
     },
     {
