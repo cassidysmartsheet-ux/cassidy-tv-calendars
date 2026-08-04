@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T22:30:28+00:00",
+  "generatedAt": "2026-08-04T23:34:59+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 331,
   "events": [
@@ -159,8 +159,8 @@
       "city": "Haverhill",
       "crew": "Hand",
       "phase": "Hand",
-      "startDate": "2026-07-07",
-      "endDate": "2026-07-07",
+      "startDate": "2026-08-03",
+      "endDate": "2026-08-03",
       "status": "Scheduled"
     },
     {
@@ -541,7 +541,7 @@
       "phase": "Paving",
       "startDate": "2026-08-01",
       "endDate": "2026-08-01",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3792-26",
@@ -631,7 +631,7 @@
       "phase": "Hand",
       "startDate": "2026-07-27",
       "endDate": "2026-07-28",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4017-26",
@@ -771,7 +771,7 @@
       "phase": "Paving",
       "startDate": "2026-07-29",
       "endDate": "2026-07-29",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3964-26",
@@ -819,8 +819,8 @@
       "city": "Sunapee",
       "crew": "Hand",
       "phase": "Paving",
-      "startDate": "2026-07-31",
-      "endDate": "2026-07-31",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
       "status": "Scheduled"
     },
     {
@@ -941,7 +941,7 @@
       "phase": "Hand",
       "startDate": "2026-07-31",
       "endDate": "2026-07-31",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "4102-26",
@@ -1131,7 +1131,7 @@
       "phase": "Milling",
       "startDate": "2026-07-19",
       "endDate": "2026-07-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3467-25",
@@ -1141,7 +1141,7 @@
       "phase": "Milling",
       "startDate": "2026-07-26",
       "endDate": "2026-07-26",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0268-26",
@@ -1691,7 +1691,7 @@
       "phase": "Paving",
       "startDate": "2026-07-30",
       "endDate": "2026-07-30",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "2994-25",
@@ -1831,7 +1831,7 @@
       "phase": "Paving",
       "startDate": "2026-07-20",
       "endDate": "2026-07-24",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3467-25",
@@ -1841,7 +1841,7 @@
       "phase": "Paving",
       "startDate": "2026-07-27",
       "endDate": "2026-07-27",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3802-26",
@@ -2519,8 +2519,8 @@
       "city": "Haverhill",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-07-07",
-      "endDate": "2026-07-07",
+      "startDate": "2026-08-03",
+      "endDate": "2026-08-03",
       "status": "Scheduled"
     },
     {
@@ -2671,7 +2671,7 @@
       "phase": "Reclaim/Grading",
       "startDate": "2026-08-03",
       "endDate": "2026-08-03",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "FJ-0299-26",
@@ -2811,7 +2811,7 @@
       "phase": "Pulverizing",
       "startDate": "2026-07-30",
       "endDate": "2026-07-31",
-      "status": "Scheduled"
+      "status": "Complete"
     },
     {
       "jobNumber": "3918-26",
@@ -2909,8 +2909,8 @@
       "city": "Sunapee",
       "crew": "Reclaim/Grading",
       "phase": "Reclaim/Grading",
-      "startDate": "2026-09-04",
-      "endDate": "2026-09-04",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-26",
       "status": "Scheduled"
     },
     {
