@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-10T19:07:09+00:00",
+  "generatedAt": "2026-08-10T19:58:44+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 345,
+  "totalRows": 347,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -1104,6 +1104,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "3279-25",
+      "client": "Growth companies",
+      "city": "Waltham",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-13",
+      "status": "Scheduled"
+    },
+    {
       "jobNumber": "4227-26",
       "client": "Keypoint Partners",
       "city": "Plymouth",
@@ -1490,7 +1500,7 @@
       "crew": "Milling",
       "phase": "Milling",
       "startDate": "2026-08-18",
-      "endDate": "2026-08-18",
+      "endDate": "2026-08-20",
       "status": "Scheduled"
     },
     {
@@ -1499,8 +1509,8 @@
       "city": "Wilmington",
       "crew": "Milling",
       "phase": "Milling",
-      "startDate": "2026-08-19",
-      "endDate": "2026-08-20",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-02",
       "status": "Scheduled"
     },
     {
@@ -3271,6 +3281,16 @@
       "phase": "Paving",
       "startDate": "2026-10-05",
       "endDate": "2026-10-06",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3279-25",
+      "client": "Growth companies",
+      "city": "Waltham",
+      "crew": "Pulverizing",
+      "phase": "Pulverizing",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-09",
       "status": "Scheduled"
     }
   ]
